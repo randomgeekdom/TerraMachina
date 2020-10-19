@@ -1,14 +1,14 @@
 <template>
 <div>
   
-  <v-row v-show="IsMobile()">
+  <v-row v-show="IsMobile()" class='no-print'>
     
               <v-select :items="list" v-model="selectedRoute" item-text="display" item-value="link" @change="RouteTo()" v-show="this.IsMobile()">
 
               </v-select>
   </v-row>
    <v-row>
-          <v-col cols="1" v-show="!IsMobile()">
+          <v-col cols="2" v-show="!IsMobile()" class='no-print'>
             <v-sheet rounded="lg">
               <v-list color="transparent">
                 <v-list-item v-for="item in list" :key="item.link" :to="item.link" link>
@@ -42,18 +42,9 @@
     @Component
     export default class Rules extends Vue{
           [x: string]: any;
-          public name = 'Rules';
+          public name = 'Character Sheets';
           public list = [
-            {link: "/rules/Moves", display: "Moves"},
-            {link: "/rules/LevelingUp", display: "Leveling Up"},
-            {link: "/rules/Death", display: "Death"},
-            {link: "/rules/Stats", display: "Stats"},
-            {link: "/rules/Classes", display: "Classes"},
-            {link: "/rules/Status-Effects", display: "Status Effects"},
-            {link: "/rules/Elements", display: "Elements"},
-            {link: "/rules/Money", display: "Money"},
-            {link: "/rules/Armor", display: "Armor"},
-            {link: "/rules/Weapons", display: "Weapons"},
+            {link: "/character-sheets/basic", display: "Basic Character Sheet"},
           ] ;
           public selectedRoute = {};
 

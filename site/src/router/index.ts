@@ -11,6 +11,19 @@ const routes: Array<RouteConfig> = [
     component: Home
   },
   {
+    path: '/character-sheets',
+    name: 'Character Sheet',
+    redirect: '/character-sheets/basic',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Character-Sheets.vue'),
+    children:[
+      {
+        path: 'basic',
+        name: 'Basic Character Sheet',
+        component: () => import(/* webpackChunkName: "about" */ '../views/character-sheets/BasicCharacterSheet.vue'),
+      }
+    ]
+  },
+  {
     path: '/rules',
     name: 'Rules',
     redirect: '/rules/armor',

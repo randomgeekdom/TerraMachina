@@ -1,7 +1,7 @@
   
 <template>
   <v-app id="inspire">
-    <v-app-bar
+    <v-app-bar class='no-print'
       app
       color="white"
       flat
