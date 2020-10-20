@@ -17,7 +17,7 @@
         <v-btn text to="/">
           Home
         </v-btn>
-        <v-btn text to="/rules">
+        <v-btn text to="/Rules">
           Rules
         </v-btn>
 

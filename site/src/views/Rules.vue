@@ -8,7 +8,7 @@
               </v-select>
   </v-row>
    <v-row>
-          <v-col cols="1" v-show="!IsMobile()">
+          <v-col cols="2" v-show="!IsMobile()">
             <v-sheet rounded="lg">
               <v-list color="transparent">
                 <v-list-item v-for="item in list" :key="item.link" :to="item.link" link>
@@ -41,7 +41,6 @@
 
     @Component
     export default class Rules extends Vue{
-          [x: string]: any;
           public name = 'Rules';
           public list = [
             {link: "/rules/Moves", display: "Moves"},

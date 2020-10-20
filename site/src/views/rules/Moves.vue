@@ -6,7 +6,7 @@
     <v-row>
     <ul>
       <li>Moves are the actions a character may take in or out of combat</li>
-      <li>There are a set of moves that any character may take that are denoted in the <router-link to="/character-sheets/basic">Basic Character Sheet</router-link> </li>
+      <li>There are a set of moves that any character may take that are denoted in the Basic Character Sheet </li>
       <li>A move that requires a roll but no SP cost can only be done once out of combat within a set location</li>
       <li>Each class has its own set of moves</li>
       <li>Certain moves have more than one level that can be obtained only after the first level is obtained</li>
