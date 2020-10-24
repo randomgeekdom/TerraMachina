@@ -13,7 +13,7 @@ const routes: Array<RouteConfig> = [
   {
     path: '/Rules',
     name: 'Rules',
-    redirect: '/Rules/Armor',
+    redirect: '/rules/Moves',
     component: () => import(/* webpackChunkName: "about" */ '../views/Rules.vue'),
     children: [
       {
