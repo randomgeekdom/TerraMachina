@@ -55,6 +55,7 @@ export default class Rules extends Vue {
     { page: "Home", route: "/" },
     { page: "Items", route: "/Items" },
     { page: "Bestiary", route: "/Bestiary" },
+    { page: "NPC Generator", route: "/Generate-NPC" },
   ];
 
   public selectedLink = "";
