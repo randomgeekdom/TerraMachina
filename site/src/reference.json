@@ -1,0 +1,63 @@
+{
+    "Items": [
+        {
+            "Name": "Potion",
+            "Description": "Heals 10 HP",
+            "Cost": "10"
+        },
+        {
+            "Name": "Concoction",
+            "Description": "Heals 10 SP",
+            "Cost": "10"
+        },
+        {
+            "Name": "Medicine",
+            "Description": "Heals 2d10 HP, but can only be used outside of battle",
+            "Cost": "7"
+        },
+        {
+            "Name": "Bandage",
+            "Description": "Immediately heals Bleed",
+            "Cost": "6"
+        },
+        {
+            "Name": "Eye Drop",
+            "Description": "Immediately heals Blind",
+            "Cost": "6"
+        },
+        {
+            "Name": "Ointment",
+            "Description": "Immediately heals Burn",
+            "Cost": "6"
+        },
+        {
+            "Name": "Medication",
+            "Description": "Immediately heals Mania",
+            "Cost": "6"
+        },
+        {
+            "Name": "Antidote",
+            "Description": "Immediately heals Poison",
+            "Cost": "6"
+        },
+        {
+            "Name": "Liquid Courage",
+            "Description": "Immediately heals Scared",
+            "Cost": "6"
+        },
+        {
+            "Name": "Basic Weapon",
+            "Description": "Basic type of any weapon (no modifiers)",
+            "Cost": "5"
+        }
+    ],
+    "Bestiary": [
+        {
+            "Name": "Brown Dragon",
+            "Description": "Dragons the size of human beings with thick scale skin",
+            "HP": "10",
+            "Armor": "2",
+            "Attacks": "Scratch: 1d8+3 damage\r\n\r\nBite: 1d8 damage.  Will latch onto a character causing the following: -1 to Grace Rolls and automatic 1d4 damage until free\r\n\r\nDirt Tail Whip: 1d6 ranged Earth damage plus causes Blind."
+        }
+    ]
+}

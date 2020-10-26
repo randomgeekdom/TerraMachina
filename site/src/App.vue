@@ -53,7 +53,8 @@ import { Component } from "vue-property-decorator";
 export default class Rules extends Vue {
   public links = [
     { page: "Home", route: "/" },
-    { page: "Rules", route: "/Rules" },
+    { page: "Items", route: "/Items" },
+    { page: "Bestiary", route: "/Bestiary" },
   ];
 
   public selectedLink = "";
