@@ -5,13 +5,16 @@
       <v-col cols="12">
         <v-sheet class="pa-10" rounded="lg">
           <v-row>
-            <v-btn @click="GenerateName()">Generate</v-btn>
+            <v-btn @click="GenerateNPC()">Generate</v-btn>
           </v-row>
           <v-row>
-            <h2>{{ this.FirstName }}</h2>
+            <h2>{{ npc.FirstName }}</h2>
           </v-row>
           <v-row>
-            <h2>{{ this.LastName }}</h2>
+            <h2>{{ npc.LastName }}</h2>
+          </v-row>
+          <v-row>
+            <h2>{{ Gender }}</h2>
           </v-row>
         </v-sheet>
       </v-col>
@@ -23,16 +26,20 @@
 <script lang="ts">
 import Vue from "vue";
 import { Component } from "vue-property-decorator";
-import * as NameGenerator from "../services/NameGenerator";
+import * as NPCGenerator from "@/services/NPCGenerator";
+import NPC from "@/models/NPC";
+import { Gender } from '@/enumerations/Gender';
 
 @Component
 export default class GenerateNPC extends Vue {
-  public FirstName = "";
-  public LastName = "";
+  public npc = new NPC();
 
-  public GenerateName(): void {
-    this.FirstName = NameGenerator.default.GenerateFirstName();
-    this.LastName = NameGenerator.default.GenerateLastName();
+  public get Gender(): string{
+    return this.npc.Gender == Gender.Female ? "Female" : "Male";
+  }
+
+  public GenerateNPC(): void {
+    this.npc = NPCGenerator.default.Generate();
   }
 }
 </script>

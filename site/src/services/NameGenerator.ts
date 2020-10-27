@@ -1,5 +1,6 @@
 import { uniqueNamesGenerator, colors, animals, countries, names, starWars, adjectives } from 'unique-names-generator';
 import { nameByRace } from "fantasy-name-generator";
+import { Gender } from '@/enumerations/Gender';
 
 export default class NameGenerator {
     static FantasyRaces = [
@@ -35,23 +36,23 @@ export default class NameGenerator {
         return this.GetRandomInt(2) == 0;
     }
 
-    static GenerateName(): string {
+    static GenerateName(gender: Gender): string {
         if (this.GetRandomInt(2) == 0) {
             return this.CapitalizeFirstLetter(uniqueNamesGenerator({ dictionaries: [colors, animals, countries, names, starWars, adjectives], length: 1 }).split(" ")[0]);
         }
         else {
             const randomRace = this.FantasyRaces[this.GetRandomInt(this.FantasyRaces.length)];
-            const gender = this.GetRandomBool() ? "male" : "female";
-            return String(nameByRace(randomRace, { gender: gender }));
+            const genderText = gender==Gender.Female ? "female" : "male";
+            return String(nameByRace(randomRace, { gender: genderText }));
         }
 
     }
 
-    public static GenerateFirstName(): string {
-        return this.GenerateName();
+    public static GenerateFirstName(gender: Gender): string {
+        return this.GenerateName(gender);
     }
 
     public static GenerateLastName(): string {
-        return this.GenerateName();
+        return this.GenerateName(this.GetRandomBool() ? Gender.Female : Gender.Male);
     }
 }
