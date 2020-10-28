@@ -13,15 +13,6 @@
           </v-btn>
         </div>
 
-        <div class="d-sm-none">
-          <v-select
-            :items="links"
-            item-text="page"
-            item-value="route"
-            v-model="selectedLink"
-            @change="routeTo()"
-          ></v-select>
-        </div>
 
         <v-spacer></v-spacer>
 
@@ -39,6 +30,17 @@
 
     <v-main class="grey lighten-3">
       <v-container>
+        
+        <div class="d-sm-none">
+          <v-select
+          flat
+            :items="links"
+            item-text="page"
+            item-value="route"
+            v-model="selectedLink"
+            @change="routeTo()"
+          ></v-select>
+        </div>
         <router-view></router-view>
       </v-container>
     </v-main>

@@ -1,19 +1,9 @@
 {
     "Items": [
         {
-            "Name": "Potion",
-            "Description": "Heals 10 HP",
-            "Cost": "10"
-        },
-        {
-            "Name": "Concoction",
-            "Description": "Heals 10 SP",
-            "Cost": "10"
-        },
-        {
-            "Name": "Medicine",
-            "Description": "Heals 2d10 HP, but can only be used outside of battle",
-            "Cost": "7"
+            "Name": "Antidote",
+            "Description": "Immediately heals Poison",
+            "Cost": "6"
         },
         {
             "Name": "Bandage",
@@ -21,13 +11,23 @@
             "Cost": "6"
         },
         {
+            "Name": "Basic Weapon",
+            "Description": "Basic type of any weapon (no modifiers)",
+            "Cost": "5"
+        },
+        {
+            "Name": "Concoction",
+            "Description": "Heals 10 SP",
+            "Cost": "10"
+        },
+        {
             "Name": "Eye Drop",
             "Description": "Immediately heals Blind",
             "Cost": "6"
         },
         {
-            "Name": "Ointment",
-            "Description": "Immediately heals Burn",
+            "Name": "Tonic",
+            "Description": "Immediately heals Scared",
             "Cost": "6"
         },
         {
@@ -36,28 +36,47 @@
             "Cost": "6"
         },
         {
-            "Name": "Antidote",
-            "Description": "Immediately heals Poison",
+            "Name": "Medicine",
+            "Description": "Heals 2d10 HP, but can only be used outside of battle",
+            "Cost": "7"
+        },
+        {
+            "Name": "Ointment",
+            "Description": "Immediately heals Burn",
             "Cost": "6"
         },
         {
-            "Name": "Liquid Courage",
-            "Description": "Immediately heals Scared",
-            "Cost": "6"
+            "Name": "Potion",
+            "Description": "Heals 10 HP",
+            "Cost": "10"
         },
         {
-            "Name": "Basic Weapon",
-            "Description": "Basic type of any weapon (no modifiers)",
-            "Cost": "5"
+            "Name": "Scale Armor",
+            "Description": "Adds +1 Armor",
+            "Cost": "10"
+        },
+        {
+            "Name": "Tincture",
+            "Description": "Heals 1d10 HP and 1d10 SP",
+            "Cost": "30"
         }
     ],
     "Bestiary": [
         {
             "Name": "Brown Dragon",
-            "Description": "Dragons the size of human beings with thick scale skin",
+            "Description": "Dragons the size of human beings with thick brown scales",
             "HP": "10",
             "Armor": "2",
-            "Attacks": "Scratch: 1d8+3 damage\r\n\r\nBite: 1d8 damage.  Will latch onto a character causing the following: -1 to Grace Rolls and automatic 1d4 damage until free\r\n\r\nDirt Tail Whip: 1d6 ranged Earth damage plus causes Blind."
+            "ElementalWeaknesses": "Water",
+            "Attacks": "Scratch: 1d8+3 damage\r\n\r\nBite: 1d8 damage.  Will latch onto a character causing the following: -1 to Movement Rolls and automatic 1d4 damage until free\r\n\r\nDirt Tail Whip: 1d6 ranged Earth damage plus causes Blind."
+        },
+        {
+            "Name": "Armored Rhino",
+            "Description": "A rhinoceros with a thick metal hide",
+            "HP": "10",
+            "Armor": "5",
+            "ElementalWeaknesses": "Fire\r\nLightning",
+            "Attacks": "Charge: 1d12 damage\r\n\r\nGround Stomp: 1d8 damage to 2 enemies"
         }
     ]
 }
