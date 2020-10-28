@@ -4,7 +4,7 @@
     <v-app-bar class="no-print" app color="white" flat hide-on-scroll>
       <v-container class="py-0 fill-height">
         <router-link class="mr-10" to="/">
-          <img src="./assets/logo.png" />
+          <img height="50" src="./assets/logo.png" />
         </router-link>
 
         <div class="d-none d-sm-block">

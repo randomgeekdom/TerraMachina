@@ -3,6 +3,7 @@ import VueRouter, { RouteConfig } from 'vue-router'
 import Home from '../views/Home.vue'
 import Items from '../views/Items.vue'
 import GenerateNPC from '../views/GenerateNPC.vue'
+import Bestiary from '../views/Bestiary.vue'
 
 Vue.use(VueRouter)
 
@@ -21,6 +22,11 @@ const routes: Array<RouteConfig> = [
     path: '/Generate-NPC',
     name: 'GenerateNPC',
     component: GenerateNPC
+  },
+  {
+    path: '/Bestiary',
+    name: 'Bestiary',
+    component: Bestiary
   },
   
 ]
