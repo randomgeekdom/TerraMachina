@@ -1,6 +1,7 @@
 import { uniqueNamesGenerator, colors, animals, countries, names, starWars, adjectives } from 'unique-names-generator';
 import { nameByRace } from "fantasy-name-generator";
 import { Gender } from '@/enumerations/Gender';
+import Randomizer from './Randomizer';
 
 export default class NameGenerator {
     static FantasyRaces = [
@@ -28,20 +29,12 @@ export default class NameGenerator {
         return text.charAt(0).toUpperCase() + text.slice(1);
       }
 
-    static GetRandomInt(max: number): number {
-        return Math.floor(Math.random() * Math.floor(max));
-    }
-
-    static GetRandomBool(): boolean {
-        return this.GetRandomInt(2) == 0;
-    }
-
     static GenerateName(gender: Gender): string {
-        if (this.GetRandomInt(2) == 0) {
+        if (Randomizer.GetRandomInt(2) == 0) {
             return this.CapitalizeFirstLetter(uniqueNamesGenerator({ dictionaries: [colors, animals, countries, names, starWars, adjectives], length: 1 }).split(" ")[0]);
         }
         else {
-            const randomRace = this.FantasyRaces[this.GetRandomInt(this.FantasyRaces.length)];
+            const randomRace = this.FantasyRaces[Randomizer.GetRandomInt(this.FantasyRaces.length)];
             const genderText = gender==Gender.Female ? "female" : "male";
             return String(nameByRace(randomRace, { gender: genderText }));
         }
@@ -53,6 +46,6 @@ export default class NameGenerator {
     }
 
     public static GenerateLastName(): string {
-        return this.GenerateName(this.GetRandomBool() ? Gender.Female : Gender.Male);
+        return this.GenerateName(Randomizer.GetRandomBool() ? Gender.Female : Gender.Male);
     }
 }

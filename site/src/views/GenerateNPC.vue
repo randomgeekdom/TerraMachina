@@ -9,9 +9,9 @@
           </v-row>
           <v-row>
             <v-card>
-              <v-card-title
-                >{{ npc.FirstName }} {{ npc.LastName }}</v-card-title
-              >
+              <v-card-title>
+                {{ npc.FirstName }} {{ npc.LastName }}
+              </v-card-title>
               <v-card-subtitle>{{ Gender }}</v-card-subtitle>
             </v-card>
           </v-row>
