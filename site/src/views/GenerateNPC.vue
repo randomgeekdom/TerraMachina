@@ -8,12 +8,12 @@
             <v-btn @click="GenerateNPC()">Generate</v-btn>
           </v-row>
           <v-row>
-            <v-card>
-              <v-card-title>
-                {{ npc.FirstName }} {{ npc.LastName }}
-              </v-card-title>
-              <v-card-subtitle>{{ Gender }}</v-card-subtitle>
-            </v-card>
+              <v-card v-for="npc in npcs" :key="npc.Name" width="250">
+                <v-card-title>
+                  {{ npc.FirstName }} {{ npc.LastName }}
+                </v-card-title>
+                <v-card-subtitle>{{ Gender(npc.Gender) }}</v-card-subtitle>
+              </v-card>
           </v-row>
         </v-sheet>
       </v-col>
@@ -31,14 +31,14 @@ import { Gender } from "@/enumerations/Gender";
 
 @Component
 export default class GenerateNPC extends Vue {
-  public npc = new NPC();
+  public npcs: NPC[] = [];
 
-  public get Gender(): string {
-    return this.npc.Gender == Gender.Female ? "Female" : "Male";
+  public Gender(gender: Gender): string {
+    return gender == Gender.Female ? "Female" : "Male";
   }
 
   public GenerateNPC(): void {
-    this.npc = NPCGenerator.default.Generate();
+    this.npcs.push(NPCGenerator.default.Generate());
   }
 }
 </script>

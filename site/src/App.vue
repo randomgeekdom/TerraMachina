@@ -16,15 +16,6 @@
 
         <v-spacer></v-spacer>
 
-        <!-- <v-responsive max-width="260">
-          <v-text-field
-            dense
-            flat
-            hide-details
-            rounded
-            solo-inverted
-          ></v-text-field>
-        </v-responsive> -->
       </v-container>
     </v-app-bar>
 
@@ -55,9 +46,10 @@ import { Component } from "vue-property-decorator";
 export default class Rules extends Vue {
   public links = [
     { page: "Home", route: "/" },
-    { page: "Items", route: "/Items" },
-    { page: "Bestiary", route: "/Bestiary" },
-    { page: "NPC Generator", route: "/Generate-NPC" },
+    { page: "Items", route: "/items" },
+    { page: "Bestiary", route: "/bestiary" },
+    { page: "Sample Custom Moves", route: "/sample-custom-moves" },
+    { page: "NPC Generator", route: "/generate-npc" }
   ];
 
   public selectedLink = "";

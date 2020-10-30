@@ -15,23 +15,10 @@
           </v-row>
           <v-row>
             <v-data-table
-              :items="enemies"
+              :items="moves"
               :headers="headers"
               :search="search"
-              item-key="Name"
-              show-expand
             >
-              <!-- <template v-slot:item.Attacks="{item}">
-                  <pre>{{item.Attacks}}</pre>
-              </template> -->
-
-              <template v-slot:expanded-item="{ headers, item }">
-                <td :colspan="headers.length">
-                  <br/>
-                  <pre>{{ item.Attacks }}</pre>
-                  <br/>
-                </td>
-              </template>
             </v-data-table>
           </v-row>
         </v-sheet>
@@ -47,19 +34,15 @@ import { Component } from "vue-property-decorator";
 import reference from "../reference.json";
 
 @Component
-export default class Bestiary extends Vue {
+export default class SampleCustomMoves extends Vue {
   public headers = [
     { text: "Name", value: "Name" },
     { text: "Description", value: "Description" },
-    { text: "HP", value: "HP" },
-    { text: "Armor", value: "Armor" },
-    { text: "Weakness", value: "Weakness" },
-    // { text: "Attacks", value: "Attacks" },
   ];
   public search = "";
 
-  public get enemies() {
-    return reference.Bestiary;
+  public get moves() {
+    return reference.Sample_Custom_Moves;
   }
 }
 </script>

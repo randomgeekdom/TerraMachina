@@ -26,7 +26,7 @@
             "Cost": "6"
         },
         {
-            "Name": "Tonic",
+            "Name": "Brew",
             "Description": "Immediately heals Scared",
             "Cost": "6"
         },
@@ -59,6 +59,31 @@
             "Name": "Tincture",
             "Description": "Heals 1d10 HP and 1d10 SP",
             "Cost": "30"
+        },
+        {
+            "Name": "Dangerous Mushroom",
+            "Description": "Requires a resilience roll:\r\n-\tSuccess: Heal 1d6 HP\r\n-\tMinor Success: Heal 1d6 HP but gain Poison.\r\n-\tFail: Gain Poison",
+            "Cost": "5"
+        },
+        {
+            "Name": "Potion+",
+            "Description": "Heals All HP",
+            "Cost": "25"
+        },
+        {
+            "Name": "Tincture+",
+            "Description": "Heals all HP and SP",
+            "Cost": "70"
+        },
+        {
+            "Name": "Concoction+",
+            "Description": "Heals all SP",
+            "Cost": "25"
+        },
+        {
+            "Name": "Lazarus Tonic",
+            "Description": "Revives a fainted comrade in battle",
+            "Cost": "100"
         }
     ],
     "Bestiary": [
@@ -67,7 +92,7 @@
             "Description": "Dragons the size of human beings with thick brown scales",
             "HP": "10",
             "Armor": "2",
-            "ElementalWeaknesses": "Water",
+            "Weakness": "Water",
             "Attacks": "Scratch: 1d8+3 damage\r\n\r\nBite: 1d8 damage.  Will latch onto a character causing the following: -1 to Movement Rolls and automatic 1d4 damage until free\r\n\r\nDirt Tail Whip: 1d6 ranged Earth damage plus causes Blind."
         },
         {
@@ -75,8 +100,41 @@
             "Description": "A rhinoceros with a thick metal hide",
             "HP": "10",
             "Armor": "5",
-            "ElementalWeaknesses": "Fire\r\nLightning",
+            "Weakness": "Fire, Lightning",
             "Attacks": "Charge: 1d12 damage\r\n\r\nGround Stomp: 1d8 damage to 2 enemies"
+        },
+        {
+            "Name": "Muskroom",
+            "Description": "A muskrat covered in mushrooms",
+            "HP": "3",
+            "Armor": "0",
+            "Weakness": "Fire",
+            "Attacks": "Scratch: 1d4+3 damage\r\n\r\nBite: 1d4 damage.  Causes Poison.\r\n\r\nSpore Cloud: Cause Poison on all enemies"
+        },
+        {
+            "Name": "Flying Drone",
+            "Description": "A robot in the air that can shoot an enemy",
+            "HP": "10",
+            "Armor": "1",
+            "Weakness": "Lightning",
+            "Attacks": "Laser Shot: 1d6 damage"
+        },
+        {
+            "Name": "Gunner Soldier",
+            "Description": "A soldier with a gun",
+            "HP": "7",
+            "Armor": "4",
+            "Attacks": "Gunshot: 1d10 damage to an enemy\r\n\r\nGun Spray: 1d4 damage to all enemies"
+        }
+    ],
+    "Sample_Custom_Moves": [
+        {
+            "Name": "Call of the Wild",
+            "Description": "Spend 1 SP to summon a Wolf to your side if in a forest.  Wolf has 4 HP and can do 1d6 damage and has its own turn during combat."
+        },
+        {
+            "Name": "Prosecutor",
+            "Description": "+1 to Diplomacy when you try to convince others that someone is lying (whether it's true or not)"
         }
     ]
 }
