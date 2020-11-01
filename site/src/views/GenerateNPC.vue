@@ -43,12 +43,24 @@ import { Gender } from "@/enumerations/Gender";
 export default class GenerateNPC extends Vue {
   public npcs: NPC[] = [];
 
+  public created(){
+    const storedNpcs = localStorage.getItem("npcs");
+    if(storedNpcs){
+      this.npcs = JSON.parse(storedNpcs);
+    }
+  }
+
+  public setNPCs(){
+    localStorage.setItem("npcs", JSON.stringify(this.npcs));
+  }
+
   public Gender(gender: Gender): string {
     return gender == Gender.Female ? "Female" : "Male";
   }
 
   public GenerateNPC(): void {
     this.npcs.push(NPCGenerator.default.Generate());
+    this.setNPCs();
   }
 
   public Delete(npc: NPC): void {

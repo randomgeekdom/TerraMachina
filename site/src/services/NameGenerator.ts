@@ -1,7 +1,7 @@
 import { uniqueNamesGenerator, colors, animals, names, starWars, adjectives } from 'unique-names-generator';
 import { nameByRace } from "fantasy-name-generator";
 import { Gender } from '@/enumerations/Gender';
-import Randomizer from './Randomizer';
+import Randomizer from '@/services/Randomizer';
 
 export default class NameGenerator {
     static FantasyRaces = [

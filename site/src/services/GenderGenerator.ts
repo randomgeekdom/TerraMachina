@@ -1,5 +1,5 @@
 import { Gender } from '@/enumerations/Gender';
-import Randomizer from './Randomizer';
+import Randomizer from '@/services/Randomizer';
 
 export default class GenderGenerator {
     public static GetGender(): Gender {
