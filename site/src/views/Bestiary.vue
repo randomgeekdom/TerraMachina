@@ -4,6 +4,7 @@
     <v-row>
       <v-col cols="12">
         <v-sheet class="pa-10" rounded="lg">
+          <h1>Bestiary</h1>
           <v-row>
             <v-text-field
               v-model="search"
@@ -27,10 +28,14 @@
 
               <template v-slot:expanded-item="{ headers, item }">
                 <td :colspan="headers.length">
-                  <br/>
+                  <br />
                   <pre>{{ item.Attacks }}</pre>
-                  <br/>
+                  <br />
                 </td>
+              </template>
+
+              <template v-slot:item.Encounter="{ item }">
+                <v-btn @click="AddToEncounter(item)">Add to Encounter</v-btn>
               </template>
             </v-data-table>
           </v-row>
@@ -45,6 +50,7 @@
 import Vue from "vue";
 import { Component } from "vue-property-decorator";
 import reference from "../reference.json";
+import Enemy from "@/models/Enemy";
 
 @Component
 export default class Bestiary extends Vue {
@@ -54,13 +60,21 @@ export default class Bestiary extends Vue {
     { text: "HP", value: "HP" },
     { text: "Armor", value: "Armor" },
     { text: "Weakness", value: "Weakness" },
-    // { text: "Attacks", value: "Attacks" },
+    { text: "", value: "Encounter" }
   ];
   public search = "";
 
   public get enemies() {
     return reference.Bestiary;
   }
+
+  public AddToEncounter(enemy: Enemy) {
+    const enemyString = localStorage.getItem("encounterEnemies");
+    if (enemyString) {
+      const enemies = JSON.parse(enemyString);
+      enemies.push(enemy);
+      localStorage.setItem("encounterEnemies", JSON.stringify(enemies));
+    }
+  }
 }
 </script>
-
