@@ -1,7 +1,8 @@
-import { uniqueNamesGenerator, colors, animals, names, starWars, adjectives } from 'unique-names-generator';
+import { uniqueNamesGenerator, colors, animals, names, adjectives } from 'unique-names-generator';
 import { nameByRace } from "fantasy-name-generator";
 import { Gender } from '@/enumerations/Gender';
 import Randomizer from '@/services/Randomizer';
+import humanNames from 'human-names';
 
 export default class NameGenerator {
     static FantasyRaces = [
@@ -21,20 +22,24 @@ export default class NameGenerator {
         "highelf",
         "highfairy",
         "human",
-        // "ogre",
-        // "orc"
+        "ogre",
+        "orc"
     ];
 
-    static dictionaries = [colors, animals, names, starWars, adjectives];
+    static dictionaries = [colors, animals, names, adjectives];
 
 
     static GenerateName(gender: Gender): string {
-        const choice = Randomizer.GetRandomInt(6);
+        const numberOfDictionaries = this.dictionaries.length;
+        const choice = Randomizer.GetRandomInt(numberOfDictionaries+2);
 
-        if(choice==5){
+        if(choice==numberOfDictionaries){
             const randomRace = this.FantasyRaces[Randomizer.GetRandomInt(this.FantasyRaces.length)];
             const genderText = gender==Gender.Female ? "female" : "male";
             return String(nameByRace(randomRace, { gender: genderText }));
+        }
+        else if(choice == numberOfDictionaries+1){
+            return gender==Gender.Female ? humanNames.femaleRandom() : humanNames.maleRandom();
         }
         else{
             return this.GetUniqueName(this.dictionaries[choice]);

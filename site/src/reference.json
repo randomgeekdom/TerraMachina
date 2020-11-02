@@ -62,7 +62,7 @@
         },
         {
             "Name": "Dangerous Mushroom",
-            "Description": "Requires a resilience roll:\r\n-\tSuccess: Heal 1d6 HP\r\n-\tMinor Success: Heal 1d6 HP but gain Poison.\r\n-\tFail: Gain Poison",
+            "Description": "Requires a resilience roll:\r\n-\tSuccess: Heal 1d6 HP\r\n-\tMinor Success: Heal 1d6 HP but gain Poison\r\n-\tFail: Gain Poison",
             "Cost": "5"
         },
         {
@@ -84,17 +84,74 @@
             "Name": "Lazarus Tonic",
             "Description": "Revives a fainted comrade in battle",
             "Cost": "100"
+        },
+        {
+            "Name": "Welder's Gloves",
+            "Description": "Gloves that add +1 to Tinker",
+            "Cost": "22"
+        },
+        {
+            "Name": "Confidence Booster",
+            "Description": "+1 to next Diplomacy Roll",
+            "Cost": "15"
+        },
+        {
+            "Name": "Flex",
+            "Description": "+1 to next Movement Roll",
+            "Cost": "15"
+        },
+        {
+            "Name": "Concentration",
+            "Description": "+1 to next Shoot Roll",
+            "Cost": "15"
+        },
+        {
+            "Name": "Brain Boost",
+            "Description": "+1 to next Deduction Roll",
+            "Cost": "15"
+        },
+        {
+            "Name": "Encyclopedia Light",
+            "Description": "+1 to next Knowledge Roll",
+            "Cost": "15"
+        },
+        {
+            "Name": "Elbow Grease",
+            "Description": "+1 to next Tinker Roll",
+            "Cost": "15"
+        },
+        {
+            "Name": "Steroid",
+            "Description": "+1 to next Brawn Roll",
+            "Cost": "15"
+        },
+        {
+            "Name": "Brawl Balm",
+            "Description": "+1 to next Melee Roll",
+            "Cost": "15"
+        },
+        {
+            "Name": "Vitamin",
+            "Description": "+1 to next Resilience Roll",
+            "Cost": "15"
+        },
+        {
+            "Name": "Energy Boost",
+            "Description": "+1 to next Energy Roll",
+            "Cost": "15"
+        },
+        {
+            "Name": "Magnifier",
+            "Description": "+1 to next Search Roll",
+            "Cost": "15"
+        },
+        {
+            "Name": "Enhancer",
+            "Description": "+1 to next Sense Roll",
+            "Cost": "15"
         }
     ],
     "Bestiary": [
-        {
-            "Name": "Brown Dragon",
-            "Description": "Dragons the size of human beings with thick brown scales",
-            "HP": "10",
-            "Armor": "2",
-            "Weakness": "Water",
-            "Attacks": "Scratch: 1d8+3 damage\r\n\r\nBite: 1d8 damage.  Will latch onto a character causing the following: -1 to Movement Rolls and automatic 1d4 damage until free\r\n\r\nDirt Tail Whip: 1d6 ranged Earth damage plus causes Blind."
-        },
         {
             "Name": "Armored Rhino",
             "Description": "A rhinoceros with a thick metal hide",
@@ -104,12 +161,44 @@
             "Attacks": "Charge: 1d12 damage\r\n\r\nGround Stomp: 1d8 damage to 2 enemies"
         },
         {
-            "Name": "Muskroom",
-            "Description": "A muskrat covered in mushrooms",
-            "HP": "3",
+            "Name": "Baterina",
+            "Description": "A giant back with legs that wears a tutu",
+            "HP": "6",
             "Armor": "0",
-            "Weakness": "Fire",
-            "Attacks": "Scratch: 1d4+3 damage\r\n\r\nBite: 1d4 damage.  Causes Poison.\r\n\r\nSpore Cloud: Cause Poison on all enemies"
+            "Weakness": "Holy",
+            "Attacks": "Bite: 1d12 damage.  Causes Mania"
+        },
+        {
+            "Name": "Brown Dragon",
+            "Description": "Dragons the size of human beings with thick brown scales",
+            "HP": "10",
+            "Armor": "2",
+            "Weakness": "Air",
+            "Attacks": "Scratch: 1d8+3 damage\r\n\r\nBite: 1d8 damage.  Will latch onto a character causing the following: -1 to Movement Rolls and automatic 1d4 damage until free\r\n\r\nDirt Tail Whip: 1d6 ranged Earth damage plus causes Blind."
+        },
+        {
+            "Name": "Crystal Squid",
+            "Description": "A squid that can swim",
+            "HP": "13",
+            "Armor": "1",
+            "Weakness": "Lightning",
+            "Attacks": "Snap: 1d10 damage to a single player\r\n\r\nEmbrace: 1d4 damage.  Traps the player who must make a move to escape\r\n\r\nWater Jet: 1d10 damage to all players"
+        },
+        {
+            "Name": "Dark Wolf",
+            "Description": "A tall wolf with charcoal-like skin",
+            "HP": "9",
+            "Armor": "0",
+            "Weakness": "Holy",
+            "Attacks": "Bite: 1d10 damage"
+        },
+        {
+            "Name": "Fire Scorpion",
+            "Description": "A big scorpion that has does fire damage",
+            "HP": "14",
+            "Armor": "7",
+            "Weakness": "Ice",
+            "Attacks": "Sting: 1d12 fire damage.  Causes burn.\r\n\r\nPinch: 1d4.  Traps the player who must make a move to escape."
         },
         {
             "Name": "Flying Drone",
@@ -125,6 +214,78 @@
             "HP": "7",
             "Armor": "4",
             "Attacks": "Gunshot: 1d10 damage to an enemy\r\n\r\nGun Spray: 1d4 damage to all enemies"
+        },
+        {
+            "Name": "Magmus",
+            "Description": "A humanoid creature made of lava rock",
+            "HP": "7",
+            "Armor": "2",
+            "Weakness": "Ice",
+            "Attacks": "Fire Punch: 1d8 Fire damage."
+        },
+        {
+            "Name": "Marionette",
+            "Description": "A marionette.  A puppet on strings.",
+            "HP": "6",
+            "Armor": "0",
+            "Weakness": "Fire",
+            "Attacks": "Slap: 1d8 damage"
+        },
+        {
+            "Name": "Muskroom",
+            "Description": "A muskrat covered in mushrooms",
+            "HP": "3",
+            "Armor": "0",
+            "Weakness": "Fire",
+            "Attacks": "Scratch: 1d4+3 damage\r\n\r\nBite: 1d4 damage.  Causes Poison.\r\n\r\nSpore Cloud: Cause Poison on all enemies"
+        },
+        {
+            "Name": "Ring of Fire",
+            "Description": "A literal floating circle of fire",
+            "HP": "7",
+            "Armor": "0",
+            "Weakness": "Ice",
+            "Attacks": "Fireball: 1d8 fire damage.  Causes Burn."
+        },
+        {
+            "Name": "Rock Beast",
+            "Description": "A humanoid creature made of dirt and rock",
+            "HP": "17",
+            "Armor": "3",
+            "Weakness": "Air",
+            "Attacks": "Rock Punch: 1d10 Earth damage\r\n\r\nGrab: Entrap an enemy"
+        },
+        {
+            "Name": "Skeleton Knight",
+            "Description": "A skeleton in armor with a sword",
+            "HP": "5",
+            "Armor": "4",
+            "Weakness": "Holy",
+            "Attacks": "Slash: 1d8 damage"
+        },
+        {
+            "Name": "Snow Vixen",
+            "Description": "A giant white fox",
+            "HP": "11",
+            "Armor": "0",
+            "Weakness": "Fire",
+            "Attacks": "Bite: 1d10 damage\r\n\r\nScratch: 1d6 damage\r\n\r\nSnow Beam: 1d10 Ice damage"
+        },
+        {
+            "Name": "Ring of Lightning",
+            "Description": "A literal floating circle of electricity",
+            "HP": "7",
+            "Armor": "0",
+            "Weakness": "Water",
+            "Attacks": "Lightning Strike: 1d8 Lightning damage.  Causes Paralysis."
+        },
+        {
+            "Name": "Waterbone",
+            "Description": "A skeleton inside a bubble of water",
+            "HP": "9",
+            "Armor": "1",
+            "Weakness": "Holy, Lightning",
+            "Attacks": "Bubble Attack: 1d10 Water damage\r\n\r\nBone Attack: 1d12 Dark damage."
         }
     ],
     "Sample_Custom_Moves": [
@@ -135,6 +296,18 @@
         {
             "Name": "Prosecutor",
             "Description": "+1 to Diplomacy when you try to convince others that someone is lying (whether it's true or not)"
+        },
+        {
+            "Name": "Chef",
+            "Description": "+1 to Tinker for creating a delicious meal that will restore 1d4 HP or SP"
+        },
+        {
+            "Name": "Informed Traveller",
+            "Description": "+1 to Knowledge roll for information about a city/town you haven't been to before"
+        },
+        {
+            "Name": "Cavern Explorer",
+            "Description": "+1 to Sense roll when inside a cave or cavern"
         }
     ]
 }
