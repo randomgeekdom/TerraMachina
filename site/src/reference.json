@@ -193,6 +193,13 @@
             "Attacks": "Bite: 1d10 damage"
         },
         {
+            "Name": "Electric Eel",
+            "Description": "An underwater creature that shoots electricity",
+            "HP": "9",
+            "Armor": "0",
+            "Attacks": "Bite: 1d10 damage\r\n\r\nShock: 1d8 Lightning damage to all enemies.  Causes Paralysis."
+        },
+        {
             "Name": "Fire Scorpion",
             "Description": "A big scorpion that has does fire damage",
             "HP": "14",
@@ -207,6 +214,13 @@
             "Armor": "1",
             "Weakness": "Lightning",
             "Attacks": "Laser Shot: 1d6 damage"
+        },
+        {
+            "Name": "Giant Weasel",
+            "Description": "A giant weasel",
+            "HP": "11",
+            "Armor": "0",
+            "Attacks": "Attack: 1d6 damage"
         },
         {
             "Name": "Gunner Soldier",
@@ -248,6 +262,14 @@
             "Attacks": "Fireball: 1d8 fire damage.  Causes Burn."
         },
         {
+            "Name": "Ring of Lightning",
+            "Description": "A literal floating circle of electricity",
+            "HP": "7",
+            "Armor": "0",
+            "Weakness": "Water",
+            "Attacks": "Lightning Strike: 1d8 Lightning damage.  Causes Paralysis."
+        },
+        {
             "Name": "Rock Beast",
             "Description": "A humanoid creature made of dirt and rock",
             "HP": "17",
@@ -270,14 +292,6 @@
             "Armor": "0",
             "Weakness": "Fire",
             "Attacks": "Bite: 1d10 damage\r\n\r\nScratch: 1d6 damage\r\n\r\nSnow Beam: 1d10 Ice damage"
-        },
-        {
-            "Name": "Ring of Lightning",
-            "Description": "A literal floating circle of electricity",
-            "HP": "7",
-            "Armor": "0",
-            "Weakness": "Water",
-            "Attacks": "Lightning Strike: 1d8 Lightning damage.  Causes Paralysis."
         },
         {
             "Name": "Waterbone",

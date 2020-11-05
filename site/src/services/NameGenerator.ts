@@ -1,4 +1,4 @@
-import { uniqueNamesGenerator, colors, animals, names, adjectives } from 'unique-names-generator';
+import { uniqueNamesGenerator, colors, animals, names } from 'unique-names-generator';
 import { nameByRace } from "fantasy-name-generator";
 import { Gender } from '@/enumerations/Gender';
 import Randomizer from '@/services/Randomizer';
@@ -26,7 +26,7 @@ export default class NameGenerator {
         "orc"
     ];
 
-    static dictionaries = [colors, animals, names, adjectives];
+    static dictionaries = [colors, animals, names];
 
 
     static GenerateName(gender: Gender): string {
