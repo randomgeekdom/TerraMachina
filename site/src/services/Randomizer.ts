@@ -5,4 +5,7 @@ export default class Randomizer{
     static GetRandomBool(): boolean {
         return this.GetRandomInt(2) == 0;
     }
+    static GetRandomElement<T>(array: T[]){
+        return array[this.GetRandomInt(array.length)];
+    }
 }

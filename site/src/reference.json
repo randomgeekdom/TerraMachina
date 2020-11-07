@@ -322,6 +322,10 @@
         {
             "Name": "Cavern Explorer",
             "Description": "+1 to Sense roll when inside a cave or cavern"
+        },
+        {
+            "Name": "Mountain Climber",
+            "Description": "+1 to Brawn roll for climbing mountains"
         }
     ]
 }

@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import Items from '../views/Items.vue'
 import GenerateNPC from '../views/GenerateNPC.vue'
 import Bestiary from '../views/Bestiary.vue'
+import Encounter from '../views/Encounter.vue'
 import SampleCustomMoves from '../views/SampleCustomMoves.vue'
 
 Vue.use(VueRouter)
@@ -33,6 +34,11 @@ const routes: Array<RouteConfig> = [
     path: '/sample-custom-moves',
     name: 'SampleCustomMoves',
     component: SampleCustomMoves
+  },
+  {
+    path: '/encounter',
+    name: 'Encounter',
+    component: Encounter
   },
 ]
 

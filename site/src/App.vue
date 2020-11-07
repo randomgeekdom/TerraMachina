@@ -7,31 +7,46 @@
           <img height="50" src="./assets/logo.png" />
         </router-link>
 
-        <div class="d-none d-sm-block">
+        <!-- <div class="d-none d-sm-block">
           <v-btn v-for="link in links" :key="link.page" :to="link.route" text>
             {{ link.page }}
           </v-btn>
-        </div>
+        </div> -->
 
 
         <v-spacer></v-spacer>
 
+        <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
       </v-container>
     </v-app-bar>
 
-    <v-main class="grey lighten-3">
+ <v-navigation-drawer
+      v-model="drawer"
+      absolute
+      bottom
+      temporary
+      right
+    >
+      <v-list
+        nav
+        dense
+      >
+        <v-list-item-group
+          v-model="group"
+          active-class="deep-purple--text text--accent-4"
+        >
+          <v-list-item v-for="link in links" :key="link.page" :to="link.route">
+            <v-list-item-title>
+              {{link.page}}
+              </v-list-item-title>
+          </v-list-item>
+        </v-list-item-group>
+      </v-list>
+    </v-navigation-drawer>
+
+
+    <v-main class="grey lighten-3 my-3">
       <v-container>
-        
-        <div class="d-sm-none">
-          <v-select
-          flat
-            :items="links"
-            item-text="page"
-            item-value="route"
-            v-model="selectedLink"
-            @change="routeTo()"
-          ></v-select>
-        </div>
         <router-view></router-view>
       </v-container>
     </v-main>
@@ -48,9 +63,12 @@ export default class Rules extends Vue {
     { page: "Home", route: "/" },
     { page: "Items", route: "/items" },
     { page: "Bestiary", route: "/bestiary" },
+    { page: "Encounter", route: "/encounter" },
     { page: "Sample Custom Moves", route: "/sample-custom-moves" },
     { page: "NPC Generator", route: "/generate-npc" }
   ];
+
+  public drawer = false;
 
   public selectedLink = "";
 

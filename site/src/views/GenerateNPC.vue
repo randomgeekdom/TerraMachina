@@ -3,12 +3,28 @@
   <div>
     <v-row>
       <v-col cols="12">
-        <v-sheet class="pa-10 ma-10" rounded="lg">
+        <v-sheet class="pa-10" rounded="lg">
           <v-row>
-            <v-btn @click="GenerateNPC()">Generate</v-btn>
+            <v-col>
+              <label># of NPCs to Generate</label>
+              <v-text-field
+                type="number"
+                v-model="numberOfGenerations"
+                placeholder="Amount of NPCs to Generate"
+              ></v-text-field>
+            </v-col>
           </v-row>
           <v-row>
-            <v-card v-for="npc in npcs" :key="npc.Name" width="250" class="ma-5">
+            <v-btn @click="GenerateNPC()">Generate</v-btn>
+            <v-btn @click="ClearNPCs()">Clear</v-btn>
+          </v-row>
+          <v-row>
+            <v-card
+              v-for="npc in npcs"
+              :key="npc.Name"
+              width="250"
+              class="ma-5"
+            >
               <v-card-title>
                 {{ npc.FirstName }} {{ npc.LastName }}
               </v-card-title>
@@ -42,15 +58,16 @@ import { Gender } from "@/enumerations/Gender";
 @Component
 export default class GenerateNPC extends Vue {
   public npcs: NPC[] = [];
+  public numberOfGenerations = 1;
 
-  public created(){
+  public created() {
     const storedNpcs = localStorage.getItem("npcs");
-    if(storedNpcs){
+    if (storedNpcs) {
       this.npcs = JSON.parse(storedNpcs);
     }
   }
 
-  public setNPCs(){
+  public setNPCs() {
     localStorage.setItem("npcs", JSON.stringify(this.npcs));
   }
 
@@ -59,7 +76,9 @@ export default class GenerateNPC extends Vue {
   }
 
   public GenerateNPC(): void {
-    this.npcs.push(NPCGenerator.default.Generate());
+    for (let i = 0; i < this.numberOfGenerations; i++) {
+      this.npcs.push(NPCGenerator.default.Generate());
+    }
     this.setNPCs();
   }
 
@@ -68,6 +87,10 @@ export default class GenerateNPC extends Vue {
     if (index > -1) {
       this.npcs.splice(index, 1);
     }
+  }
+
+  public ClearNPCs(): void {
+    this.npcs = [];
   }
 }
 </script>
