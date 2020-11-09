@@ -28,7 +28,8 @@
               <v-card-title>
                 {{ npc.FirstName }} {{ npc.LastName }}
               </v-card-title>
-              <v-card-subtitle>{{ Gender(npc.Gender) }}</v-card-subtitle>
+              <v-card-subtitle>{{ Gender(npc.Gender) }} from {{ npc.Hometown }}</v-card-subtitle>
+              <!-- <v-card-subtitle>Hometown: {{ Gender(npc.Gender) }}</v-card-subtitle> -->
               <v-btn
                 class="mx-2"
                 fab
@@ -87,10 +88,12 @@ export default class GenerateNPC extends Vue {
     if (index > -1) {
       this.npcs.splice(index, 1);
     }
+    this.setNPCs();
   }
 
   public ClearNPCs(): void {
     this.npcs = [];
+    this.setNPCs();
   }
 }
 </script>

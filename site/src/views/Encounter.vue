@@ -70,6 +70,16 @@
               <label>Attacks</label>
               <pre class="pa-4" >{{ enemy.Attacks }}</pre>
             </v-row>
+              <v-btn
+                class="mx-2"
+                fab
+                dark
+                small
+                color="primary"
+                @click="Delete(enemy)"
+              >
+                <v-icon dark> mdi-minus </v-icon>
+              </v-btn>
           </v-card>
         </v-sheet>
       </v-col>
@@ -101,6 +111,12 @@ export default class Encounter extends Vue {
       "encounterEnemies",
       JSON.stringify(this.encounterEnemies)
     );
+  }
+
+  public Delete(enemy: Enemy): void{
+    const i = this.encounterEnemies.indexOf(enemy);
+    this.encounterEnemies.splice(i, 1);
+    this.UpdateEncounter();
   }
 
   public Roll(die: number) {
