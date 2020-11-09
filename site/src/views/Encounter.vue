@@ -66,6 +66,15 @@
                   @change="UpdateEncounter()"></v-text-field>
               </v-col>
             </v-row>
+            <v-row>
+              <v-col>
+                
+              </v-col>
+              <v-col>
+                  <v-btn @click="ChangeArmor(enemy, -1)">Ding Armor</v-btn>
+                  <v-btn @click="ChangeArmor(enemy, 1)">Increase Armor</v-btn>
+              </v-col>
+            </v-row>
             <v-row class="pa-3">
               <label>Attacks</label>
               <pre class="pa-4" >{{ enemy.Attacks }}</pre>
@@ -111,6 +120,14 @@ export default class Encounter extends Vue {
       "encounterEnemies",
       JSON.stringify(this.encounterEnemies)
     );
+  }
+
+  public ChangeArmor(enemy: Enemy, change: number): void{
+    const newArmor = parseInt(enemy.Armor.toString()) + change;
+    if(newArmor >= 0){
+      enemy.Armor = newArmor;
+      this.UpdateEncounter();
+    }
   }
 
   public Delete(enemy: Enemy): void{
