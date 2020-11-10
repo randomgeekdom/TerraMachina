@@ -7,20 +7,20 @@
           <img height="50" src="./assets/logo.png" />
         </router-link>
 
-        <!-- <div class="d-none d-sm-block">
+        <div class="d-none d-lg-block">
           <v-btn v-for="link in links" :key="link.page" :to="link.route" text>
             {{ link.page }}
           </v-btn>
-        </div> -->
+        </div>
 
 
         <v-spacer></v-spacer>
 
-        <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
+        <v-app-bar-nav-icon class="d-lg-none" @click="drawer = true"></v-app-bar-nav-icon>
       </v-container>
     </v-app-bar>
 
- <v-navigation-drawer
+ <v-navigation-drawer class="d-lg-none"
       v-model="drawer"
       absolute
       bottom
@@ -32,7 +32,7 @@
         dense
       >
         <v-list-item-group
-          v-model="group"
+          
           active-class="deep-purple--text text--accent-4"
         >
           <v-list-item v-for="link in links" :key="link.page" :to="link.route">
