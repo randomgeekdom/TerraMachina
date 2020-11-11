@@ -25,10 +25,10 @@ export default class TrapGenerator {
     ];
 
     static Generate(): string {
-        var target = Randomizer.GetRandomElement(this.targets);
-        var trap = Randomizer.GetRandomElement(this.traps);
-        var damageDie = Randomizer.GetRandomElement(this.damageDice);
+        const target = Randomizer.GetRandomElement(this.targets);
+        const trap = Randomizer.GetRandomElement(this.traps);
+        const damageDie = Randomizer.GetRandomElement(this.damageDice);
 
-        return trap.replace("{target}", target).replace("{damageDie}", '1d' + damageDie);
+        return trap.replace("{target}", target).replace("{damage}", '1d' + damageDie);
     }
 }

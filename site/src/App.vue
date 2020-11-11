@@ -65,7 +65,8 @@ export default class Rules extends Vue {
     { page: "Bestiary", route: "/bestiary" },
     { page: "Encounter", route: "/encounter" },
     { page: "Sample Custom Moves", route: "/sample-custom-moves" },
-    { page: "NPC Generator", route: "/generate-npc" }
+    { page: "NPC Generator", route: "/generate-npc" },
+    { page: "Trap Generator", route: "/generate-trap" }
   ];
 
   public drawer = false;

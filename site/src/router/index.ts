@@ -3,6 +3,7 @@ import VueRouter, { RouteConfig } from 'vue-router'
 import Home from '../views/Home.vue'
 import Items from '../views/Items.vue'
 import GenerateNPC from '../views/GenerateNPC.vue'
+import GenerateTrap from '../views/GenerateTrap.vue'
 import Bestiary from '../views/Bestiary.vue'
 import Encounter from '../views/Encounter.vue'
 import SampleCustomMoves from '../views/SampleCustomMoves.vue'
@@ -24,6 +25,11 @@ const routes: Array<RouteConfig> = [
     path: '/generate-npc',
     name: 'GenerateNPC',
     component: GenerateNPC
+  },
+  {
+    path: '/generate-trap',
+    name: 'GenerateTrap',
+    component: GenerateTrap
   },
   {
     path: '/bestiary',
