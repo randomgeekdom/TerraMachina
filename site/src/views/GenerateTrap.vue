@@ -50,7 +50,6 @@
 import Vue from "vue";
 import { Component } from "vue-property-decorator";
 import TrapGenerator from "@/services/TrapGenerator";
-import { Gender } from "@/enumerations/Gender";
 
 @Component
 export default class GenerateTrap extends Vue {

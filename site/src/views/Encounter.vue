@@ -6,7 +6,7 @@
         <v-sheet class="pa-10" rounded="lg">
           <h1>Dice Roller</h1>
           <v-flex class="pa-3 d-inline-flex flex-wrap">
-            <v-btn @click="Roll(4)">d1</v-btn>
+            <v-btn @click="Roll(4)">d4</v-btn>
           </v-flex>
           <v-flex class="pa-3 d-inline-flex flex-wrap">
             <v-btn @click="Roll(6)">d6</v-btn>

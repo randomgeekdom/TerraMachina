@@ -33,8 +33,8 @@
                   <br />
                 </td>
               </template>
-
-              <template v-slot:item.Encounter="{ item }">
+// eslint-disable-next-line
+              <template v-slot:[`item.Encounter`]="{ item }">
                 <v-btn @click="AddToEncounter(item)">Add to Encounter</v-btn>
               </template>
             </v-data-table>
