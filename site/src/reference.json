@@ -154,6 +154,11 @@
             "Name": "Basic Armor",
             "Description": "Adds +2 Armor",
             "Cost": "10"
+        },
+        {
+            "Name": "Jerky",
+            "Description": "Restore 3 SP",
+            "Cost": "3"
         }
     ],
     "Bestiary": [
@@ -162,6 +167,7 @@
             "Description": "A rhinoceros with a thick metal hide",
             "HP": "10",
             "Armor": "5",
+            "Immunity": "None",
             "Locations": "Plains",
             "Weakness": "Fire, Lightning",
             "Attacks": "Charge: 1d12 damage\r\n\r\nGround Stomp: 1d8 damage to 2 enemies"
@@ -171,6 +177,7 @@
             "Description": "A giant back with legs that wears a tutu",
             "HP": "6",
             "Armor": "0",
+            "Immunity": "None",
             "Locations": "Cave",
             "Weakness": "Holy",
             "Attacks": "Bite: 1d12 damage.  Causes Mania"
@@ -210,7 +217,9 @@
             "Description": "An underwater creature that shoots electricity",
             "HP": "9",
             "Armor": "0",
+            "Immunity": "None",
             "Locations": "Underwater",
+            "Weakness": "None",
             "Attacks": "Bite: 1d10 damage\r\n\r\nShock: 1d8 Lightning damage to all enemies.  Causes Paralysis."
         },
         {
@@ -228,6 +237,7 @@
             "Description": "A robot in the air that can shoot an enemy",
             "HP": "10",
             "Armor": "1",
+            "Immunity": "None",
             "Locations": "Sky, City",
             "Weakness": "Lightning",
             "Attacks": "Laser Shot: 1d6 damage"
@@ -237,7 +247,9 @@
             "Description": "A giant weasel",
             "HP": "11",
             "Armor": "0",
+            "Immunity": "None",
             "Locations": "Forest, Plains",
+            "Weakness": "None",
             "Attacks": "Attack: 1d6 damage"
         },
         {
@@ -246,6 +258,7 @@
             "HP": "7",
             "Armor": "4",
             "Locations": "City",
+            "Weakness": "None",
             "Attacks": "Gunshot: 1d10 damage to an enemy\r\n\r\nGun Spray: 1d4 damage to all enemies"
         },
         {
@@ -263,6 +276,7 @@
             "Description": "A marionette.  A puppet on strings.",
             "HP": "6",
             "Armor": "0",
+            "Immunity": "None",
             "Locations": "City",
             "Weakness": "Fire",
             "Attacks": "Slap: 1d8 damage"
@@ -272,6 +286,7 @@
             "Description": "A muskrat covered in mushrooms",
             "HP": "3",
             "Armor": "0",
+            "Immunity": "None",
             "Locations": "Cave, Forest",
             "Weakness": "Fire",
             "Attacks": "Scratch: 1d4+3 damage\r\n\r\nBite: 1d4 damage.  Causes Poison.\r\n\r\nSpore Cloud: Cause Poison on all enemies"
@@ -345,6 +360,16 @@
             "Locations": "Shore",
             "Weakness": "Lightning",
             "Attacks": "Bite: 1d10 damage.  Once bitten, 3 damage every turn until the enemy escapes."
+        },
+        {
+            "Name": "Experiment",
+            "Description": "A person that has been experimented on and no longer looks human.  Arms have been replaced with guns",
+            "HP": "9",
+            "Armor": "0",
+            "Immunity": "None",
+            "Locations": "Swamp, Cave, City",
+            "Weakness": "None",
+            "Attacks": "Manic Shot: 1d8 -1 damage.  Causes mania"
         }
     ],
     "Sample_Custom_Moves": [
@@ -383,6 +408,10 @@
         {
             "Name": "Prosecutor",
             "Description": "+2 to Diplomacy when you try to convince others that someone is lying (whether it's true or not)"
+        },
+        {
+            "Name": "Brawler",
+            "Description": "+2 to Melee when fighting one-on-one"
         }
     ]
 }

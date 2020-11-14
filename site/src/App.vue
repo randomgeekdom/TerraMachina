@@ -1,7 +1,7 @@
   
 <template>
   <v-app id="inspire">
-    <v-app-bar class="no-print" app color="white" flat hide-on-scroll>
+    <v-app-bar class="no-print" app color="#177C88" flat hide-on-scroll>
       <v-container class="py-0 fill-height">
         <router-link class="mr-10" to="/">
           <img height="50" src="./assets/logo.png" />

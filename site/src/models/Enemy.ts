@@ -4,4 +4,6 @@ export default class Enemy{
     public HP = 0;
     public Armor = 0;
     public Weakness = "";
+    public Immunity = "";
+    public Locations = "";
 }

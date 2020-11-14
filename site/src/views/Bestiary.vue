@@ -60,6 +60,8 @@ export default class Bestiary extends Vue {
     { text: "HP", value: "HP" },
     { text: "Armor", value: "Armor" },
     { text: "Weakness", value: "Weakness" },
+    { text: "Immunity", value: "Immunity" },
+    { text: "Known Locations", value: "Locations" },
     { text: "", value: "Encounter" }
   ];
   public search = "";
