@@ -159,6 +159,51 @@
             "Name": "Jerky",
             "Description": "Restore 3 SP",
             "Cost": "3"
+        },
+        {
+            "Name": "Rock Grenade",
+            "Description": "A grenade that does 1d6 Earth damage",
+            "Cost": "6"
+        },
+        {
+            "Name": "Aqua Grenade",
+            "Description": "A grenade that does 1d6 Water damage",
+            "Cost": "6"
+        },
+        {
+            "Name": "Wind Grenade",
+            "Description": "A grenade that does 1d6 Air damage",
+            "Cost": "6"
+        },
+        {
+            "Name": "Shock Grenade",
+            "Description": "A grenade that does 1d6 Lightning damage",
+            "Cost": "6"
+        },
+        {
+            "Name": "Flame Grenade",
+            "Description": "A grenade that does 1d6 Fire damage",
+            "Cost": "6"
+        },
+        {
+            "Name": "Frost Grenade",
+            "Description": "A grenade that does 1d6 Ice damage",
+            "Cost": "6"
+        },
+        {
+            "Name": "Evil Grenade",
+            "Description": "A grenade that does 1d6 Dark damage",
+            "Cost": "6"
+        },
+        {
+            "Name": "Saintly Grenade",
+            "Description": "A grenade that does 1d6 Holy damage",
+            "Cost": "6"
+        },
+        {
+            "Name": "Basic Airship",
+            "Description": "An airship with a capacity of 13.  Not very good for combat.",
+            "Cost": "700"
         }
     ],
     "Bestiary": [
@@ -223,6 +268,16 @@
             "Attacks": "Bite: 1d10 damage\r\n\r\nShock: 1d8 Lightning damage to all enemies.  Causes Paralysis."
         },
         {
+            "Name": "Experiment",
+            "Description": "A person that has been experimented on and no longer looks human.  Arms have been replaced with guns",
+            "HP": "9",
+            "Armor": "0",
+            "Immunity": "None",
+            "Locations": "Swamp, Cave, City",
+            "Weakness": "None",
+            "Attacks": "Manic Shot: 1d8 -1 damage.  Causes mania"
+        },
+        {
             "Name": "Fire Scorpion",
             "Description": "A big scorpion that has does fire damage",
             "HP": "14",
@@ -262,6 +317,16 @@
             "Attacks": "Gunshot: 1d10 damage to an enemy\r\n\r\nGun Spray: 1d4 damage to all enemies"
         },
         {
+            "Name": "Hornet Swarm",
+            "Description": "A swarm of stinging hornets",
+            "HP": "5",
+            "Armor": "0",
+            "Immunity": "None",
+            "Locations": "Forest, Plains, Desert",
+            "Weakness": "Fire",
+            "Attacks": "Venomous Sting: 1d4+1 damage to all enemies.  Causes Poison."
+        },
+        {
             "Name": "Magmus",
             "Description": "A humanoid creature made of lava rock",
             "HP": "7",
@@ -280,6 +345,16 @@
             "Locations": "City",
             "Weakness": "Fire",
             "Attacks": "Slap: 1d8 damage"
+        },
+        {
+            "Name": "Mollusk",
+            "Description": "A creature with an oyster-like body, lobster legs, and pincers",
+            "HP": "3",
+            "Armor": "4",
+            "Immunity": "Water",
+            "Locations": "Shore, Underwater",
+            "Weakness": "Lightning",
+            "Attacks": "Clamp: 1d8+1 damage"
         },
         {
             "Name": "Muskroom",
@@ -342,16 +417,6 @@
             "Attacks": "Bite: 1d10 damage\r\n\r\nScratch: 1d6 damage\r\n\r\nSnow Beam: 1d10 Ice damage"
         },
         {
-            "Name": "Waterbone",
-            "Description": "A skeleton inside a bubble of water",
-            "HP": "9",
-            "Armor": "1",
-            "Immunity": "Water",
-            "Locations": "Underwater",
-            "Weakness": "Holy, Lightning",
-            "Attacks": "Bubble Attack: 1d10 Water damage\r\n\r\nBone Attack: 1d12 Dark damage."
-        },
-        {
             "Name": "Walking Shark",
             "Description": "A shark on two legs",
             "HP": "9",
@@ -362,14 +427,24 @@
             "Attacks": "Bite: 1d10 damage.  Once bitten, 3 damage every turn until the enemy escapes."
         },
         {
-            "Name": "Experiment",
-            "Description": "A person that has been experimented on and no longer looks human.  Arms have been replaced with guns",
+            "Name": "Waterbone",
+            "Description": "A skeleton inside a bubble of water",
             "HP": "9",
-            "Armor": "0",
-            "Immunity": "None",
-            "Locations": "Swamp, Cave, City",
-            "Weakness": "None",
-            "Attacks": "Manic Shot: 1d8 -1 damage.  Causes mania"
+            "Armor": "1",
+            "Immunity": "Water",
+            "Locations": "Underwater",
+            "Weakness": "Holy, Lightning",
+            "Attacks": "Bubble Attack: 1d10 Water damage\r\n\r\nBone Attack: 1d12 Dark damage."
+        },
+        {
+            "Name": "Tortussle",
+            "Description": "A giant tortoise with glowing eyes",
+            "HP": "18",
+            "Armor": "2",
+            "Immunity": "Water",
+            "Locations": "Underwater, Shore, Swamp, Forest, Plains",
+            "Weakness": "Lightning",
+            "Attacks": "Bite: 1d12+2 damage\r\n\r\n"
         }
     ],
     "Sample_Custom_Moves": [
@@ -412,6 +487,10 @@
         {
             "Name": "Brawler",
             "Description": "+2 to Melee when fighting one-on-one"
+        },
+        {
+            "Name": "Good Shepherd",
+            "Description": "+2 to Sense when attempting to wrangle a plant-eating animal"
         }
     ]
 }

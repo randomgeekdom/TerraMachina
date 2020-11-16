@@ -19,6 +19,7 @@ export default class CityNameGenerator {
         "ton",
         "polis",
         " City",
+        "wall",
         "grad"];
     static Generate(): string {
         debugger;

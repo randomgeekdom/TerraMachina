@@ -39,7 +39,23 @@
 						:key="`enemy-${index}`"
             :color="enemy.HP > 0 ? '#FFFFFF' : '#FF1122'"
 					>
-						<v-card-title>{{ enemy.Name }}</v-card-title>
+					
+					<v-row>
+						<v-col>
+						<v-card-title>{{ enemy.Name }}</v-card-title></v-col>
+						<v-col>
+							<v-btn
+								class="mx-5"
+								fab
+								dark
+								small
+								color="primary"
+								@click="Delete(enemy)"
+							>
+								<v-icon dark> mdi-minus </v-icon>
+							</v-btn></v-col
+						>
+					</v-row>
 
 						<v-row>
 							<v-col>
@@ -157,27 +173,24 @@
 								>
 							</v-col>
 						</v-row>
-						<v-btn
-							class="mx-5"
-							fab
-							dark
-							small
-							color="primary"
-							@click="Delete(enemy)"
-						>
-							<v-icon dark> mdi-minus </v-icon>
-						</v-btn>
 					</v-card>
 				</v-sheet>
 			</v-col>
 			<v-col cols="4">
 				<v-sheet class="pa-10 flex" rounded="lg">
-					<h1>Loot</h1>
-					<v-flex v-for="(lootItem, index) in Loot" :key="`lootItem-${index}`">
-						<v-subheader>Name: {{ lootItem.Name }}</v-subheader>
-						<v-subheader>Description: {{ lootItem.Description }}</v-subheader>
-						<v-subheader>Cost: {{ lootItem.Cost }}</v-subheader>
-					</v-flex>
+					<v-row>
+						<v-col><h1>Loot</h1></v-col>
+						<v-col><v-btn  @click="ClearLoot()">Clear</v-btn></v-col>
+					</v-row>
+					
+					<v-card v-for="(lootItem, index) in Loot" :key="`lootItem-${index}`">
+						<v-card-title>Name: {{ lootItem.Name }}</v-card-title>
+						<v-card-subtitle>Description: {{ lootItem.Description }}</v-card-subtitle>
+						<v-card-text>
+							Cost: {{ lootItem.Cost }}
+							<v-btn @click="DeleteLoot(lootItem)"><v-icon>mdi-delete-forever</v-icon></v-btn>
+						</v-card-text>
+					</v-card>
 				</v-sheet>
 			</v-col>
 		</v-row>
@@ -207,6 +220,7 @@ export default class Encounter extends Vue {
 	public Ice = false;
 	public Lightning = false;
 	public Water = false;
+	public Piercing = false;
 
 	public DamageAmount = 1;
 
@@ -226,18 +240,34 @@ export default class Encounter extends Vue {
 
 	public Loot: Item[] = [];
 
+	public DeleteLoot(lootItem: Item){
+		const index = this.Loot.indexOf(lootItem);
+		this.Loot.splice(index, 1);
+		this.UpdateEncounter();
+	}
+
+	public ClearLoot(){
+		this.Loot = [];
+		this.UpdateEncounter();
+	}
+
 	public Attack(enemy: Enemy) {
 		let damage = this.DamageAmount;
 		const elements = this.GetElements();
+		
 		for (let i = 0; i < elements.length; i++) {
-      if(enemy.Immunity.includes(elements[i])){
-        damage = 0;
-        break;
-      }
-			if (enemy.Weakness.includes(elements[i])) {
-				damage += 2;
+			if(enemy.Immunity.includes(elements[i])){
+				damage = 0;
 				break;
 			}
+			if (enemy.Weakness.includes(elements[i])) {
+				damage += 2;
+			}
+		}
+		
+		if(enemy.Armor>0 && !this.Piercing){
+			damage -= enemy.Armor;
+			damage = Math.max(damage, 0);
 		}
 
 		enemy.HP -= damage;
@@ -255,6 +285,8 @@ export default class Encounter extends Vue {
 
 			enemy.HP = 0;
 		}
+
+		this.UpdateEncounter();
 	}
 
 	public created() {
@@ -262,12 +294,20 @@ export default class Encounter extends Vue {
 		if (enemyString) {
 			this.encounterEnemies = JSON.parse(enemyString);
 		}
+		const lootString = localStorage.getItem("encounterLoot");
+		if (lootString) {
+			this.Loot = JSON.parse(lootString);
+		}
 	}
 
 	public UpdateEncounter() {
 		localStorage.setItem(
 			"encounterEnemies",
 			JSON.stringify(this.encounterEnemies)
+		);
+		localStorage.setItem(
+			"encounterLoot",
+			JSON.stringify(this.Loot)
 		);
 	}
 
