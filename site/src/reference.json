@@ -6,9 +6,24 @@
             "Cost": "6"
         },
         {
+            "Name": "Aqua Grenade",
+            "Description": "A grenade that does 1d6 Water damage",
+            "Cost": "6"
+        },
+        {
             "Name": "Bandage",
             "Description": "Immediately heals Bleed",
             "Cost": "6"
+        },
+        {
+            "Name": "Basic Airship",
+            "Description": "An airship with a capacity of 13.  Not very good for combat.",
+            "Cost": "700"
+        },
+        {
+            "Name": "Basic Armor",
+            "Description": "Adds +2 Armor",
+            "Cost": "10"
         },
         {
             "Name": "Basic Weapon",
@@ -76,14 +91,34 @@
             "Cost": "15"
         },
         {
+            "Name": "Evil Grenade",
+            "Description": "A grenade that does 1d6 Dark damage",
+            "Cost": "6"
+        },
+        {
             "Name": "Eye Drop",
             "Description": "Immediately heals Blind",
+            "Cost": "6"
+        },
+        {
+            "Name": "Flame Grenade",
+            "Description": "A grenade that does 1d6 Fire damage",
             "Cost": "6"
         },
         {
             "Name": "Flex",
             "Description": "+2 to next Movement Roll",
             "Cost": "15"
+        },
+        {
+            "Name": "Frost Grenade",
+            "Description": "A grenade that does 1d6 Ice damage",
+            "Cost": "6"
+        },
+        {
+            "Name": "Jerky",
+            "Description": "Restore 3 SP",
+            "Cost": "3"
         },
         {
             "Name": "Lazarus Tonic",
@@ -121,9 +156,24 @@
             "Cost": "25"
         },
         {
+            "Name": "Rock Grenade",
+            "Description": "A grenade that does 1d6 Earth damage",
+            "Cost": "6"
+        },
+        {
+            "Name": "Saintly Grenade",
+            "Description": "A grenade that does 1d6 Holy damage",
+            "Cost": "6"
+        },
+        {
             "Name": "Scale Armor",
             "Description": "Adds +2 Armor",
             "Cost": "10"
+        },
+        {
+            "Name": "Shock Grenade",
+            "Description": "A grenade that does 1d6 Lightning damage",
+            "Cost": "6"
         },
         {
             "Name": "Steroid",
@@ -151,62 +201,22 @@
             "Cost": "22"
         },
         {
-            "Name": "Basic Armor",
-            "Description": "Adds +2 Armor",
-            "Cost": "10"
-        },
-        {
-            "Name": "Jerky",
-            "Description": "Restore 3 SP",
-            "Cost": "3"
-        },
-        {
-            "Name": "Rock Grenade",
-            "Description": "A grenade that does 1d6 Earth damage",
-            "Cost": "6"
-        },
-        {
-            "Name": "Aqua Grenade",
-            "Description": "A grenade that does 1d6 Water damage",
-            "Cost": "6"
-        },
-        {
             "Name": "Wind Grenade",
             "Description": "A grenade that does 1d6 Air damage",
             "Cost": "6"
-        },
-        {
-            "Name": "Shock Grenade",
-            "Description": "A grenade that does 1d6 Lightning damage",
-            "Cost": "6"
-        },
-        {
-            "Name": "Flame Grenade",
-            "Description": "A grenade that does 1d6 Fire damage",
-            "Cost": "6"
-        },
-        {
-            "Name": "Frost Grenade",
-            "Description": "A grenade that does 1d6 Ice damage",
-            "Cost": "6"
-        },
-        {
-            "Name": "Evil Grenade",
-            "Description": "A grenade that does 1d6 Dark damage",
-            "Cost": "6"
-        },
-        {
-            "Name": "Saintly Grenade",
-            "Description": "A grenade that does 1d6 Holy damage",
-            "Cost": "6"
-        },
-        {
-            "Name": "Basic Airship",
-            "Description": "An airship with a capacity of 13.  Not very good for combat.",
-            "Cost": "700"
         }
     ],
     "Bestiary": [
+        {
+            "Name": "Arctic Sniper",
+            "Description": "A white-coated person with a long-range rifle",
+            "HP": "4",
+            "Armor": "0",
+            "Immunity": "None",
+            "Locations": "Tundra",
+            "Weakness": "None",
+            "Attacks": "Shot: 1d10-1 Ice damage."
+        },
         {
             "Name": "Armored Rhino",
             "Description": "A rhinoceros with a thick metal hide",
@@ -317,6 +327,16 @@
             "Attacks": "Gunshot: 1d10 damage to an enemy\r\n\r\nGun Spray: 1d4 damage to all enemies"
         },
         {
+            "Name": "Hammercat",
+            "Description": "A cat wielding a maul",
+            "HP": "10",
+            "Armor": "0",
+            "Immunity": "None",
+            "Locations": "Forest, Plains",
+            "Weakness": "None",
+            "Attacks": "Blinding Bite: 1d4+1 damage.  Causes blind.\r\n\r\nSmash: 1d10+2 damage."
+        },
+        {
             "Name": "Hornet Swarm",
             "Description": "A swarm of stinging hornets",
             "HP": "5",
@@ -325,6 +345,16 @@
             "Locations": "Forest, Plains, Desert",
             "Weakness": "Fire",
             "Attacks": "Venomous Sting: 1d4+1 damage to all enemies.  Causes Poison."
+        },
+        {
+            "Name": "Lizard Samurai",
+            "Description": "An lizard creature with a katana",
+            "HP": "10",
+            "Armor": "1",
+            "Immunity": "Earth",
+            "Locations": "Plains, Cave, Mountain, Forest",
+            "Weakness": "Air",
+            "Attacks": "Slash: 1d8 damage.  Causes Bleed.\r\n\r\nBite: 1d10-1 damage. "
         },
         {
             "Name": "Magmus",
@@ -417,6 +447,16 @@
             "Attacks": "Bite: 1d10 damage\r\n\r\nScratch: 1d6 damage\r\n\r\nSnow Beam: 1d10 Ice damage"
         },
         {
+            "Name": "Tortussle",
+            "Description": "A giant tortoise with glowing eyes",
+            "HP": "18",
+            "Armor": "2",
+            "Immunity": "Water",
+            "Locations": "Underwater, Shore, Swamp, Forest, Plains",
+            "Weakness": "Lightning",
+            "Attacks": "Bite: 1d12+2 damage\r\n\r\n"
+        },
+        {
             "Name": "Walking Shark",
             "Description": "A shark on two legs",
             "HP": "9",
@@ -435,22 +475,16 @@
             "Locations": "Underwater",
             "Weakness": "Holy, Lightning",
             "Attacks": "Bubble Attack: 1d10 Water damage\r\n\r\nBone Attack: 1d12 Dark damage."
-        },
-        {
-            "Name": "Tortussle",
-            "Description": "A giant tortoise with glowing eyes",
-            "HP": "18",
-            "Armor": "2",
-            "Immunity": "Water",
-            "Locations": "Underwater, Shore, Swamp, Forest, Plains",
-            "Weakness": "Lightning",
-            "Attacks": "Bite: 1d12+2 damage\r\n\r\n"
         }
     ],
     "Sample_Custom_Moves": [
         {
             "Name": "Big Ears",
             "Description": "+2 to Sense roll when listening to others' conversations"
+        },
+        {
+            "Name": "Brawler",
+            "Description": "+2 to Melee when fighting one-on-one"
         },
         {
             "Name": "Call of the Wild",
@@ -469,6 +503,10 @@
             "Description": "+2 to Search when investigating a crime"
         },
         {
+            "Name": "Good Shepherd",
+            "Description": "+2 to Sense when attempting to wrangle a plant-eating animal"
+        },
+        {
             "Name": "Informed Traveller",
             "Description": "+2 to Knowledge roll for information about a city/town you haven't been to before"
         },
@@ -477,20 +515,16 @@
             "Description": "Spend 10 SP to read somebody's mind.  Automatic success on any Diplomacy roll."
         },
         {
+            "Name": "King Speech",
+            "Description": "+2 to Diplomacy when speaking to rulers of nations"
+        },
+        {
             "Name": "Mountain Climber",
             "Description": "+2 to Brawn roll for climbing mountains"
         },
         {
             "Name": "Prosecutor",
             "Description": "+2 to Diplomacy when you try to convince others that someone is lying (whether it's true or not)"
-        },
-        {
-            "Name": "Brawler",
-            "Description": "+2 to Melee when fighting one-on-one"
-        },
-        {
-            "Name": "Good Shepherd",
-            "Description": "+2 to Sense when attempting to wrangle a plant-eating animal"
         }
     ]
 }

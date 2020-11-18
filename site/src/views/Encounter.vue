@@ -1,61 +1,38 @@
 
 <template>
 	<div>
-		<v-row>
-			<v-col cols="12">
+		<v-flex class="d-flex flex-wrap">
+			<v-card width="1100" class="ma-2">
 				<v-sheet class="pa-10" rounded="lg">
-					<h1>Dice Roller</h1>
-					<v-flex class="pa-3 d-inline-flex flex-wrap">
-						<v-btn @click="Roll(4)">d4</v-btn>
-					</v-flex>
-					<v-flex class="pa-3 d-inline-flex flex-wrap">
-						<v-btn @click="Roll(6)">d6</v-btn>
-					</v-flex>
-					<v-flex class="pa-3 d-inline-flex flex-wrap">
-						<v-btn @click="Roll(8)">d8</v-btn>
-					</v-flex>
-					<v-flex class="pa-3 d-inline-flex flex-wrap">
-						<v-btn @click="Roll(10)">d10</v-btn>
-					</v-flex>
-					<v-flex class="pa-3 d-inline-flex flex-wrap">
-						<v-btn @click="Roll(12)">d12</v-btn>
-					</v-flex>
-					<v-flex class="pa-3 d-inline-flex flex-wrap">
-						<v-btn @click="Roll(20)">d20</v-btn>
-					</v-flex>
-					<v-flex class="pa-3 d-inline-flex flex-wrap">
-						<h4 v-if="RollResult">Roll Result: {{ RollResult }}</h4>
-					</v-flex>
-				</v-sheet>
-			</v-col>
-		</v-row>
-		<v-row>
-			<v-col cols="8">
-				<v-sheet class="pa-10" rounded="lg">
-					<h1>Current Encounter</h1>
+					<v-row>
+						<v-col> <h1>Current Encounter</h1></v-col>
+						<v-col>
+							<v-btn @click="RemoveDeadEnemies()">Clear the Dead</v-btn></v-col
+						>
+					</v-row>
 					<v-card
 						class="ma-2 pa-4 text-no-wrap"
 						v-for="(enemy, index) in encounterEnemies"
 						:key="`enemy-${index}`"
-            :color="enemy.HP > 0 ? '#FFFFFF' : '#FF1122'"
+						:color="enemy.HP > 0 ? '#FFFFFF' : '#FF1122'"
 					>
-					
-					<v-row>
-						<v-col>
-						<v-card-title>{{ enemy.Name }}</v-card-title></v-col>
-						<v-col>
-							<v-btn
-								class="mx-5"
-								fab
-								dark
-								small
-								color="primary"
-								@click="Delete(enemy)"
+						<v-row>
+							<v-col>
+								<v-card-title>{{ enemy.Name }}</v-card-title></v-col
 							>
-								<v-icon dark> mdi-minus </v-icon>
-							</v-btn></v-col
-						>
-					</v-row>
+							<v-col>
+								<v-btn
+									class="mx-5"
+									fab
+									dark
+									small
+									color="primary"
+									@click="Delete(enemy)"
+								>
+									<v-icon dark> mdi-minus </v-icon>
+								</v-btn></v-col
+							>
+						</v-row>
 
 						<v-row>
 							<v-col>
@@ -175,25 +152,29 @@
 						</v-row>
 					</v-card>
 				</v-sheet>
-			</v-col>
-			<v-col cols="4">
+			</v-card>
+			<v-card width="400" class="ma-2">
 				<v-sheet class="pa-10 flex" rounded="lg">
 					<v-row>
 						<v-col><h1>Loot</h1></v-col>
-						<v-col><v-btn  @click="ClearLoot()">Clear</v-btn></v-col>
+						<v-col><v-btn @click="ClearLoot()">Clear</v-btn></v-col>
 					</v-row>
-					
-					<v-card v-for="(lootItem, index) in Loot" :key="`lootItem-${index}`">
+
+					<v-card class="ma-2" v-for="(lootItem, index) in Loot" :key="`lootItem-${index}`">
 						<v-card-title>Name: {{ lootItem.Name }}</v-card-title>
-						<v-card-subtitle>Description: {{ lootItem.Description }}</v-card-subtitle>
+						<v-card-subtitle
+							>Description: {{ lootItem.Description }}</v-card-subtitle
+						>
 						<v-card-text>
 							Cost: {{ lootItem.Cost }}
-							<v-btn @click="DeleteLoot(lootItem)"><v-icon>mdi-delete-forever</v-icon></v-btn>
+							<v-btn @click="DeleteLoot(lootItem)"
+								><v-icon>mdi-delete-forever</v-icon></v-btn
+							>
 						</v-card-text>
 					</v-card>
 				</v-sheet>
-			</v-col>
-		</v-row>
+			</v-card>
+		</v-flex>
 	</div>
 </template>
 
@@ -240,13 +221,13 @@ export default class Encounter extends Vue {
 
 	public Loot: Item[] = [];
 
-	public DeleteLoot(lootItem: Item){
+	public DeleteLoot(lootItem: Item) {
 		const index = this.Loot.indexOf(lootItem);
 		this.Loot.splice(index, 1);
 		this.UpdateEncounter();
 	}
 
-	public ClearLoot(){
+	public ClearLoot() {
 		this.Loot = [];
 		this.UpdateEncounter();
 	}
@@ -254,9 +235,9 @@ export default class Encounter extends Vue {
 	public Attack(enemy: Enemy) {
 		let damage = this.DamageAmount;
 		const elements = this.GetElements();
-		
+
 		for (let i = 0; i < elements.length; i++) {
-			if(enemy.Immunity.includes(elements[i])){
+			if (enemy.Immunity.includes(elements[i])) {
 				damage = 0;
 				break;
 			}
@@ -264,8 +245,8 @@ export default class Encounter extends Vue {
 				damage += 2;
 			}
 		}
-		
-		if(enemy.Armor>0 && !this.Piercing){
+
+		if (enemy.Armor > 0 && !this.Piercing) {
 			damage -= enemy.Armor;
 			damage = Math.max(damage, 0);
 		}
@@ -305,10 +286,7 @@ export default class Encounter extends Vue {
 			"encounterEnemies",
 			JSON.stringify(this.encounterEnemies)
 		);
-		localStorage.setItem(
-			"encounterLoot",
-			JSON.stringify(this.Loot)
-		);
+		localStorage.setItem("encounterLoot", JSON.stringify(this.Loot));
 	}
 
 	public ChangeArmor(enemy: Enemy, change: number): void {
@@ -327,6 +305,16 @@ export default class Encounter extends Vue {
 
 	public Roll(die: number) {
 		this.RollResult = (Randomizer.GetRandomInt(die) + 1).toString();
+	}
+
+	public RemoveDeadEnemies() {
+		const deadEnemies = this.encounterEnemies.filter(x => x.HP <= 0);
+		deadEnemies.forEach(d => {
+			const index = this.encounterEnemies.indexOf(d);
+			this.encounterEnemies.splice(index, 1);
+		});
+
+		this.UpdateEncounter();
 	}
 }
 </script>
