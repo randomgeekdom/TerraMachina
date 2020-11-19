@@ -255,18 +255,28 @@ export default class Encounter extends Vue {
 		if (enemy.HP <= 0) {
 			//Enemy is killed
 			const fullEnemy = reference.Bestiary.find(x => x.Name === enemy.Name);
-			let lootValue =
+			const lootValue =
 				parseInt(fullEnemy?.HP || "0") + parseInt(fullEnemy?.Armor || "0");
 
-			while (lootValue >= 0) {
-				const item: Item = Randomizer.GetRandomElement<Item>(reference.Items);
-				this.Loot.push(item);
-				lootValue -= parseInt(item.Cost);
-			}
+			this.GenerateLoot(lootValue);
 
 			enemy.HP = 0;
 		}
 
+		this.UpdateEncounter();
+	}
+
+	public GenerateLoot(lootValue: number){
+		let item: Item = Randomizer.GetRandomElement<Item>(reference.Items);
+		for(let i = 0; i<4; i++){
+			const newItem = Randomizer.GetRandomElement(reference.Items);
+
+			if(Math.abs(parseInt(newItem.Cost) - lootValue) < Math.abs(parseInt(item.Cost) - lootValue)){
+				item = newItem;
+			}
+		}
+
+		this.Loot.push(item);
 		this.UpdateEncounter();
 	}
 
