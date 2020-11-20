@@ -204,6 +204,11 @@
             "Name": "Wind Grenade",
             "Description": "A grenade that does 1d6 Air damage",
             "Cost": "6"
+        },
+        {
+            "Name": "Ground Beetle Armor",
+            "Description": "+1 Armor with Earth attribute",
+            "Cost": "9"
         }
     ],
     "Bestiary": [
@@ -475,6 +480,16 @@
             "Locations": "Underwater",
             "Weakness": "Holy, Lightning",
             "Attacks": "Bubble Attack: 1d10 Water damage\r\n\r\nBone Attack: 1d12 Dark damage."
+        },
+        {
+            "Name": "Spiderbot",
+            "Description": "A robotic spider with a cannon up top",
+            "HP": "4",
+            "Armor": "5",
+            "Immunity": "None",
+            "Locations": "City, Cave",
+            "Weakness": "None",
+            "Attacks": "Laser Shot: 1d6 damage"
         }
     ],
     "Sample_Custom_Moves": [
@@ -525,6 +540,99 @@
         {
             "Name": "Prosecutor",
             "Description": "+2 to Diplomacy when you try to convince others that someone is lying (whether it's true or not)"
+        },
+        {
+            "Name": "Forest Dweller",
+            "Description": "+2 to Sense in a forest"
+        }
+    ],
+    "Enemy Data": [
+        {
+            "Elementals": "Earth",
+            "Weaknesses": "0",
+            "Immunity": "3"
+        },
+        {
+            "Elementals": "Air",
+            "Weaknesses": "3",
+            "Immunity": "0"
+        },
+        {
+            "Elementals": "Fire",
+            "Weaknesses": "5",
+            "Immunity": "3"
+        },
+        {
+            "Elementals": "Water",
+            "Weaknesses": "1",
+            "Immunity": "5"
+        },
+        {
+            "Elementals": "Lightning",
+            "Weaknesses": "7",
+            "Immunity": "1"
+        },
+        {
+            "Elementals": "Ice",
+            "Weaknesses": "3",
+            "Immunity": "1"
+        },
+        {
+            "Elementals": "Holy",
+            "Weaknesses": "4",
+            "Immunity": "0"
+        },
+        {
+            "Elementals": "Dark",
+            "Weaknesses": "0",
+            "Immunity": "2"
+        },
+        {
+            "Elementals": "Locations"
+        },
+        {
+            "Elementals": "Cave",
+            "Weaknesses": "12"
+        },
+        {
+            "Elementals": "Sky",
+            "Weaknesses": "2"
+        },
+        {
+            "Elementals": "Mountain",
+            "Weaknesses": "6"
+        },
+        {
+            "Elementals": "Swamp",
+            "Weaknesses": "3"
+        },
+        {
+            "Elementals": "Forest",
+            "Weaknesses": "8"
+        },
+        {
+            "Elementals": "Underwater",
+            "Weaknesses": "5"
+        },
+        {
+            "Elementals": "Shore",
+            "Weaknesses": "4"
+        },
+        {
+            "Elementals": "Plains",
+            "Weaknesses": "7"
+        },
+        {
+            "Elementals": "Desert",
+            "Weaknesses": "2"
+        },
+        {
+            "Elementals": "Tundra",
+            "Weaknesses": "2"
+        },
+        {
+            "Elementals": "City",
+            "Weaknesses": "5"
         }
     ]
 }
