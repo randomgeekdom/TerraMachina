@@ -14,7 +14,7 @@
 						class="ma-2 pa-4 text-no-wrap"
 						v-for="(enemy, index) in encounterEnemies"
 						:key="`enemy-${index}`"
-						:color="enemy.HP > 0 ? '#FFFFFF' : '#FF1122'"
+						:color="enemy.HP > 0 ? '#FFFFFF' : 'red lighten-2'"
 					>
 						<v-row>
 							<v-col>
@@ -71,68 +71,17 @@
 										class="my-2 mr-2"
 										:disabled="enemy.HP <= 0"
 										>Attack</v-btn
-									>
+									> 
+										
 									<v-text-field label="Damage Amount" v-model="DamageAmount" />
 								</v-flex>
-								<h4>Elemental Damage</h4>
-								<v-sheet class="d-flex flex-wrap">
-									<v-flex class="mx-5">
-										<v-checkbox
-											:disabled="enemy.HP <= 0"
-											label="Holy"
-											v-model="Holy"
-										></v-checkbox>
-									</v-flex>
-									<v-flex class="mx-5">
-										<v-checkbox
-											:disabled="enemy.HP <= 0"
-											label="Dark"
-											v-model="Dark"
-										></v-checkbox>
-									</v-flex>
-									<v-flex class="mx-5">
-										<v-checkbox
-											:disabled="enemy.HP <= 0"
-											label="Air"
-											v-model="Air"
-										></v-checkbox>
-									</v-flex>
-									<v-flex class="mx-5">
-										<v-checkbox
-											:disabled="enemy.HP <= 0"
-											label="Earth"
-											v-model="Earth"
-										></v-checkbox>
-									</v-flex>
-									<v-flex class="mx-5">
-										<v-checkbox
-											:disabled="enemy.HP <= 0"
-											label="Fire"
-											v-model="Fire"
-										></v-checkbox>
-									</v-flex>
-									<v-flex class="mx-5">
-										<v-checkbox
-											:disabled="enemy.HP <= 0"
-											label="Ice"
-											v-model="Ice"
-										></v-checkbox>
-									</v-flex>
-									<v-flex class="mx-5">
-										<v-checkbox
-											:disabled="enemy.HP <= 0"
-											label="Lightning"
-											v-model="Lightning"
-										></v-checkbox>
-									</v-flex>
-									<v-flex class="mx-5">
-										<v-checkbox
-											:disabled="enemy.HP <= 0"
-											label="Water"
-											v-model="Water"
-										></v-checkbox>
-									</v-flex>
-								</v-sheet>
+								<h4>Attack Attribute</h4>
+								<v-row>
+									<v-col v-for="element in elements" :key="element.name"  >
+										<v-btn width="100" :color="GetSelectValue(element.Value)" :disabled="enemy.HP <= 0" @click="SetElementValue(element)">{{element.Key}}</v-btn>
+									</v-col>
+								</v-row>
+								<v-btn :color="GetSelectValue(Piercing)" :disabled="enemy.HP <= 0" @click="Piercing = !Piercing">Piercing</v-btn>
 							</v-col>
 							<v-col>
 								<v-text-field
@@ -162,9 +111,9 @@
 
 					<v-card class="ma-2" v-for="(lootItem, index) in Loot" :key="`lootItem-${index}`">
 						<v-card-title>Name: {{ lootItem.Name }}</v-card-title>
-						<v-card-subtitle
-							>Description: {{ lootItem.Description }}</v-card-subtitle
-						>
+						<v-card-subtitle>
+							Description: <pre>{{ lootItem.Description }}</pre>
+						</v-card-subtitle>
 						<v-card-text>
 							Cost: {{ lootItem.Cost }}
 							<v-btn @click="DeleteLoot(lootItem)"
@@ -185,6 +134,7 @@ import Vue from "vue";
 import { Component } from "vue-property-decorator";
 import Enemy from "@/models/Enemy";
 import Item from "@/models/Item";
+import KeyValue from "@/models/KeyValue";
 import Randomizer from "@/services/Randomizer";
 import reference from "../reference.json";
 
@@ -193,28 +143,60 @@ export default class Encounter extends Vue {
 	public RollResult = "";
 	public encounterEnemies: Enemy[] = [];
 
-	public Holy = false;
-	public Dark = false;
-	public Earth = false;
-	public Air = false;
-	public Fire = false;
-	public Ice = false;
-	public Lightning = false;
-	public Water = false;
 	public Piercing = false;
 
 	public DamageAmount = 1;
 
+	public SetElementValue(element: KeyValue<boolean>){
+		element.Value = !element.Value;
+	}
+
+	public GetSelectValue(value: boolean){
+		return value ? 'success' : 'normal';
+	}
+
+	public elements: KeyValue<boolean> [] = [
+		{
+			Key: "Holy",
+			Value: false
+		},
+		{
+			Key: "Dark",
+			Value: false
+		},
+		{
+			Key: "Earth",
+			Value: false
+		},
+		{
+			Key: "Air",
+			Value: false
+		},
+		{
+			Key: "Fire",
+			Value: false
+		},
+		{
+			Key: "Ice",
+			Value: false
+		},
+		{
+			Key: "Lightning",
+			Value: false
+		},
+		{
+			Key: "Water",
+			Value: false
+		}
+	];
+
 	public GetElements(): string[] {
 		const text: string[] = [];
-		if (this.Holy) text.push("Holy");
-		if (this.Dark) text.push("Dark");
-		if (this.Earth) text.push("Earth");
-		if (this.Air) text.push("Air");
-		if (this.Fire) text.push("Fire");
-		if (this.Ice) text.push("Ice");
-		if (this.Lightning) text.push("Lightning");
-		if (this.Water) text.push("Water");
+
+		const selectedElements = this.elements.filter(x=>x.Value);
+		for(let i = 0; i<selectedElements.length; i++){
+			text.push(selectedElements[i].Key);
+		}
 
 		return text;
 	}

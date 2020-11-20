@@ -8,7 +8,7 @@
         </router-link>
 
         <div class="d-none d-lg-block">
-          <v-btn v-for="link in links" :key="link.page" :to="link.route" text>
+          <v-btn color="white" v-for="link in links" :key="link.page" :to="link.route" text>
             {{ link.page }}
           </v-btn>
         </div>
@@ -23,9 +23,7 @@
  <v-navigation-drawer class="d-lg-none"
       v-model="drawer"
       absolute
-      bottom
       temporary
-      right
     >
       <v-list
         nav
