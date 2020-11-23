@@ -7,8 +7,11 @@
 					<v-row>
 						<v-col> <h1>Current Encounter</h1></v-col>
 						<v-col>
-							<v-btn @click="RemoveDeadEnemies()">Clear the Dead</v-btn></v-col
-						>
+							<v-btn @click="RemoveDeadEnemies()">Clear the Dead</v-btn>
+						</v-col>
+						<v-col>
+							<v-btn @click="ClearEnemies()">Clear All</v-btn>
+						</v-col>
 					</v-row>
 					<v-card
 						class="ma-2 pa-4 text-no-wrap"
@@ -305,6 +308,12 @@ export default class Encounter extends Vue {
 			const index = this.encounterEnemies.indexOf(d);
 			this.encounterEnemies.splice(index, 1);
 		});
+
+		this.UpdateEncounter();
+	}
+
+	public ClearEnemies() {
+		this.encounterEnemies = [];
 
 		this.UpdateEncounter();
 	}

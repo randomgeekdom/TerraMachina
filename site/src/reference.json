@@ -490,6 +490,16 @@
             "Locations": "City, Cave",
             "Weakness": "None",
             "Attacks": "Laser Shot: 1d6 damage"
+        },
+        {
+            "Name": "Yellow Dragon",
+            "Description": "A dragon with yellow scales",
+            "HP": "19",
+            "Armor": "4",
+            "Immunity": "Air",
+            "Locations": "Sky, Mountain",
+            "Weakness": "Earth",
+            "Attacks": "Wind Blast: 1d10 Air damage\r\n\r\nScratch: 1d8 - 1 Piercing damage"
         }
     ],
     "Sample_Custom_Moves": [
@@ -526,10 +536,6 @@
             "Description": "+2 to Knowledge roll for information about a city/town you haven't been to before"
         },
         {
-            "Name": "Inside your Mind",
-            "Description": "Spend 10 SP to read somebody's mind.  Automatic success on any Diplomacy roll."
-        },
-        {
             "Name": "King Speech",
             "Description": "+2 to Diplomacy when speaking to rulers of nations"
         },
@@ -544,18 +550,26 @@
         {
             "Name": "Forest Dweller",
             "Description": "+2 to Sense in a forest"
+        },
+        {
+            "Name": "Natural Athlete",
+            "Description": "+2 to Brawn when competing in an athletic event"
+        },
+        {
+            "Name": "Entomologist",
+            "Description": "+2 to Search when searching for bugs"
         }
     ],
     "Enemy Data": [
         {
             "Elementals": "Earth",
-            "Weaknesses": "0",
+            "Weaknesses": "1",
             "Immunity": "3"
         },
         {
             "Elementals": "Air",
             "Weaknesses": "3",
-            "Immunity": "0"
+            "Immunity": "1"
         },
         {
             "Elementals": "Fire",
@@ -596,11 +610,11 @@
         },
         {
             "Elementals": "Sky",
-            "Weaknesses": "2"
+            "Weaknesses": "3"
         },
         {
             "Elementals": "Mountain",
-            "Weaknesses": "6"
+            "Weaknesses": "7"
         },
         {
             "Elementals": "Swamp",

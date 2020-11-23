@@ -4,6 +4,7 @@
     <v-row>
       <v-col cols="9">
         <v-sheet class="pa-10" rounded="lg">
+          <h1>Items</h1>
           <v-row>
             <v-text-field
               v-model="search"
@@ -15,6 +16,10 @@
           </v-row>
           <v-row>
             <v-data-table :items="items" :headers="headers" :search="search">
+              // eslint-disable-next-line
+              <template v-slot:[`item.Encounter`]="{ item }">
+                <v-btn @click="AddToEncounter(item)" title="Add to Encounter Loot"><v-icon>mdi-plus</v-icon></v-btn>
+              </template>
             </v-data-table>
           </v-row>
         </v-sheet>
@@ -48,6 +53,7 @@ export default class Items extends Vue {
     { text: "Name", value: "Name" },
     { text: "Description", value: "Description" },
     { text: "Cost", value: "Cost" },
+    { text: "", value: "Encounter" },
   ];
   public search = "";
   public randomItem = new Item();
@@ -58,6 +64,16 @@ export default class Items extends Vue {
 
   public get items() {
     return reference.Items;
+  }
+  
+
+  public AddToEncounter(item: Item) {
+    const lootString = localStorage.getItem("encounterLoot");
+    if (lootString) {
+      const enemies = JSON.parse(lootString);
+      enemies.push(item);
+      localStorage.setItem("encounterLoot", JSON.stringify(enemies));
+    }
   }
 }
 </script>
