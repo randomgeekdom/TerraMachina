@@ -27,6 +27,7 @@
       <v-col cols="3">
         <v-sheet class="pa-10" rounded="lg">
           <v-btn @click="GetRandomItem()">Get Random Item</v-btn>
+          <v-btn v-show="!!randomItem.Name" @click="AddToEncounter(randomItem)">Add Item to Encounter</v-btn>
           <div v-if="randomItem.Name">  
               <v-subheader>Name: {{randomItem.Name}}</v-subheader>
               <v-subheader>Description: {{randomItem.Description}}</v-subheader>
