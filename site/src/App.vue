@@ -1,13 +1,15 @@
   
 <template>
   <v-app id="inspire">
-    <v-app-bar class="no-print" app color="#177C88" flat hide-on-scroll>
+    <v-app-bar class="no-print" app color="#177C88" >
+      
+      <v-app-bar-nav-icon color="white" class="d-xl-none" @click="drawer = true"></v-app-bar-nav-icon>
       <v-container class="py-0 fill-height">
         <router-link class="mr-10" to="/">
           <img height="50" src="./assets/logo.png" />
         </router-link>
 
-        <div class="d-none d-lg-block">
+        <div class="d-none d-xl-block">
           <v-btn color="white" v-for="link in links" :key="link.page" :to="link.route" text>
             {{ link.page }}
           </v-btn>
@@ -15,12 +17,10 @@
 
 
         <v-spacer></v-spacer>
-
-        <v-app-bar-nav-icon class="d-lg-none" @click="drawer = true"></v-app-bar-nav-icon>
       </v-container>
     </v-app-bar>
 
- <v-navigation-drawer class="d-lg-none"
+ <v-navigation-drawer class="d-xl-none"
       v-model="drawer"
       absolute
       temporary
@@ -62,6 +62,7 @@ export default class Rules extends Vue {
     { page: "Items", route: "/items" },
     { page: "Bestiary", route: "/bestiary" },
     { page: "Encounter", route: "/encounter" },
+    { page: "Adventures", route: "/adventures" },
     { page: "Sample Custom Moves", route: "/sample-custom-moves" },
     { page: "NPC Generator", route: "/generate-npc" },
     { page: "Trap Generator", route: "/generate-trap" }

@@ -7,6 +7,7 @@ import GenerateTrap from '../views/GenerateTrap.vue'
 import Bestiary from '../views/Bestiary.vue'
 import Encounter from '../views/Encounter.vue'
 import SampleCustomMoves from '../views/SampleCustomMoves.vue'
+import Adventures from '../views/Adventures.vue'
 
 Vue.use(VueRouter)
 
@@ -46,6 +47,11 @@ const routes: Array<RouteConfig> = [
     name: 'Encounter',
     component: Encounter
   },
+  {
+    path: '/adventures',
+    name: 'Adventures',
+    component: Adventures
+  }
 ]
 
 const router = new VueRouter({
