@@ -116,6 +116,11 @@
             "Cost": "6"
         },
         {
+            "Name": "Ground Beetle Armor",
+            "Description": "+1 Armor with Earth attribute",
+            "Cost": "9"
+        },
+        {
             "Name": "Jerky",
             "Description": "Restore 3 SP",
             "Cost": "3"
@@ -204,11 +209,6 @@
             "Name": "Wind Grenade",
             "Description": "A grenade that does 1d6 Air damage",
             "Cost": "6"
-        },
-        {
-            "Name": "Ground Beetle Armor",
-            "Description": "+1 Armor with Earth attribute",
-            "Cost": "9"
         }
     ],
     "Bestiary": [
@@ -220,6 +220,7 @@
             "Immunity": "None",
             "Locations": "Tundra",
             "Weakness": "None",
+            "Type": "Human",
             "Attacks": "Shot: 1d10-1 Ice damage."
         },
         {
@@ -230,16 +231,18 @@
             "Immunity": "None",
             "Locations": "Plains",
             "Weakness": "Fire, Lightning",
+            "Type": "Animal",
             "Attacks": "Charge: 1d12 damage\r\n\r\nGround Stomp: 1d8 damage to 2 enemies"
         },
         {
             "Name": "Baterina",
-            "Description": "A giant back with legs that wears a tutu",
+            "Description": "A giant bat with legs that wears a tutu",
             "HP": "6",
             "Armor": "0",
             "Immunity": "None",
             "Locations": "Cave",
             "Weakness": "Holy",
+            "Type": "Monster",
             "Attacks": "Bite: 1d12 damage.  Causes Mania"
         },
         {
@@ -250,6 +253,7 @@
             "Immunity": "Earth",
             "Locations": "Sky, Cave, Mountain",
             "Weakness": "Air",
+            "Type": "Animal, Reptilian",
             "Attacks": "Scratch: 1d8+3 damage\r\n\r\nBite: 1d8 damage.  Will latch onto a character causing the following: -1 to Movement Rolls and automatic 1d4 damage until free\r\n\r\nDirt Tail Whip: 1d6 ranged Earth damage plus causes Blind."
         },
         {
@@ -260,6 +264,7 @@
             "Immunity": "Water",
             "Locations": "Underwater, Shore",
             "Weakness": "Lightning",
+            "Type": "Animal",
             "Attacks": "Snap: 1d10 damage to a single player\r\n\r\nEmbrace: 1d4 damage.  Traps the player who must make a move to escape\r\n\r\nWater Jet: 1d10 damage to all players"
         },
         {
@@ -270,6 +275,7 @@
             "Immunity": "Dark",
             "Locations": "Cave, Forest",
             "Weakness": "Holy",
+            "Type": "Animal",
             "Attacks": "Bite: 1d10 damage"
         },
         {
@@ -280,6 +286,7 @@
             "Immunity": "None",
             "Locations": "Underwater",
             "Weakness": "None",
+            "Type": "Animal",
             "Attacks": "Bite: 1d10 damage\r\n\r\nShock: 1d8 Lightning damage to all enemies.  Causes Paralysis."
         },
         {
@@ -290,6 +297,7 @@
             "Immunity": "None",
             "Locations": "Swamp, Cave, City",
             "Weakness": "None",
+            "Type": "Monster, Human",
             "Attacks": "Manic Shot: 1d8 -1 damage.  Causes mania"
         },
         {
@@ -300,6 +308,7 @@
             "Immunity": "Fire",
             "Locations": "Desert",
             "Weakness": "Ice",
+            "Type": "Animal, Insect",
             "Attacks": "Sting: 1d12 fire damage.  Causes burn.\r\n\r\nPinch: 1d4.  Traps the player who must make a move to escape."
         },
         {
@@ -310,6 +319,7 @@
             "Immunity": "None",
             "Locations": "Sky, City",
             "Weakness": "Lightning",
+            "Type": "Robotic",
             "Attacks": "Laser Shot: 1d6 damage"
         },
         {
@@ -320,6 +330,7 @@
             "Immunity": "None",
             "Locations": "Forest, Plains",
             "Weakness": "None",
+            "Type": "Animal",
             "Attacks": "Attack: 1d6 damage"
         },
         {
@@ -329,6 +340,7 @@
             "Armor": "4",
             "Locations": "City",
             "Weakness": "None",
+            "Type": "Human",
             "Attacks": "Gunshot: 1d10 damage to an enemy\r\n\r\nGun Spray: 1d4 damage to all enemies"
         },
         {
@@ -339,6 +351,7 @@
             "Immunity": "None",
             "Locations": "Forest, Plains",
             "Weakness": "None",
+            "Type": "Monster, Animal",
             "Attacks": "Blinding Bite: 1d4+1 damage.  Causes blind.\r\n\r\nSmash: 1d10+2 damage."
         },
         {
@@ -349,6 +362,7 @@
             "Immunity": "None",
             "Locations": "Forest, Plains, Desert",
             "Weakness": "Fire",
+            "Type": "Animal, Insect, Mob",
             "Attacks": "Venomous Sting: 1d4+1 damage to all enemies.  Causes Poison."
         },
         {
@@ -359,6 +373,7 @@
             "Immunity": "Earth",
             "Locations": "Plains, Cave, Mountain, Forest",
             "Weakness": "Air",
+            "Type": "Monster, Reptilian",
             "Attacks": "Slash: 1d8 damage.  Causes Bleed.\r\n\r\nBite: 1d10-1 damage. "
         },
         {
@@ -369,6 +384,7 @@
             "Immunity": "Fire",
             "Locations": "Cave, Mountain",
             "Weakness": "Ice",
+            "Type": "Monster",
             "Attacks": "Fire Punch: 1d8 Fire damage."
         },
         {
@@ -379,6 +395,7 @@
             "Immunity": "None",
             "Locations": "City",
             "Weakness": "Fire",
+            "Type": "Monster",
             "Attacks": "Slap: 1d8 damage"
         },
         {
@@ -389,6 +406,7 @@
             "Immunity": "Water",
             "Locations": "Shore, Underwater",
             "Weakness": "Lightning",
+            "Type": "Animal",
             "Attacks": "Clamp: 1d8+1 damage"
         },
         {
@@ -399,6 +417,7 @@
             "Immunity": "None",
             "Locations": "Cave, Forest",
             "Weakness": "Fire",
+            "Type": "Animal",
             "Attacks": "Scratch: 1d4+3 damage\r\n\r\nBite: 1d4 damage.  Causes Poison.\r\n\r\nSpore Cloud: Cause Poison on all enemies"
         },
         {
@@ -409,6 +428,7 @@
             "Immunity": "Fire",
             "Locations": "Cave, Mountain",
             "Weakness": "Ice",
+            "Type": "Monster",
             "Attacks": "Fireball: 1d8 fire damage.  Causes Burn."
         },
         {
@@ -419,6 +439,7 @@
             "Immunity": "Lightning",
             "Locations": "Cave, Mountain",
             "Weakness": "Water",
+            "Type": "Monster",
             "Attacks": "Lightning Strike: 1d8 Lightning damage.  Causes Paralysis."
         },
         {
@@ -429,6 +450,7 @@
             "Immunity": "Earth",
             "Locations": "Plains, Cave, Mountain",
             "Weakness": "Air",
+            "Type": "Monster",
             "Attacks": "Rock Punch: 1d10 Earth damage\r\n\r\nGrab: Entrap an enemy"
         },
         {
@@ -439,6 +461,7 @@
             "Immunity": "Dark",
             "Locations": "Cave, Swamp",
             "Weakness": "Holy",
+            "Type": "Monster, Undead",
             "Attacks": "Slash: 1d8 damage"
         },
         {
@@ -449,6 +472,7 @@
             "Immunity": "Ice",
             "Locations": "Tundra, Forest",
             "Weakness": "Fire",
+            "Type": "Animal",
             "Attacks": "Bite: 1d10 damage\r\n\r\nScratch: 1d6 damage\r\n\r\nSnow Beam: 1d10 Ice damage"
         },
         {
@@ -459,6 +483,7 @@
             "Immunity": "Water",
             "Locations": "Underwater, Shore, Swamp, Forest, Plains",
             "Weakness": "Lightning",
+            "Type": "Animal, Reptilian",
             "Attacks": "Bite: 1d12+2 damage\r\n\r\n"
         },
         {
@@ -469,6 +494,7 @@
             "Immunity": "Water",
             "Locations": "Shore",
             "Weakness": "Lightning",
+            "Type": "Monster, Animal",
             "Attacks": "Bite: 1d10 damage.  Once bitten, 3 damage every turn until the enemy escapes."
         },
         {
@@ -479,6 +505,7 @@
             "Immunity": "Water",
             "Locations": "Underwater",
             "Weakness": "Holy, Lightning",
+            "Type": "Undead",
             "Attacks": "Bubble Attack: 1d10 Water damage\r\n\r\nBone Attack: 1d12 Dark damage."
         },
         {
@@ -489,6 +516,7 @@
             "Immunity": "None",
             "Locations": "City, Cave",
             "Weakness": "None",
+            "Type": "Robotic, Insect",
             "Attacks": "Laser Shot: 1d6 damage"
         },
         {
@@ -499,7 +527,41 @@
             "Immunity": "Air",
             "Locations": "Sky, Mountain",
             "Weakness": "Earth",
+            "Type": "Animal, Reptilian",
             "Attacks": "Wind Blast: 1d10 Air damage\r\n\r\nScratch: 1d8 - 1 Piercing damage"
+        },
+        {
+            "Name": "Sand Crusader",
+            "Description": "A warrior dressed in robes carrying a staff",
+            "HP": "19",
+            "Armor": "0",
+            "Immunity": "Holy",
+            "Locations": "Desert",
+            "Weakness": "Dark",
+            "Type": "Human",
+            "Attacks": "Holy Strike: 1d6 Holy damage\r\n\r\nBlinding Light: 1d10 -2 Holy damage.  Causes Blind"
+        },
+        {
+            "Name": "Living Snow",
+            "Description": "A group of snowflakes that seem to be sentient",
+            "HP": "4",
+            "Armor": "1",
+            "Immunity": "Ice",
+            "Locations": "Tundra, Mountain",
+            "Weakness": "Earth",
+            "Type": "Monster, Mob",
+            "Attacks": "Strike Fear: 1d4-1 damage.  Causes Scared.\r\n\r\nPelt Ice: 1d10 Ice damage."
+        },
+        {
+            "Name": "Shard Swarm",
+            "Description": "Flying intelligent pieces of glass",
+            "HP": "12",
+            "Armor": "0",
+            "Immunity": "Lightning",
+            "Locations": "Desert, Shore",
+            "Weakness": "Water",
+            "Type": "Monster, Mob",
+            "Attacks": "Multi-Attack: 1d6-1 damage.  Causes Bleed.\r\n\r\nMirror: Take a turn to cast Mirror.  The next time the Shard Swarm is attack, whoever attacks will get the same damage."
         }
     ],
     "Sample_Custom_Moves": [
@@ -563,86 +625,117 @@
     "Enemy Data": [
         {
             "Elementals": "Earth",
-            "Weaknesses": "1",
-            "Immunity": "3"
+            "Weaknesses": "2",
+            "Immunity": "3",
+            "Status Effects": "Bleed",
+            "undefined": "2"
         },
         {
             "Elementals": "Air",
             "Weaknesses": "3",
-            "Immunity": "1"
+            "Immunity": "1",
+            "Status Effects": "Blind",
+            "undefined": "4"
         },
         {
             "Elementals": "Fire",
             "Weaknesses": "5",
-            "Immunity": "3"
+            "Immunity": "3",
+            "Status Effects": "Burn",
+            "undefined": "1"
         },
         {
             "Elementals": "Water",
-            "Weaknesses": "1",
-            "Immunity": "5"
+            "Weaknesses": "2",
+            "Immunity": "5",
+            "Status Effects": "Mania",
+            "undefined": "1"
         },
         {
             "Elementals": "Lightning",
             "Weaknesses": "7",
-            "Immunity": "1"
+            "Immunity": "2",
+            "Status Effects": "Paralysis",
+            "undefined": "2"
         },
         {
             "Elementals": "Ice",
             "Weaknesses": "3",
-            "Immunity": "1"
+            "Immunity": "2",
+            "Status Effects": "Poison",
+            "undefined": "3"
         },
         {
             "Elementals": "Holy",
             "Weaknesses": "4",
-            "Immunity": "0"
+            "Immunity": "1",
+            "Status Effects": "Scared",
+            "undefined": "1"
         },
         {
             "Elementals": "Dark",
-            "Weaknesses": "0",
+            "Weaknesses": "1",
             "Immunity": "2"
         },
         {
-            "Elementals": "Locations"
+            "Elementals": "Locations",
+            "Status Effects": "Type"
         },
         {
             "Elementals": "Cave",
-            "Weaknesses": "12"
+            "Weaknesses": "12",
+            "Status Effects": "Animal",
+            "undefined": "15"
         },
         {
             "Elementals": "Sky",
-            "Weaknesses": "3"
+            "Weaknesses": "3",
+            "Status Effects": "Human",
+            "undefined": "4"
         },
         {
             "Elementals": "Mountain",
-            "Weaknesses": "7"
+            "Weaknesses": "8",
+            "Status Effects": "Monster",
+            "undefined": "13"
         },
         {
             "Elementals": "Swamp",
-            "Weaknesses": "3"
+            "Weaknesses": "3",
+            "Status Effects": "Robotic",
+            "undefined": "2"
         },
         {
             "Elementals": "Forest",
-            "Weaknesses": "8"
+            "Weaknesses": "8",
+            "Status Effects": "Reptilian",
+            "undefined": "4"
         },
         {
             "Elementals": "Underwater",
-            "Weaknesses": "5"
+            "Weaknesses": "5",
+            "Status Effects": "Insect",
+            "undefined": "3"
         },
         {
             "Elementals": "Shore",
-            "Weaknesses": "4"
+            "Weaknesses": "5",
+            "Status Effects": "Mob",
+            "undefined": "3"
         },
         {
             "Elementals": "Plains",
-            "Weaknesses": "7"
+            "Weaknesses": "7",
+            "Status Effects": "Undead",
+            "undefined": "2"
         },
         {
             "Elementals": "Desert",
-            "Weaknesses": "2"
+            "Weaknesses": "4"
         },
         {
             "Elementals": "Tundra",
-            "Weaknesses": "2"
+            "Weaknesses": "3"
         },
         {
             "Elementals": "City",

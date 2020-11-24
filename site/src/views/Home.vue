@@ -37,9 +37,6 @@
 					<v-card-text>
 						<a href="/Terra-Machina.pdf" target="_blank">Download Rulebook</a>
 					</v-card-text>
-					<v-card-text>
-            <a href="/Terra-Machina-Reference-Guide.xlsx" target="_blank">Download Reference Guide</a>
-					</v-card-text>
 
 			</v-card>
 		</v-flex>

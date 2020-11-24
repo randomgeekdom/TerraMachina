@@ -57,6 +57,7 @@ export default class Bestiary extends Vue {
   public headers = [
     { text: "Name", value: "Name" },
     { text: "Description", value: "Description" },
+    { text: "Type", value: "Type" },
     { text: "HP", value: "HP" },
     { text: "Armor", value: "Armor" },
     { text: "Weakness", value: "Weakness" },
