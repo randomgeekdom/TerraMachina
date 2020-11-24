@@ -2,15 +2,13 @@
 <template>
 	<div>
 		<v-flex class="d-flex flex-wrap">
-			<v-card width="1100" class="ma-2">
-				<div class="ma-2 pa-2">
+			<v-card width="1100" class="ma-2" rounded="lg">
 					<v-card-title>
 						Updates
 					</v-card-title>
 					<v-card-text>
 						Still in a pre-alpha state...
 					</v-card-text>
-				</div>
 			</v-card>
 			<v-card cols="12" rounded="lg" width="400" class="ma-2">
 				<v-card-title>About</v-card-title>
