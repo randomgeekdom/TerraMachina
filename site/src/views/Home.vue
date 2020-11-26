@@ -2,7 +2,7 @@
 <template>
 	<div>
 		<v-flex class="d-flex flex-wrap">
-			<v-card width="1100" class="ma-2" rounded="lg">
+			<v-card width="70%" class="ma-2" rounded="lg">
 					<v-card-title>
 						Updates
 					</v-card-title>
@@ -10,7 +10,7 @@
 						Still in a pre-alpha state...
 					</v-card-text>
 			</v-card>
-			<v-card cols="12" rounded="lg" width="400" class="ma-2">
+			<v-card cols="12" rounded="lg" width="25%" class="ma-2">
 				<v-card-title>About</v-card-title>
         
 					<v-card-text>

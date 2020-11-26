@@ -1,10 +1,9 @@
 
 <template>
   <div>
-    <v-row>
-      <v-col cols="9">
-        <v-sheet class="pa-10" rounded="lg">
-          <h1>Items</h1>
+    <v-flex class="d-flex flex-wrap">
+        <v-card class="pa-10 ma-2"  width="70%" rounded="lg">
+          <v-card-title>Items</v-card-title>
           <v-row>
             <v-text-field
               v-model="search"
@@ -22,10 +21,8 @@
               </template>
             </v-data-table>
           </v-row>
-        </v-sheet>
-      </v-col>
-      <v-col cols="3">
-        <v-sheet class="pa-10" rounded="lg">
+        </v-card>
+        <v-card class="pa-10 ma-2" rounded="lg" width="25%" >
           <v-btn @click="GetRandomItem()">Get Random Item</v-btn>
           <v-btn v-show="!!randomItem.Name" @click="AddToEncounter(randomItem)">Add Item to Encounter</v-btn>
           <div v-if="randomItem.Name">  
@@ -33,9 +30,8 @@
               <v-subheader>Description: {{randomItem.Description}}</v-subheader>
               <v-subheader>Cost: {{randomItem.Cost}}</v-subheader>
           </div>
-        </v-sheet>
-      </v-col>
-    </v-row>
+        </v-card>
+    </v-flex>
   </div>
 </template>
 
