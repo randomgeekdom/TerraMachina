@@ -15,16 +15,12 @@
           </v-row>
           <v-row>
             <v-data-table :items="items" :headers="headers" :search="search">
-              // eslint-disable-next-line
-              <template v-slot:[`item.Encounter`]="{ item }">
-                <v-btn @click="AddToEncounter(item)" title="Add to Encounter Loot"><v-icon>mdi-plus</v-icon></v-btn>
-              </template>
             </v-data-table>
           </v-row>
         </v-card>
         <v-card class="pa-10 ma-2" rounded="lg" width="25%" >
           <v-btn @click="GetRandomItem()">Get Random Item</v-btn>
-          <v-btn v-show="!!randomItem.Name" @click="AddToEncounter(randomItem)">Add Item to Encounter</v-btn>
+         
           <div v-if="randomItem.Name">  
               <v-subheader>Name: {{randomItem.Name}}</v-subheader>
               <v-subheader>Description: {{randomItem.Description}}</v-subheader>
@@ -64,14 +60,14 @@ export default class Items extends Vue {
   }
   
 
-  public AddToEncounter(item: Item) {
-    const lootString = localStorage.getItem("encounterLoot");
-    if (lootString) {
-      const enemies = JSON.parse(lootString);
-      enemies.push(item);
-      localStorage.setItem("encounterLoot", JSON.stringify(enemies));
-    }
-  }
+  // public AddToEncounter(item: Item) {
+  //   const lootString = localStorage.getItem("encounterLoot");
+  //   if (lootString) {
+  //     const enemies = JSON.parse(lootString);
+  //     enemies.push(item);
+  //     localStorage.setItem("encounterLoot", JSON.stringify(enemies));
+  //   }
+  // }
 }
 </script>
 

@@ -33,10 +33,6 @@
                   <br />
                 </td>
               </template>
-// eslint-disable-next-line
-              <template v-slot:[`item.Encounter`]="{ item }">
-                <v-btn @click="AddToEncounter(item)" title="Add to Encounter"><v-icon>mdi-plus</v-icon></v-btn>
-              </template>
             </v-data-table>
           </v-row>
         </v-sheet>
@@ -50,7 +46,6 @@
 import Vue from "vue";
 import { Component } from "vue-property-decorator";
 import reference from "../reference.json";
-import Enemy from "@/models/Enemy";
 
 @Component
 export default class Bestiary extends Vue {
@@ -62,8 +57,7 @@ export default class Bestiary extends Vue {
     { text: "Armor", value: "Armor" },
     { text: "Weakness", value: "Weakness" },
     { text: "Immunity", value: "Immunity" },
-    { text: "Known Locations", value: "Locations" },
-    { text: "", value: "Encounter" }
+    { text: "Known Locations", value: "Locations" }
   ];
   public search = "";
 
@@ -71,13 +65,13 @@ export default class Bestiary extends Vue {
     return reference.Bestiary;
   }
 
-  public AddToEncounter(enemy: Enemy) {
-    const enemyString = localStorage.getItem("encounterEnemies");
-    if (enemyString) {
-      const enemies = JSON.parse(enemyString);
-      enemies.push(enemy);
-      localStorage.setItem("encounterEnemies", JSON.stringify(enemies));
-    }
-  }
+  // public AddToEncounter(enemy: Enemy) {
+  //   const enemyString = localStorage.getItem("encounterEnemies");
+  //   if (enemyString) {
+  //     const enemies = JSON.parse(enemyString);
+  //     enemies.push(enemy);
+  //     localStorage.setItem("encounterEnemies", JSON.stringify(enemies));
+  //   }
+  // }
 }
 </script>
