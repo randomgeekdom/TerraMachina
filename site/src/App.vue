@@ -1,7 +1,7 @@
   
 <template>
   <v-app id="inspire">
-    <v-app-bar class="no-print" app color="#177C88" >
+    <v-app-bar class="no-print" app color="#453654" >
       
       <v-app-bar-nav-icon color="white" class="d-xl-none" @click="drawer = true"></v-app-bar-nav-icon>
       <v-container class="py-0 fill-height">
