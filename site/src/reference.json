@@ -76,7 +76,7 @@
             "Cost": "15"
         },
         {
-            "Name": "Encyclopedia Light",
+            "Name": "Encyclopedia",
             "Description": "+2 to next Knowledge Roll",
             "Cost": "15"
         },
@@ -209,6 +209,41 @@
             "Name": "Wind Grenade",
             "Description": "A grenade that does 1d6 Air damage",
             "Cost": "6"
+        },
+        {
+            "Name": "Lockpick",
+            "Description": "Picking a lock does not require a Tinker roll",
+            "Cost": "10"
+        },
+        {
+            "Name": "Boat",
+            "Description": "A water craft that carries 3 people and can cross still water",
+            "Cost": "180"
+        },
+        {
+            "Name": "Yacht",
+            "Description": "A water craft that carries 5 people and can cross oceans",
+            "Cost": "260"
+        },
+        {
+            "Name": "Light Ship",
+            "Description": "A water craft that carries 11 people and can cross oceans",
+            "Cost": "300"
+        },
+        {
+            "Name": "Jetpack",
+            "Description": "Allows an individual to fly any distance",
+            "Cost": "210"
+        },
+        {
+            "Name": "Helicopter",
+            "Description": "A flying craft that carries 4 people and can cross up to 8 areas before needing to land",
+            "Cost": "270"
+        },
+        {
+            "Name": "Light Airship",
+            "Description": "A flying craft that carries 7 people and can cross long distances",
+            "Cost": "330"
         }
     ],
     "Bestiary": [
@@ -562,6 +597,116 @@
             "Weakness": "Water",
             "Type": "Monster, Mob",
             "Attacks": "Multi-Attack: 1d6-1 damage.  Causes Bleed.\r\n\r\nMirror: Take a turn to cast Mirror.  The next time the Shard Swarm is attack, whoever attacks will get the same damage."
+        },
+        {
+            "Name": "Fire Spirit",
+            "Description": "An undead creature that flies and is made of fire",
+            "HP": "17",
+            "Armor": "1",
+            "Immunity": "Air, Fire",
+            "Locations": "Sky",
+            "Weakness": "Dark",
+            "Type": "Undead",
+            "Attacks": "Fireball: 1d10 - 1 Fire damage.  Causes Burn."
+        },
+        {
+            "Name": "Psycho Borealis",
+            "Description": "An ethereal creature made of an array of lights",
+            "HP": "9",
+            "Armor": "0",
+            "Immunity": "Holy",
+            "Locations": "Tundra",
+            "Weakness": "Dark",
+            "Type": "Monster",
+            "Attacks": "Manic Attack: 1d6-1 Holy damage.  Causes Mania.\r\n\r\nFright Attack: 1d6-1 Holy damage.  Causes Scared."
+        },
+        {
+            "Name": "Sawbot",
+            "Description": "A robot with buzzsaw for hands",
+            "HP": "8",
+            "Armor": "2",
+            "Immunity": "None",
+            "Locations": "City, Forest",
+            "Weakness": "Lightning",
+            "Type": "Robotic",
+            "Attacks": "Shred: 1d12 - 1 damage.  Causes Bleed."
+        },
+        {
+            "Name": "Snowbug",
+            "Description": "A large insectoid ice creature",
+            "HP": "6",
+            "Armor": "3",
+            "Immunity": "Ice",
+            "Locations": "Tundra",
+            "Weakness": "None",
+            "Type": "Insect",
+            "Attacks": "Bite: 1d10 damage.\r\n\r\nShowshot: 1d6+1 Ice damage."
+        },
+        {
+            "Name": "Cave Troll",
+            "Description": "A troll that lives in a cave.",
+            "HP": "11",
+            "Armor": "3",
+            "Immunity": "Earth",
+            "Locations": "Cave",
+            "Weakness": "Water",
+            "Type": "Monster",
+            "Attacks": "Smash: 1d8+5 damage.\r\n\r\nFrightening Stance: Causes Scared."
+        },
+        {
+            "Name": "Thunderclapper",
+            "Description": "Flying robotic hands that are electrically charged",
+            "HP": "1",
+            "Armor": "3",
+            "Immunity": "Lightning",
+            "Locations": "Sky",
+            "Weakness": "None",
+            "Type": "Robotic",
+            "Attacks": "Electric Slap: 1d10+1 Lightning damage."
+        },
+        {
+            "Name": "Frog Lancer",
+            "Description": "A humanoid frog carrying a lance",
+            "HP": "8",
+            "Armor": "3",
+            "Immunity": "Dark, Water",
+            "Locations": "Swamp, Cave, Forest",
+            "Weakness": "Lightning",
+            "Type": "Reptilian",
+            "Attacks": "Stab: 1d10 damage."
+        },
+        {
+            "Name": "Eagle Flock",
+            "Description": "A group of eagles",
+            "HP": "8",
+            "Armor": "0",
+            "Immunity": "Air",
+            "Locations": "Sky, Forest, Mountain, Plains, Desert",
+            "Weakness": "Earth",
+            "Type": "Animal, Mob",
+            "Attacks": "Manic Screech: A screech that causes Mania.\r\n\r\nPeck: 1d12-1 damage."
+        },
+        {
+            "Name": "Swarm of Mosquitos",
+            "Description": "A swarm of mosquitos",
+            "HP": "9",
+            "Armor": "0",
+            "Immunity": "None",
+            "Locations": "Air, Swamp, Forest, Cave",
+            "Weakness": "None",
+            "Type": "Mob, Insect",
+            "Attacks": "Swarm of Bites: 1d12+1 damage.  Causes Paralysis."
+        },
+        {
+            "Name": "Ice Knight",
+            "Description": "A person in white armor in the snow.",
+            "HP": "13",
+            "Armor": "5",
+            "Immunity": "Ice",
+            "Locations": "Mountain, Tundra",
+            "Weakness": "Fire",
+            "Type": "Human",
+            "Attacks": "Attack: 1d6+1 damage.\r\n\r\nIce Blast: 1d6-1 Ice damage."
         }
     ],
     "Sample_Custom_Moves": [
@@ -625,57 +770,57 @@
     "Enemy Data": [
         {
             "Elementals": "Earth",
-            "Weaknesses": "2",
-            "Immunity": "3",
+            "Weaknesses": "3",
+            "Immunity": "4",
             "Status Effects": "Bleed",
-            "undefined": "2"
+            "undefined": "3"
         },
         {
             "Elementals": "Air",
             "Weaknesses": "3",
-            "Immunity": "1",
+            "Immunity": "3",
             "Status Effects": "Blind",
             "undefined": "4"
         },
         {
             "Elementals": "Fire",
-            "Weaknesses": "5",
-            "Immunity": "3",
+            "Weaknesses": "6",
+            "Immunity": "4",
             "Status Effects": "Burn",
-            "undefined": "1"
+            "undefined": "2"
         },
         {
             "Elementals": "Water",
-            "Weaknesses": "2",
-            "Immunity": "5",
+            "Weaknesses": "3",
+            "Immunity": "6",
             "Status Effects": "Mania",
-            "undefined": "1"
+            "undefined": "3"
         },
         {
             "Elementals": "Lightning",
-            "Weaknesses": "7",
-            "Immunity": "2",
+            "Weaknesses": "9",
+            "Immunity": "3",
             "Status Effects": "Paralysis",
-            "undefined": "2"
+            "undefined": "3"
         },
         {
             "Elementals": "Ice",
             "Weaknesses": "3",
-            "Immunity": "2",
+            "Immunity": "4",
             "Status Effects": "Poison",
             "undefined": "3"
         },
         {
             "Elementals": "Holy",
             "Weaknesses": "4",
-            "Immunity": "1",
+            "Immunity": "2",
             "Status Effects": "Scared",
-            "undefined": "1"
+            "undefined": "3"
         },
         {
             "Elementals": "Dark",
-            "Weaknesses": "1",
-            "Immunity": "2"
+            "Weaknesses": "3",
+            "Immunity": "3"
         },
         {
             "Elementals": "Locations",
@@ -683,63 +828,63 @@
         },
         {
             "Elementals": "Cave",
-            "Weaknesses": "12",
+            "Weaknesses": "15",
             "Status Effects": "Animal",
-            "undefined": "15"
+            "undefined": "16"
         },
         {
             "Elementals": "Sky",
-            "Weaknesses": "3",
+            "Weaknesses": "6",
             "Status Effects": "Human",
-            "undefined": "4"
+            "undefined": "5"
         },
         {
             "Elementals": "Mountain",
-            "Weaknesses": "8",
+            "Weaknesses": "10",
             "Status Effects": "Monster",
-            "undefined": "13"
+            "undefined": "15"
         },
         {
             "Elementals": "Swamp",
-            "Weaknesses": "3",
+            "Weaknesses": "5",
             "Status Effects": "Robotic",
-            "undefined": "2"
+            "undefined": "4"
         },
         {
             "Elementals": "Forest",
-            "Weaknesses": "8",
+            "Weaknesses": "12",
             "Status Effects": "Reptilian",
-            "undefined": "4"
+            "undefined": "5"
         },
         {
             "Elementals": "Underwater",
             "Weaknesses": "5",
             "Status Effects": "Insect",
-            "undefined": "3"
+            "undefined": "5"
         },
         {
             "Elementals": "Shore",
             "Weaknesses": "5",
             "Status Effects": "Mob",
-            "undefined": "3"
+            "undefined": "5"
         },
         {
             "Elementals": "Plains",
-            "Weaknesses": "7",
+            "Weaknesses": "8",
             "Status Effects": "Undead",
-            "undefined": "2"
+            "undefined": "3"
         },
         {
             "Elementals": "Desert",
-            "Weaknesses": "4"
+            "Weaknesses": "5"
         },
         {
             "Elementals": "Tundra",
-            "Weaknesses": "3"
+            "Weaknesses": "6"
         },
         {
             "Elementals": "City",
-            "Weaknesses": "5"
+            "Weaknesses": "6"
         }
     ]
 }
