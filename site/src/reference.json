@@ -707,6 +707,72 @@
             "Weakness": "Fire",
             "Type": "Human",
             "Attacks": "Attack: 1d6+1 damage.\r\n\r\nIce Blast: 1d6-1 Ice damage."
+        },
+        {
+            "Name": "Bog Knight",
+            "Description": "An armored figure wielding an axe that hangs out in swamps",
+            "HP": "10",
+            "Armor": "2",
+            "Immunity": "Dark",
+            "Locations": "Swamp",
+            "Weakness": "Earth",
+            "Type": "Human",
+            "Attacks": "Axe Attack: 1d8 damage"
+        },
+        {
+            "Name": "Thunder Wraith",
+            "Description": "An undead creature with lightning power",
+            "HP": "8",
+            "Armor": "3",
+            "Immunity": "Dark, Lightning",
+            "Locations": "Shore, Desert",
+            "Weakness": "Ice",
+            "Type": "Undead",
+            "Attacks": "Burning Shock: Blast of electricity that does 1d10 Lightning damage.  Causes Burn."
+        },
+        {
+            "Name": "Crystal Ninja",
+            "Description": "A crystalline person with martial arts skills",
+            "HP": "8",
+            "Armor": "3",
+            "Immunity": "Holy",
+            "Locations": "Swamp, Shore, City",
+            "Weakness": "Dark",
+            "Type": "Human",
+            "Attacks": "Sharp Punch: 1d10-1 damage.  Causes Bleed."
+        },
+        {
+            "Name": "Inker",
+            "Description": "A creature with six tentacles and human legs.",
+            "HP": "15",
+            "Armor": "4",
+            "Immunity": "Holy, Air, Water",
+            "Locations": "Underwater, Swamp, Shore",
+            "Weakness": "Earth",
+            "Type": "Monster",
+            "Attacks": "Tentacle Attack: 1d12+3 damage to all enemies.  Causes Paralysis.\r\n\r\nWater Spray: 1d8 Water damage.  "
+        },
+        {
+            "Name": "Thunder Bird",
+            "Description": "A yellow bird emanating electricity",
+            "HP": "8",
+            "Armor": "0",
+            "Immunity": "Air, Lightning",
+            "Locations": "Sky, Desert, Tundra",
+            "Weakness": "Water",
+            "Type": "Animal",
+            "Attacks": "Claws: 1d6-1 damage.  Causes Scared.\r\n\r\nLightning Strike: 1d10 Lightning damage."
+        },
+        {
+            "Name": "Cave Driller",
+            "Description": "A robotic tank with a drill that can dig in the earth.",
+            "HP": "9",
+            "Armor": "3",
+            "Immunity": "Earth",
+            "Locations": "Cave, Mountain",
+            "Weakness": "Water",
+            "Type": "Robotic",
+            "Attacks": "Drill: 1d6+3 damage.\r\n\r\nSound Blast: 1d10-1 damage on all enemies.  Causes Mania."
         }
     ],
     "Sample_Custom_Moves": [
@@ -770,57 +836,57 @@
     "Enemy Data": [
         {
             "Elementals": "Earth",
-            "Weaknesses": "3",
-            "Immunity": "4",
+            "Immunity": "5",
+            "Weaknesses": "5",
             "Status Effects": "Bleed",
-            "undefined": "3"
+            "undefined": "4"
         },
         {
             "Elementals": "Air",
+            "Immunity": "5",
             "Weaknesses": "3",
-            "Immunity": "3",
             "Status Effects": "Blind",
             "undefined": "4"
         },
         {
             "Elementals": "Fire",
-            "Weaknesses": "6",
             "Immunity": "4",
+            "Weaknesses": "6",
             "Status Effects": "Burn",
-            "undefined": "2"
+            "undefined": "4"
         },
         {
             "Elementals": "Water",
-            "Weaknesses": "3",
-            "Immunity": "6",
+            "Immunity": "7",
+            "Weaknesses": "5",
             "Status Effects": "Mania",
-            "undefined": "3"
+            "undefined": "4"
         },
         {
             "Elementals": "Lightning",
+            "Immunity": "5",
             "Weaknesses": "9",
-            "Immunity": "3",
             "Status Effects": "Paralysis",
-            "undefined": "3"
+            "undefined": "4"
         },
         {
             "Elementals": "Ice",
-            "Weaknesses": "3",
             "Immunity": "4",
+            "Weaknesses": "4",
             "Status Effects": "Poison",
             "undefined": "3"
         },
         {
             "Elementals": "Holy",
+            "Immunity": "4",
             "Weaknesses": "4",
-            "Immunity": "2",
             "Status Effects": "Scared",
-            "undefined": "3"
+            "undefined": "4"
         },
         {
             "Elementals": "Dark",
-            "Weaknesses": "3",
-            "Immunity": "3"
+            "Immunity": "5",
+            "Weaknesses": "4"
         },
         {
             "Elementals": "Locations",
@@ -828,63 +894,63 @@
         },
         {
             "Elementals": "Cave",
-            "Weaknesses": "15",
+            "Immunity": "16",
             "Status Effects": "Animal",
-            "undefined": "16"
+            "undefined": "17"
         },
         {
             "Elementals": "Sky",
-            "Weaknesses": "6",
+            "Immunity": "7",
             "Status Effects": "Human",
-            "undefined": "5"
+            "undefined": "7"
         },
         {
             "Elementals": "Mountain",
-            "Weaknesses": "10",
+            "Immunity": "11",
             "Status Effects": "Monster",
-            "undefined": "15"
+            "undefined": "16"
         },
         {
             "Elementals": "Swamp",
-            "Weaknesses": "5",
+            "Immunity": "8",
             "Status Effects": "Robotic",
-            "undefined": "4"
+            "undefined": "5"
         },
         {
             "Elementals": "Forest",
-            "Weaknesses": "12",
+            "Immunity": "12",
             "Status Effects": "Reptilian",
             "undefined": "5"
         },
         {
             "Elementals": "Underwater",
-            "Weaknesses": "5",
+            "Immunity": "6",
             "Status Effects": "Insect",
             "undefined": "5"
         },
         {
             "Elementals": "Shore",
-            "Weaknesses": "5",
+            "Immunity": "8",
             "Status Effects": "Mob",
             "undefined": "5"
         },
         {
             "Elementals": "Plains",
-            "Weaknesses": "8",
+            "Immunity": "8",
             "Status Effects": "Undead",
-            "undefined": "3"
+            "undefined": "4"
         },
         {
             "Elementals": "Desert",
-            "Weaknesses": "5"
+            "Immunity": "7"
         },
         {
             "Elementals": "Tundra",
-            "Weaknesses": "6"
+            "Immunity": "7"
         },
         {
             "Elementals": "City",
-            "Weaknesses": "6"
+            "Immunity": "7"
         }
     ]
 }
