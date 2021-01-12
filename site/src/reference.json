@@ -772,7 +772,18 @@
             "Locations": "Cave, Mountain",
             "Weakness": "Water",
             "Type": "Robotic",
-            "Attacks": "Drill: 1d6+3 damage.\r\n\r\nSound Blast: 1d10-1 damage on all enemies.  Causes Mania."
+            "Attacks": "Drill: 1d6+3 damage.\r\n\r\nSound Blast: 1d10-1 damage.  Causes Mania."
+        },
+        {
+            "Name": "Candlestick",
+            "Description": "A sentient candlestick",
+            "HP": "5",
+            "Armor": "2",
+            "Immunity": "Fire",
+            "Locations": "Desert, City",
+            "Weakness": "Air",
+            "Type": "Monster",
+            "Attacks": "Bonk: 1d12 + 3 damage.\r\n\r\nBurn: 1d4 Fire damage to all enemies."
         }
     ],
     "Sample_Custom_Moves": [
@@ -844,16 +855,16 @@
         {
             "Elementals": "Air",
             "Immunity": "5",
-            "Weaknesses": "3",
+            "Weaknesses": "4",
             "Status Effects": "Blind",
             "undefined": "4"
         },
         {
             "Elementals": "Fire",
-            "Immunity": "4",
+            "Immunity": "5",
             "Weaknesses": "6",
             "Status Effects": "Burn",
-            "undefined": "4"
+            "undefined": "5"
         },
         {
             "Elementals": "Water",
@@ -908,7 +919,7 @@
             "Elementals": "Mountain",
             "Immunity": "11",
             "Status Effects": "Monster",
-            "undefined": "16"
+            "undefined": "17"
         },
         {
             "Elementals": "Swamp",
@@ -942,7 +953,7 @@
         },
         {
             "Elementals": "Desert",
-            "Immunity": "7"
+            "Immunity": "8"
         },
         {
             "Elementals": "Tundra",
@@ -950,7 +961,7 @@
         },
         {
             "Elementals": "City",
-            "Immunity": "7"
+            "Immunity": "8"
         }
     ]
 }
