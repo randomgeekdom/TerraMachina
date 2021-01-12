@@ -27,7 +27,25 @@
 					<v-card-text>
 						<a href="/Terra-Machina.pdf" target="_blank">Download Rulebook</a>
 					</v-card-text>
-
+						<v-card-subtitle>Player Sheets</v-card-subtitle>
+					
+						<v-card-text><a href="/Basic_Character_Sheet.pdf" target="_blank">Basic Character Sheet</a></v-card-text>
+						<v-card-text><a href="/Custom_Moves_Sheet.pdf" target="_blank">Custom Moves Sheet</a></v-card-text>
+					
+						<v-card-subtitle>Core Class Sheets</v-card-subtitle>
+						<v-card-text><a href="/Dragoon.pdf" target="_blank">Dragoon</a></v-card-text>
+						<v-card-text><a href="/Engineer.pdf" target="_blank">Engineer</a></v-card-text>
+						<v-card-text><a href="/Gunslinger.pdf" target="_blank">Gunslinger</a></v-card-text>
+						<v-card-text><a href="/Knight.pdf" target="_blank">Knight</a></v-card-text>
+						<v-card-text><a href="/Protector.pdf" target="_blank">Protector</a></v-card-text>
+						<v-card-text><a href="/Scoundrel.pdf" target="_blank">Scoundrel</a></v-card-text>
+						<v-card-text><a href="/Sorcerex.pdf" target="_blank">Sorcerex</a></v-card-text>
+					
+					<!-- <v-card-text>
+						<v-card-subtitle>Other Class Sheets</v-card-subtitle>
+						<a href="/Dragoon.pdf" target="_blank">Dragoon</a>
+						<a href="/Engineer.pdf" target="_blank">Engineer</a>
+					</v-card-text>-->
 			</v-card>
 		</v-flex>
 	</div>
