@@ -232,7 +232,7 @@
         },
         {
             "Name": "Jetpack",
-            "Description": "Allows an individual to fly any distance",
+            "Description": "Allows an individual to fly any distance outside of battle",
             "Cost": "210"
         },
         {
@@ -784,6 +784,17 @@
             "Weakness": "Air",
             "Type": "Monster",
             "Attacks": "Bonk: 1d12 + 3 damage.\r\n\r\nBurn: 1d4 Fire damage to all enemies."
+        },
+        {
+            "Name": "Murder Wasps",
+            "Description": "A swarm of wasps",
+            "HP": "6",
+            "Armor": "0",
+            "Immunity": "Air",
+            "Locations": "Sky, Swamp, Plains",
+            "Weakness": "Ice, Holy, Dark",
+            "Type": "Mob, Insect",
+            "Attacks": "Sting: 1d8 Piercing damage.  Causes Poison"
         }
     ],
     "Sample_Custom_Moves": [
@@ -842,6 +853,10 @@
         {
             "Name": "Entomologist",
             "Description": "+2 to Search when searching for bugs"
+        },
+        {
+            "Name": "Tundra Explorer",
+            "Description": "+2 to Search when in cold climates"
         }
     ],
     "Enemy Data": [
@@ -850,54 +865,67 @@
             "Immunity": "5",
             "Weaknesses": "5",
             "Status Effects": "Bleed",
-            "undefined": "4"
+            "undefined": "2",
+            "Attack Element": "Piercing"
         },
         {
             "Elementals": "Air",
-            "Immunity": "5",
+            "Immunity": "6",
             "Weaknesses": "4",
             "Status Effects": "Blind",
-            "undefined": "4"
+            "undefined": "2",
+            "Attack Element": "Earth"
         },
         {
             "Elementals": "Fire",
             "Immunity": "5",
             "Weaknesses": "6",
             "Status Effects": "Burn",
-            "undefined": "5"
+            "undefined": "1",
+            "Attack Element": "Air"
         },
         {
             "Elementals": "Water",
             "Immunity": "7",
             "Weaknesses": "5",
             "Status Effects": "Mania",
-            "undefined": "4"
+            "undefined": "6",
+            "Attack Element": "Fire"
         },
         {
             "Elementals": "Lightning",
             "Immunity": "5",
             "Weaknesses": "9",
             "Status Effects": "Paralysis",
-            "undefined": "4"
+            "undefined": "4",
+            "Attack Element": "Water"
         },
         {
             "Elementals": "Ice",
             "Immunity": "4",
-            "Weaknesses": "4",
+            "Weaknesses": "5",
             "Status Effects": "Poison",
-            "undefined": "3"
+            "undefined": "7",
+            "Attack Element": "Lightning"
         },
         {
             "Elementals": "Holy",
             "Immunity": "4",
-            "Weaknesses": "4",
+            "Weaknesses": "5",
             "Status Effects": "Scared",
-            "undefined": "4"
+            "undefined": "7",
+            "Attack Element": "Ice"
         },
         {
             "Elementals": "Dark",
             "Immunity": "5",
-            "Weaknesses": "4"
+            "Weaknesses": "5",
+            "Attack Element": "Holy",
+            "undefined": "5"
+        },
+        {
+            "Attack Element": "Dark",
+            "undefined": "1"
         },
         {
             "Elementals": "Locations",
@@ -911,7 +939,7 @@
         },
         {
             "Elementals": "Sky",
-            "Immunity": "7",
+            "Immunity": "8",
             "Status Effects": "Human",
             "undefined": "7"
         },
@@ -923,7 +951,7 @@
         },
         {
             "Elementals": "Swamp",
-            "Immunity": "8",
+            "Immunity": "9",
             "Status Effects": "Robotic",
             "undefined": "5"
         },
@@ -937,17 +965,17 @@
             "Elementals": "Underwater",
             "Immunity": "6",
             "Status Effects": "Insect",
-            "undefined": "5"
+            "undefined": "6"
         },
         {
             "Elementals": "Shore",
             "Immunity": "8",
             "Status Effects": "Mob",
-            "undefined": "5"
+            "undefined": "6"
         },
         {
             "Elementals": "Plains",
-            "Immunity": "8",
+            "Immunity": "9",
             "Status Effects": "Undead",
             "undefined": "4"
         },
