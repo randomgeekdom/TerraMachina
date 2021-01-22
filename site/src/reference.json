@@ -817,6 +817,28 @@
             "Weakness": "Air",
             "Type": "Monster",
             "Attacks": "Blockhead: 1d12 damage.  Causes Paralysis."
+        },
+        {
+            "Name": "Cave Tortoise`",
+            "Description": "A brown tortoise with spikes on its back",
+            "HP": "3",
+            "Armor": "4",
+            "Immunity": "Earth",
+            "Locations": "Cave, Mountain",
+            "Weakness": "Air, Water",
+            "Type": "Animal, Reptilian",
+            "Attacks": "Bite: 1d12 Earth damage.\r\n\r\nSpike Shot: 1d6+1 Earth damage to all enemies.  Causes Bleed."
+        },
+        {
+            "Name": "Sun Fighter",
+            "Description": "A living sun with fists",
+            "HP": "11",
+            "Armor": "0",
+            "Immunity": "Fire",
+            "Locations": "Sky",
+            "Weakness": "Ice, Earth",
+            "Type": "Monster",
+            "Attacks": "Fire Slap: 1d6 Fire damage.\r\n\r\nSunbeam: 1d8-1 damage.  Causes Blind."
         }
     ],
     "Sample_Custom_Moves": [
@@ -892,8 +914,8 @@
     "Enemy Data": [
         {
             "Elementals": "Earth",
-            "Immunity": "5",
-            "Weaknesses": "5",
+            "Immunity": "6",
+            "Weaknesses": "6",
             "Status Effects": "Bleed",
             "undefined": "2",
             "Attack Element": "Piercing"
@@ -901,14 +923,14 @@
         {
             "Elementals": "Air",
             "Immunity": "6",
-            "Weaknesses": "5",
+            "Weaknesses": "6",
             "Status Effects": "Blind",
-            "undefined": "2",
+            "undefined": "4",
             "Attack Element": "Earth"
         },
         {
             "Elementals": "Fire",
-            "Immunity": "5",
+            "Immunity": "6",
             "Weaknesses": "6",
             "Status Effects": "Burn",
             "undefined": "1",
@@ -917,9 +939,9 @@
         {
             "Elementals": "Water",
             "Immunity": "7",
-            "Weaknesses": "5",
+            "Weaknesses": "6",
             "Status Effects": "Mania",
-            "undefined": "6",
+            "undefined": "8",
             "Attack Element": "Fire"
         },
         {
@@ -933,7 +955,7 @@
         {
             "Elementals": "Ice",
             "Immunity": "5",
-            "Weaknesses": "5",
+            "Weaknesses": "6",
             "Status Effects": "Poison",
             "undefined": "7",
             "Attack Element": "Lightning"
@@ -963,19 +985,19 @@
         },
         {
             "Elementals": "Cave",
-            "Immunity": "16",
+            "Immunity": "17",
             "Status Effects": "Animal",
-            "undefined": "17"
+            "undefined": "18"
         },
         {
             "Elementals": "Sky",
-            "Immunity": "8",
+            "Immunity": "9",
             "Status Effects": "Human",
             "undefined": "7"
         },
         {
             "Elementals": "Mountain",
-            "Immunity": "11",
+            "Immunity": "12",
             "Status Effects": "Monster",
             "undefined": "Next Enemy"
         },
