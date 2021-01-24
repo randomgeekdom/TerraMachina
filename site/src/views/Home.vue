@@ -34,8 +34,9 @@
 						<v-card-text><v-btn to="/Custom_Moves_Sheet.pdf" target="_blank">Custom Moves Sheet</v-btn></v-card-text>
 					</v-flex>
 
-					<v-card-subtitle>Core Class Sheets</v-card-subtitle>
+					<v-card-subtitle>Class Sheets</v-card-subtitle>
 					<v-flex class="d-flex flex-row">
+						<v-card-text><v-btn to="/Brute.pdf" target="_blank">Brute</v-btn></v-card-text>
 						<v-card-text><v-btn to="/Dragoon.pdf" target="_blank">Dragoon</v-btn></v-card-text>
 						<v-card-text><v-btn to="/Engineer.pdf" target="_blank">Engineer</v-btn></v-card-text>
 						<v-card-text><v-btn to="/Gunslinger.pdf" target="_blank">Gunslinger</v-btn></v-card-text>
@@ -43,6 +44,7 @@
 						<v-card-text><v-btn to="/Protector.pdf" target="_blank">Protector</v-btn></v-card-text>
 						<v-card-text><v-btn to="/Scoundrel.pdf" target="_blank">Scoundrel</v-btn></v-card-text>
 						<v-card-text><v-btn to="/Sorcerex.pdf" target="_blank">Sorcerex</v-btn></v-card-text>
+						<v-card-text><v-btn to="/Warrior.pdf" target="_blank">Warrior</v-btn></v-card-text>
 					</v-flex>
 			</v-card>
 		</v-flex>
