@@ -325,6 +325,17 @@
             "Attacks": "Drill: 1d6+3 damage.\r\n\r\nSound Blast: 1d10-1 damage.  Causes Mania."
         },
         {
+            "Name": "Cave Tortoise`",
+            "Description": "A brown tortoise with spikes on its back",
+            "HP": "3",
+            "Armor": "4",
+            "Immunity": "Earth",
+            "Locations": "Cave, Mountain",
+            "Weakness": "Air, Water",
+            "Type": "Animal, Reptilian",
+            "Attacks": "Bite: 1d12 Earth damage.\r\n\r\nSpike Shot: 1d6+1 Earth damage to all enemies.  Causes Bleed."
+        },
+        {
             "Name": "Cave Troll",
             "Description": "A troll that lives in a cave.",
             "HP": "11",
@@ -444,6 +455,17 @@
             "Weakness": "Lightning",
             "Type": "Reptilian",
             "Attacks": "Stab: 1d10 damage."
+        },
+        {
+            "Name": "Ghost",
+            "Description": "The ghost of a person who has died. ",
+            "HP": "7",
+            "Armor": "0",
+            "Immunity": "Ice",
+            "Locations": "Swamp, City",
+            "Weakness": "None",
+            "Type": "Undead",
+            "Attacks": "Fright Swipe: 1d8+1 damage.  Causes Scared."
         },
         {
             "Name": "Giant Weasel",
@@ -665,6 +687,17 @@
             "Attacks": "Shred: 1d12 - 1 damage.  Causes Bleed."
         },
         {
+            "Name": "Serpent",
+            "Description": "A giant poisonous snake.",
+            "HP": "16",
+            "Armor": "1",
+            "Immunity": "Dark",
+            "Locations": "Underwater, Swamp, Plains",
+            "Weakness": "None",
+            "Type": "Reptilian",
+            "Attacks": "Bite: 1d4 damage.  Causes Poison."
+        },
+        {
             "Name": "Shard Swarm",
             "Description": "Flying intelligent pieces of glass",
             "HP": "12",
@@ -718,6 +751,28 @@
             "Weakness": "None",
             "Type": "Robotic, Insect",
             "Attacks": "Laser Shot: 1d6 damage"
+        },
+        {
+            "Name": "Stonewall",
+            "Description": "A literal living wall of stone",
+            "HP": "11",
+            "Armor": "6",
+            "Immunity": "Holy",
+            "Locations": "City",
+            "Weakness": "Air",
+            "Type": "Monster",
+            "Attacks": "Blockhead: 1d12 damage.  Causes Paralysis."
+        },
+        {
+            "Name": "Sun Fighter",
+            "Description": "A living sun with fists",
+            "HP": "11",
+            "Armor": "0",
+            "Immunity": "Fire",
+            "Locations": "Sky",
+            "Weakness": "Ice, Earth",
+            "Type": "Monster",
+            "Attacks": "Fire Slap: 1d6 Fire damage.\r\n\r\nSunbeam: 1d8-1 damage.  Causes Blind."
         },
         {
             "Name": "Swarm of Mosquitos",
@@ -806,39 +861,6 @@
             "Weakness": "Earth",
             "Type": "Animal, Reptilian",
             "Attacks": "Wind Blast: 1d10 Air damage\r\n\r\nScratch: 1d8 - 1 Piercing damage"
-        },
-        {
-            "Name": "Stonewall",
-            "Description": "A literal living wall of stone",
-            "HP": "11",
-            "Armor": "6",
-            "Immunity": "Holy",
-            "Locations": "City",
-            "Weakness": "Air",
-            "Type": "Monster",
-            "Attacks": "Blockhead: 1d12 damage.  Causes Paralysis."
-        },
-        {
-            "Name": "Cave Tortoise`",
-            "Description": "A brown tortoise with spikes on its back",
-            "HP": "3",
-            "Armor": "4",
-            "Immunity": "Earth",
-            "Locations": "Cave, Mountain",
-            "Weakness": "Air, Water",
-            "Type": "Animal, Reptilian",
-            "Attacks": "Bite: 1d12 Earth damage.\r\n\r\nSpike Shot: 1d6+1 Earth damage to all enemies.  Causes Bleed."
-        },
-        {
-            "Name": "Sun Fighter",
-            "Description": "A living sun with fists",
-            "HP": "11",
-            "Armor": "0",
-            "Immunity": "Fire",
-            "Locations": "Sky",
-            "Weakness": "Ice, Earth",
-            "Type": "Monster",
-            "Attacks": "Fire Slap: 1d6 Fire damage.\r\n\r\nSunbeam: 1d8-1 damage.  Causes Blind."
         }
     ],
     "Sample_Custom_Moves": [
@@ -954,7 +976,7 @@
         },
         {
             "Elementals": "Ice",
-            "Immunity": "5",
+            "Immunity": "6",
             "Weaknesses": "6",
             "Status Effects": "Poison",
             "undefined": "7",
@@ -970,7 +992,7 @@
         },
         {
             "Elementals": "Dark",
-            "Immunity": "5",
+            "Immunity": "6",
             "Weaknesses": "5",
             "Attack Element": "Holy",
             "undefined": "5"
@@ -1003,7 +1025,7 @@
         },
         {
             "Elementals": "Swamp",
-            "Immunity": "9",
+            "Immunity": "11",
             "Status Effects": "Robotic",
             "undefined": "5"
         },
@@ -1015,19 +1037,19 @@
         },
         {
             "Elementals": "Underwater",
-            "Immunity": "6",
+            "Immunity": "7",
             "Status Effects": "Insect",
-            "undefined": "4"
+            "undefined": "5"
         },
         {
             "Elementals": "Shore",
             "Immunity": "8",
             "Status Effects": "Mob",
-            "undefined": "6"
+            "undefined": "7"
         },
         {
             "Elementals": "Plains",
-            "Immunity": "9",
+            "Immunity": "10",
             "Status Effects": "Undead",
             "undefined": "5"
         },
@@ -1041,7 +1063,7 @@
         },
         {
             "Elementals": "City",
-            "Immunity": "9"
+            "Immunity": "10"
         }
     ]
 }
