@@ -66,7 +66,7 @@ export default class Bestiary extends Vue {
   }
 
   public mounted(){
-    this.search = this.$route.query.name[0] || "";
+    this.search = this.$route.query.name.toString();
   }
 
   // public AddToEncounter(enemy: Enemy) {
