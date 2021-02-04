@@ -31,6 +31,11 @@
             "Cost": "5"
         },
         {
+            "Name": "Boat",
+            "Description": "A water craft that carries 3 people and can cross still water",
+            "Cost": "180"
+        },
+        {
             "Name": "Brain Boost",
             "Description": "+2 to next Deduction Roll",
             "Cost": "15"
@@ -41,7 +46,7 @@
             "Cost": "15"
         },
         {
-            "Name": "Brew",
+            "Name": "Calming Agent",
             "Description": "Immediately heals Scared",
             "Cost": "6"
         },
@@ -76,7 +81,7 @@
             "Cost": "15"
         },
         {
-            "Name": "Encyclopedia",
+            "Name": "Index Card",
             "Description": "+2 to next Knowledge Roll",
             "Cost": "15"
         },
@@ -121,14 +126,39 @@
             "Cost": "9"
         },
         {
+            "Name": "Helicopter",
+            "Description": "A flying craft that carries 4 people and can cross up to 8 areas before needing to land",
+            "Cost": "270"
+        },
+        {
             "Name": "Jerky",
             "Description": "Restore 3 SP",
             "Cost": "3"
         },
         {
+            "Name": "Jetpack",
+            "Description": "Allows an individual to fly any distance outside of battle",
+            "Cost": "210"
+        },
+        {
             "Name": "Lazarus Tonic",
             "Description": "Revives a fainted comrade in battle",
             "Cost": "100"
+        },
+        {
+            "Name": "Light Airship",
+            "Description": "A flying craft that carries 7 people and can cross long distances",
+            "Cost": "330"
+        },
+        {
+            "Name": "Light Ship",
+            "Description": "A water craft that carries 11 people and can cross oceans",
+            "Cost": "300"
+        },
+        {
+            "Name": "Lockpick",
+            "Description": "Picking a lock does not require a Tinker roll",
+            "Cost": "10"
         },
         {
             "Name": "Magnifier",
@@ -186,6 +216,11 @@
             "Cost": "15"
         },
         {
+            "Name": "Stimulant",
+            "Description": "Immediately heals Paralysis",
+            "Cost": "6"
+        },
+        {
             "Name": "Tincture",
             "Description": "Heals 1d10 HP and 1d10 SP",
             "Cost": "30"
@@ -211,39 +246,44 @@
             "Cost": "6"
         },
         {
-            "Name": "Lockpick",
-            "Description": "Picking a lock does not require a Tinker roll",
-            "Cost": "10"
-        },
-        {
-            "Name": "Boat",
-            "Description": "A water craft that carries 3 people and can cross still water",
-            "Cost": "180"
-        },
-        {
             "Name": "Yacht",
             "Description": "A water craft that carries 5 people and can cross oceans",
             "Cost": "260"
         },
         {
-            "Name": "Light Ship",
-            "Description": "A water craft that carries 11 people and can cross oceans",
-            "Cost": "300"
+            "Name": "Skinguard",
+            "Description": "Prevents Bleed twice before wearing off.",
+            "Cost": "3"
         },
         {
-            "Name": "Jetpack",
-            "Description": "Allows an individual to fly any distance outside of battle",
-            "Cost": "210"
+            "Name": "Eyeguard",
+            "Description": "Prevents Blind twice before wearing off.",
+            "Cost": "3"
         },
         {
-            "Name": "Helicopter",
-            "Description": "A flying craft that carries 4 people and can cross up to 8 areas before needing to land",
-            "Cost": "270"
+            "Name": "Flameguard",
+            "Description": "Prevents Burn twice before wearing off.",
+            "Cost": "3"
         },
         {
-            "Name": "Light Airship",
-            "Description": "A flying craft that carries 7 people and can cross long distances",
-            "Cost": "330"
+            "Name": "Mindguard",
+            "Description": "Prevents Mania twice before wearing off.",
+            "Cost": "3"
+        },
+        {
+            "Name": "Boneguard",
+            "Description": "Prevents Paralysis twice before wearing off.",
+            "Cost": "3"
+        },
+        {
+            "Name": "Vaccine",
+            "Description": "Prevents Poison twice before wearing off.",
+            "Cost": "3"
+        },
+        {
+            "Name": "Willguard",
+            "Description": "Prevents Scared twice before wearing off.",
+            "Cost": "3"
         }
     ],
     "Bestiary": [
@@ -378,6 +418,17 @@
             "Weakness": "Holy",
             "Type": "Animal",
             "Attacks": "Bite: 1d10 damage"
+        },
+        {
+            "Name": "Dryad",
+            "Description": "A humanoid guardian of the forest with a treelike body.",
+            "HP": "10",
+            "Armor": "2",
+            "Immunity": "Holy",
+            "Locations": "Forest",
+            "Weakness": "Dark",
+            "Type": "Monster",
+            "Attacks": "Smack: 1d6 damage."
         },
         {
             "Name": "Eagle Flock",
@@ -984,7 +1035,7 @@
         },
         {
             "Elementals": "Holy",
-            "Immunity": "5",
+            "Immunity": "6",
             "Weaknesses": "6",
             "Status Effects": "Scared",
             "undefined": "7",
@@ -993,7 +1044,7 @@
         {
             "Elementals": "Dark",
             "Immunity": "6",
-            "Weaknesses": "5",
+            "Weaknesses": "6",
             "Attack Element": "Holy",
             "undefined": "5"
         },
@@ -1031,9 +1082,9 @@
         },
         {
             "Elementals": "Forest",
-            "Immunity": "12",
+            "Immunity": "13",
             "Status Effects": "Reptilian",
-            "undefined": "5"
+            "undefined": "6"
         },
         {
             "Elementals": "Underwater",
