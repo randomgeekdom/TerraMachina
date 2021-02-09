@@ -121,11 +121,6 @@
             "Cost": "6"
         },
         {
-            "Name": "Ground Beetle Armor",
-            "Description": "+1 Armor with Earth attribute",
-            "Cost": "9"
-        },
-        {
             "Name": "Helicopter",
             "Description": "A flying craft that carries 4 people and can cross up to 8 areas before needing to land",
             "Cost": "270"
@@ -912,6 +907,28 @@
             "Weakness": "Earth",
             "Type": "Animal, Reptilian",
             "Attacks": "Wind Blast: 1d10 Air damage\r\n\r\nScratch: 1d8 - 1 Piercing damage"
+        },
+        {
+            "Name": "Madbot",
+            "Description": "A flying robot with a helicopter propeller and crazy eyes.",
+            "HP": "12",
+            "Armor": "2",
+            "Immunity": "Lightning",
+            "Locations": "City, Sky",
+            "Weakness": "Earth",
+            "Type": "Robotic",
+            "Attacks": "Crazy Attack: 1d6+2 damage.  Causes Mania."
+        },
+        {
+            "Name": "Scorch-pion",
+            "Description": "A robotic scorpion with fiery, poisonout tail.",
+            "HP": "20",
+            "Armor": "1",
+            "Immunity": "Ice",
+            "Locations": "Desert",
+            "Weakness": "Holy",
+            "Type": "Robotic",
+            "Attacks": "Sting: 1d6 Fire damage.  Causes Poison."
         }
     ],
     "Sample_Custom_Moves": [
@@ -988,7 +1005,7 @@
         {
             "Elementals": "Earth",
             "Immunity": "6",
-            "Weaknesses": "6",
+            "Weaknesses": "7",
             "Status Effects": "Bleed",
             "undefined": "2",
             "Attack Element": "Piercing"
@@ -1014,12 +1031,12 @@
             "Immunity": "7",
             "Weaknesses": "6",
             "Status Effects": "Mania",
-            "undefined": "8",
+            "undefined": "9",
             "Attack Element": "Fire"
         },
         {
             "Elementals": "Lightning",
-            "Immunity": "5",
+            "Immunity": "6",
             "Weaknesses": "9",
             "Status Effects": "Paralysis",
             "undefined": "4",
@@ -1027,7 +1044,7 @@
         },
         {
             "Elementals": "Ice",
-            "Immunity": "6",
+            "Immunity": "7",
             "Weaknesses": "6",
             "Status Effects": "Poison",
             "undefined": "7",
@@ -1036,7 +1053,7 @@
         {
             "Elementals": "Holy",
             "Immunity": "6",
-            "Weaknesses": "6",
+            "Weaknesses": "7",
             "Status Effects": "Scared",
             "undefined": "7",
             "Attack Element": "Ice"
@@ -1064,7 +1081,7 @@
         },
         {
             "Elementals": "Sky",
-            "Immunity": "9",
+            "Immunity": "10",
             "Status Effects": "Human",
             "undefined": "7"
         },
@@ -1078,7 +1095,7 @@
             "Elementals": "Swamp",
             "Immunity": "11",
             "Status Effects": "Robotic",
-            "undefined": "5"
+            "undefined": "6"
         },
         {
             "Elementals": "Forest",
@@ -1102,11 +1119,11 @@
             "Elementals": "Plains",
             "Immunity": "10",
             "Status Effects": "Undead",
-            "undefined": "5"
+            "undefined": "6"
         },
         {
             "Elementals": "Desert",
-            "Immunity": "8"
+            "Immunity": "9"
         },
         {
             "Elementals": "Tundra",
@@ -1114,7 +1131,7 @@
         },
         {
             "Elementals": "City",
-            "Immunity": "10"
+            "Immunity": "11"
         }
     ]
 }
