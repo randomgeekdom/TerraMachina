@@ -929,6 +929,28 @@
             "Weakness": "Holy",
             "Type": "Robotic",
             "Attacks": "Sting: 1d6 Fire damage.  Causes Poison."
+        },
+        {
+            "Name": "Fireflies",
+            "Description": "A swarm of burning bugs",
+            "HP": "9",
+            "Armor": "1",
+            "Immunity": "Fire",
+            "Locations": "Sky, Swamp",
+            "Weakness": "Water",
+            "Type": "Insect, Mob",
+            "Attacks": "Burn: 1d6 Fire damage.\r\n\r\nSting: 1d10-3 damage.  Causes Paralysis."
+        },
+        {
+            "Name": "Knifefish",
+            "Description": "A fish with a knife-like nose",
+            "HP": "5",
+            "Armor": "0",
+            "Immunity": "Dark",
+            "Locations": "Underwater",
+            "Weakness": "Ice",
+            "Type": "Animal",
+            "Attacks": "Cut: 1d4 damage.  Causes Bleed."
         }
     ],
     "Sample_Custom_Moves": [
@@ -1020,7 +1042,7 @@
         },
         {
             "Elementals": "Fire",
-            "Immunity": "6",
+            "Immunity": "7",
             "Weaknesses": "6",
             "Status Effects": "Burn",
             "undefined": "1",
@@ -1029,9 +1051,9 @@
         {
             "Elementals": "Water",
             "Immunity": "7",
-            "Weaknesses": "6",
+            "Weaknesses": "7",
             "Status Effects": "Mania",
-            "undefined": "9",
+            "undefined": "10",
             "Attack Element": "Fire"
         },
         {
@@ -1045,7 +1067,7 @@
         {
             "Elementals": "Ice",
             "Immunity": "7",
-            "Weaknesses": "6",
+            "Weaknesses": "7",
             "Status Effects": "Poison",
             "undefined": "7",
             "Attack Element": "Lightning"
@@ -1060,7 +1082,7 @@
         },
         {
             "Elementals": "Dark",
-            "Immunity": "6",
+            "Immunity": "7",
             "Weaknesses": "6",
             "Attack Element": "Holy",
             "undefined": "5"
@@ -1077,11 +1099,11 @@
             "Elementals": "Cave",
             "Immunity": "17",
             "Status Effects": "Animal",
-            "undefined": "18"
+            "undefined": "19"
         },
         {
             "Elementals": "Sky",
-            "Immunity": "10",
+            "Immunity": "11",
             "Status Effects": "Human",
             "undefined": "7"
         },
@@ -1093,7 +1115,7 @@
         },
         {
             "Elementals": "Swamp",
-            "Immunity": "11",
+            "Immunity": "12",
             "Status Effects": "Robotic",
             "undefined": "6"
         },
@@ -1105,7 +1127,7 @@
         },
         {
             "Elementals": "Underwater",
-            "Immunity": "7",
+            "Immunity": "8",
             "Status Effects": "Insect",
             "undefined": "5"
         },
@@ -1113,7 +1135,7 @@
             "Elementals": "Shore",
             "Immunity": "8",
             "Status Effects": "Mob",
-            "undefined": "7"
+            "undefined": "8"
         },
         {
             "Elementals": "Plains",
