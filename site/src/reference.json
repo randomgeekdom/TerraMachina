@@ -481,6 +481,17 @@
             "Attacks": "Fireball: 1d10 - 1 Fire damage.  Causes Burn."
         },
         {
+            "Name": "Fireflies",
+            "Description": "A swarm of burning bugs",
+            "HP": "9",
+            "Armor": "1",
+            "Immunity": "Fire",
+            "Locations": "Sky, Swamp",
+            "Weakness": "Water",
+            "Type": "Insect, Mob",
+            "Attacks": "Burn: 1d6 Fire damage.\r\n\r\nSting: 1d10-3 damage.  Causes Paralysis."
+        },
+        {
             "Name": "Flying Drone",
             "Description": "A robot in the air that can shoot an enemy",
             "HP": "10",
@@ -590,6 +601,17 @@
             "Attacks": "Tentacle Attack: 1d12+3 damage to all enemies.  Causes Paralysis.\r\n\r\nWater Spray: 1d8 Water damage.  "
         },
         {
+            "Name": "Knifefish",
+            "Description": "A fish with a knife-like nose",
+            "HP": "5",
+            "Armor": "0",
+            "Immunity": "Dark",
+            "Locations": "Underwater",
+            "Weakness": "Ice",
+            "Type": "Animal",
+            "Attacks": "Cut: 1d4 damage.  Causes Bleed."
+        },
+        {
             "Name": "Living Snow",
             "Description": "A group of snowflakes that seem to be sentient",
             "HP": "4",
@@ -610,6 +632,17 @@
             "Weakness": "Air",
             "Type": "Monster, Reptilian",
             "Attacks": "Slash: 1d8 damage.  Causes Bleed.\r\n\r\nBite: 1d10-1 damage. "
+        },
+        {
+            "Name": "Madbot",
+            "Description": "A flying robot with a helicopter propeller and crazy eyes.",
+            "HP": "12",
+            "Armor": "2",
+            "Immunity": "Lightning",
+            "Locations": "City, Sky",
+            "Weakness": "Earth",
+            "Type": "Robotic",
+            "Attacks": "Crazy Attack: 1d6+2 damage.  Causes Mania."
         },
         {
             "Name": "Magmus",
@@ -731,6 +764,17 @@
             "Weakness": "Lightning",
             "Type": "Robotic",
             "Attacks": "Shred: 1d12 - 1 damage.  Causes Bleed."
+        },
+        {
+            "Name": "Scorch-pion",
+            "Description": "A robotic scorpion with fiery, poisonout tail.",
+            "HP": "20",
+            "Armor": "1",
+            "Immunity": "Ice",
+            "Locations": "Desert",
+            "Weakness": "Holy",
+            "Type": "Robotic",
+            "Attacks": "Sting: 1d6 Fire damage.  Causes Poison."
         },
         {
             "Name": "Serpent",
@@ -909,48 +953,26 @@
             "Attacks": "Wind Blast: 1d10 Air damage\r\n\r\nScratch: 1d8 - 1 Piercing damage"
         },
         {
-            "Name": "Madbot",
-            "Description": "A flying robot with a helicopter propeller and crazy eyes.",
-            "HP": "12",
-            "Armor": "2",
-            "Immunity": "Lightning",
-            "Locations": "City, Sky",
-            "Weakness": "Earth",
-            "Type": "Robotic",
-            "Attacks": "Crazy Attack: 1d6+2 damage.  Causes Mania."
-        },
-        {
-            "Name": "Scorch-pion",
-            "Description": "A robotic scorpion with fiery, poisonout tail.",
-            "HP": "20",
-            "Armor": "1",
-            "Immunity": "Ice",
-            "Locations": "Desert",
-            "Weakness": "Holy",
-            "Type": "Robotic",
-            "Attacks": "Sting: 1d6 Fire damage.  Causes Poison."
-        },
-        {
-            "Name": "Fireflies",
-            "Description": "A swarm of burning bugs",
-            "HP": "9",
-            "Armor": "1",
-            "Immunity": "Fire",
-            "Locations": "Sky, Swamp",
-            "Weakness": "Water",
-            "Type": "Insect, Mob",
-            "Attacks": "Burn: 1d6 Fire damage.\r\n\r\nSting: 1d10-3 damage.  Causes Paralysis."
-        },
-        {
-            "Name": "Knifefish",
-            "Description": "A fish with a knife-like nose",
-            "HP": "5",
+            "Name": "Boogeyman",
+            "Description": "A scary unded creature.",
+            "HP": "4",
             "Armor": "0",
-            "Immunity": "Dark",
-            "Locations": "Underwater",
-            "Weakness": "Ice",
-            "Type": "Animal",
-            "Attacks": "Cut: 1d4 damage.  Causes Bleed."
+            "Immunity": "Air",
+            "Locations": "City",
+            "Weakness": "Fire",
+            "Type": "Undead",
+            "Attacks": "Scare Strike: 1d6 damage.  Causes Scared."
+        },
+        {
+            "Name": "Mud Monster",
+            "Description": "An amorphous monster made of mud.",
+            "HP": "7",
+            "Armor": "1",
+            "Immunity": "Earth",
+            "Locations": "Swamp, Mountain, Cave, Plains",
+            "Weakness": "Air",
+            "Type": "Monster",
+            "Attacks": "Mud Punch: 1d6 damage.  Causes Blind"
         }
     ],
     "Sample_Custom_Moves": [
@@ -1026,7 +1048,7 @@
     "Enemy Data": [
         {
             "Elementals": "Earth",
-            "Immunity": "6",
+            "Immunity": "7",
             "Weaknesses": "7",
             "Status Effects": "Bleed",
             "undefined": "2",
@@ -1034,8 +1056,8 @@
         },
         {
             "Elementals": "Air",
-            "Immunity": "6",
-            "Weaknesses": "6",
+            "Immunity": "7",
+            "Weaknesses": "7",
             "Status Effects": "Blind",
             "undefined": "4",
             "Attack Element": "Earth"
@@ -1043,7 +1065,7 @@
         {
             "Elementals": "Fire",
             "Immunity": "7",
-            "Weaknesses": "6",
+            "Weaknesses": "7",
             "Status Effects": "Burn",
             "undefined": "1",
             "Attack Element": "Air"
@@ -1097,7 +1119,7 @@
         },
         {
             "Elementals": "Cave",
-            "Immunity": "17",
+            "Immunity": "18",
             "Status Effects": "Animal",
             "undefined": "19"
         },
@@ -1109,13 +1131,13 @@
         },
         {
             "Elementals": "Mountain",
-            "Immunity": "12",
+            "Immunity": "13",
             "Status Effects": "Monster",
             "undefined": "Next Enemy"
         },
         {
             "Elementals": "Swamp",
-            "Immunity": "12",
+            "Immunity": "13",
             "Status Effects": "Robotic",
             "undefined": "6"
         },
@@ -1129,7 +1151,7 @@
             "Elementals": "Underwater",
             "Immunity": "8",
             "Status Effects": "Insect",
-            "undefined": "5"
+            "undefined": "6"
         },
         {
             "Elementals": "Shore",
@@ -1139,9 +1161,9 @@
         },
         {
             "Elementals": "Plains",
-            "Immunity": "10",
+            "Immunity": "11",
             "Status Effects": "Undead",
-            "undefined": "6"
+            "undefined": "7"
         },
         {
             "Elementals": "Desert",
@@ -1153,7 +1175,7 @@
         },
         {
             "Elementals": "City",
-            "Immunity": "11"
+            "Immunity": "12"
         }
     ]
 }
