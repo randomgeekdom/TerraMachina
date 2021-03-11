@@ -327,6 +327,17 @@
             "Attacks": "Axe Attack: 1d8 damage"
         },
         {
+            "Name": "Boogeyman",
+            "Description": "A scary unded creature.",
+            "HP": "4",
+            "Armor": "0",
+            "Immunity": "Air",
+            "Locations": "City",
+            "Weakness": "Fire",
+            "Type": "Undead",
+            "Attacks": "Scare Strike: 1d6 damage.  Causes Scared."
+        },
+        {
             "Name": "Brown Dragon",
             "Description": "Dragons the size of human beings with thick brown scales",
             "HP": "10",
@@ -678,6 +689,17 @@
             "Attacks": "Clamp: 1d8+1 damage"
         },
         {
+            "Name": "Mud Monster",
+            "Description": "An amorphous monster made of mud.",
+            "HP": "7",
+            "Armor": "1",
+            "Immunity": "Earth",
+            "Locations": "Swamp, Mountain, Cave, Plains",
+            "Weakness": "Air",
+            "Type": "Monster",
+            "Attacks": "Mud Punch: 1d6 damage.  Causes Blind"
+        },
+        {
             "Name": "Murder Wasps",
             "Description": "A swarm of wasps",
             "HP": "6",
@@ -953,26 +975,15 @@
             "Attacks": "Wind Blast: 1d10 Air damage\r\n\r\nScratch: 1d8 - 1 Piercing damage"
         },
         {
-            "Name": "Boogeyman",
-            "Description": "A scary unded creature.",
-            "HP": "4",
+            "Name": "Fairies",
+            "Description": "A group of tiny humanoids with wings.",
+            "HP": "13",
             "Armor": "0",
-            "Immunity": "Air",
-            "Locations": "City",
-            "Weakness": "Fire",
-            "Type": "Undead",
-            "Attacks": "Scare Strike: 1d6 damage.  Causes Scared."
-        },
-        {
-            "Name": "Mud Monster",
-            "Description": "An amorphous monster made of mud.",
-            "HP": "7",
-            "Armor": "1",
-            "Immunity": "Earth",
-            "Locations": "Swamp, Mountain, Cave, Plains",
-            "Weakness": "Air",
-            "Type": "Monster",
-            "Attacks": "Mud Punch: 1d6 damage.  Causes Blind"
+            "Immunity": "Holy",
+            "Locations": "Sky",
+            "Weakness": "Dark",
+            "Type": "Monster, Mob",
+            "Attacks": "Blind Swarm: 1d4 causes Blind"
         }
     ],
     "Sample_Custom_Moves": [
@@ -1096,7 +1107,7 @@
         },
         {
             "Elementals": "Holy",
-            "Immunity": "6",
+            "Immunity": "7",
             "Weaknesses": "7",
             "Status Effects": "Scared",
             "undefined": "7",
@@ -1105,7 +1116,7 @@
         {
             "Elementals": "Dark",
             "Immunity": "7",
-            "Weaknesses": "6",
+            "Weaknesses": "7",
             "Attack Element": "Holy",
             "undefined": "5"
         },
@@ -1125,7 +1136,7 @@
         },
         {
             "Elementals": "Sky",
-            "Immunity": "11",
+            "Immunity": "12",
             "Status Effects": "Human",
             "undefined": "7"
         },
@@ -1145,7 +1156,7 @@
             "Elementals": "Forest",
             "Immunity": "13",
             "Status Effects": "Reptilian",
-            "undefined": "6"
+            "undefined": "7"
         },
         {
             "Elementals": "Underwater",
