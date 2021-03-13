@@ -984,6 +984,17 @@
             "Weakness": "Dark",
             "Type": "Monster, Mob",
             "Attacks": "Blind Swarm: 1d4 causes Blind"
+        },
+        {
+            "Name": "Thunder Bugs",
+            "Description": "A swarm of flying bugs that burst with electricity.",
+            "HP": "22",
+            "Armor": "1",
+            "Immunity": "Lightning",
+            "Locations": "Tundra, Plains",
+            "Weakness": "Ice",
+            "Type": "Mob, Insect",
+            "Attacks": "Electric Bite: 1d4+1 Lightning damage.  Causes Mania."
         }
     ],
     "Sample_Custom_Moves": [
@@ -1091,7 +1102,7 @@
         },
         {
             "Elementals": "Lightning",
-            "Immunity": "6",
+            "Immunity": "7",
             "Weaknesses": "9",
             "Status Effects": "Paralysis",
             "undefined": "4",
@@ -1100,9 +1111,9 @@
         {
             "Elementals": "Ice",
             "Immunity": "7",
-            "Weaknesses": "7",
+            "Weaknesses": "8",
             "Status Effects": "Poison",
-            "undefined": "7",
+            "undefined": "8",
             "Attack Element": "Lightning"
         },
         {
@@ -1150,7 +1161,7 @@
             "Elementals": "Swamp",
             "Immunity": "13",
             "Status Effects": "Robotic",
-            "undefined": "6"
+            "undefined": "7"
         },
         {
             "Elementals": "Forest",
@@ -1172,7 +1183,7 @@
         },
         {
             "Elementals": "Plains",
-            "Immunity": "11",
+            "Immunity": "12",
             "Status Effects": "Undead",
             "undefined": "7"
         },
@@ -1182,7 +1193,7 @@
         },
         {
             "Elementals": "Tundra",
-            "Immunity": "8"
+            "Immunity": "9"
         },
         {
             "Elementals": "City",
