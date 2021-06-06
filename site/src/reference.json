@@ -316,6 +316,17 @@
             "Attacks": "Bite: 1d12 damage.  Causes Mania"
         },
         {
+            "Name": "Blue Dragon",
+            "Description": "A wingless dragon that can breathe underwater",
+            "HP": "20",
+            "Armor": "3",
+            "Immunity": "Water, Ice",
+            "Locations": "Underwater, Shore",
+            "Weakness": "Air",
+            "Type": "Reptilian",
+            "Attacks": "Swipe: 1d6\r\n\r\nWater Blast: 1d10-1 Water damage."
+        },
+        {
             "Name": "Bog Knight",
             "Description": "An armored figure wielding an axe that hangs out in swamps",
             "HP": "10",
@@ -468,6 +479,17 @@
             "Weakness": "None",
             "Type": "Monster, Human",
             "Attacks": "Manic Shot: 1d8 -1 damage.  Causes mania"
+        },
+        {
+            "Name": "Fairies",
+            "Description": "A group of tiny humanoids with wings.",
+            "HP": "13",
+            "Armor": "0",
+            "Immunity": "Holy",
+            "Locations": "Sky",
+            "Weakness": "Dark",
+            "Type": "Monster, Mob",
+            "Attacks": "Blind Swarm: 1d4 causes Blind"
         },
         {
             "Name": "Fire Scorpion",
@@ -909,6 +931,17 @@
             "Attacks": "Claws: 1d6-1 damage.  Causes Scared.\r\n\r\nLightning Strike: 1d10 Lightning damage."
         },
         {
+            "Name": "Thunder Bugs",
+            "Description": "A swarm of flying bugs that burst with electricity.",
+            "HP": "22",
+            "Armor": "1",
+            "Immunity": "Lightning",
+            "Locations": "Tundra, Plains",
+            "Weakness": "Ice",
+            "Type": "Mob, Insect",
+            "Attacks": "Electric Bite: 1d4+1 Lightning damage.  Causes Mania."
+        },
+        {
             "Name": "Thunder Wraith",
             "Description": "An undead creature with lightning power",
             "HP": "8",
@@ -973,28 +1006,6 @@
             "Weakness": "Earth",
             "Type": "Animal, Reptilian",
             "Attacks": "Wind Blast: 1d10 Air damage\r\n\r\nScratch: 1d8 - 1 Piercing damage"
-        },
-        {
-            "Name": "Fairies",
-            "Description": "A group of tiny humanoids with wings.",
-            "HP": "13",
-            "Armor": "0",
-            "Immunity": "Holy",
-            "Locations": "Sky",
-            "Weakness": "Dark",
-            "Type": "Monster, Mob",
-            "Attacks": "Blind Swarm: 1d4 causes Blind"
-        },
-        {
-            "Name": "Thunder Bugs",
-            "Description": "A swarm of flying bugs that burst with electricity.",
-            "HP": "22",
-            "Armor": "1",
-            "Immunity": "Lightning",
-            "Locations": "Tundra, Plains",
-            "Weakness": "Ice",
-            "Type": "Mob, Insect",
-            "Attacks": "Electric Bite: 1d4+1 Lightning damage.  Causes Mania."
         }
     ],
     "Sample_Custom_Moves": [
@@ -1079,7 +1090,7 @@
         {
             "Elementals": "Air",
             "Immunity": "7",
-            "Weaknesses": "7",
+            "Weaknesses": "8",
             "Status Effects": "Blind",
             "undefined": "4",
             "Attack Element": "Earth"
@@ -1094,7 +1105,7 @@
         },
         {
             "Elementals": "Water",
-            "Immunity": "7",
+            "Immunity": "8",
             "Weaknesses": "7",
             "Status Effects": "Mania",
             "undefined": "10",
@@ -1105,12 +1116,12 @@
             "Immunity": "7",
             "Weaknesses": "9",
             "Status Effects": "Paralysis",
-            "undefined": "4",
+            "undefined": "6",
             "Attack Element": "Water"
         },
         {
             "Elementals": "Ice",
-            "Immunity": "7",
+            "Immunity": "8",
             "Weaknesses": "8",
             "Status Effects": "Poison",
             "undefined": "8",
@@ -1171,15 +1182,15 @@
         },
         {
             "Elementals": "Underwater",
-            "Immunity": "8",
+            "Immunity": "9",
             "Status Effects": "Insect",
             "undefined": "6"
         },
         {
             "Elementals": "Shore",
-            "Immunity": "8",
+            "Immunity": "9",
             "Status Effects": "Mob",
-            "undefined": "8"
+            "undefined": "9"
         },
         {
             "Elementals": "Plains",
