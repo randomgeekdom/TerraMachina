@@ -799,6 +799,17 @@
             "Attacks": "Holy Strike: 1d6 Holy damage\r\n\r\nBlinding Light: 1d10 -2 Holy damage.  Causes Blind"
         },
         {
+            "Name": "Sandblade",
+            "Description": "A desert-dweller that's good with a knife",
+            "HP": "11",
+            "Armor": "1",
+            "Immunity": "Dark",
+            "Locations": "Desert",
+            "Weakness": "Water",
+            "Type": "Human",
+            "Attacks": "Cut: 1d4 damage.  Causes Bleed."
+        },
+        {
             "Name": "Sawbot",
             "Description": "A robot with buzzsaw for hands",
             "HP": "8",
@@ -1106,7 +1117,7 @@
         {
             "Elementals": "Water",
             "Immunity": "8",
-            "Weaknesses": "7",
+            "Weaknesses": "8",
             "Status Effects": "Mania",
             "undefined": "10",
             "Attack Element": "Fire"
@@ -1137,7 +1148,7 @@
         },
         {
             "Elementals": "Dark",
-            "Immunity": "7",
+            "Immunity": "8",
             "Weaknesses": "7",
             "Attack Element": "Holy",
             "undefined": "5"
@@ -1160,7 +1171,7 @@
             "Elementals": "Sky",
             "Immunity": "12",
             "Status Effects": "Human",
-            "undefined": "7"
+            "undefined": "8"
         },
         {
             "Elementals": "Mountain",
@@ -1200,7 +1211,7 @@
         },
         {
             "Elementals": "Desert",
-            "Immunity": "9"
+            "Immunity": "10"
         },
         {
             "Elementals": "Tundra",
