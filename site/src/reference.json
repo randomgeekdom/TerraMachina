@@ -1017,6 +1017,17 @@
             "Weakness": "Earth",
             "Type": "Animal, Reptilian",
             "Attacks": "Wind Blast: 1d10 Air damage\r\n\r\nScratch: 1d8 - 1 Piercing damage"
+        },
+        {
+            "Name": "Wakebot",
+            "Description": "A small robot that rides the coastline.",
+            "HP": "6",
+            "Armor": "1",
+            "Immunity": "Lightning",
+            "Locations": "Shore",
+            "Weakness": "Dark",
+            "Type": "Robotic",
+            "Attacks": "Lightning Strike: 1d8 Lightning damage.  Causes Paralysis."
         }
     ],
     "Sample_Custom_Moves": [
@@ -1124,7 +1135,7 @@
         },
         {
             "Elementals": "Lightning",
-            "Immunity": "7",
+            "Immunity": "8",
             "Weaknesses": "9",
             "Status Effects": "Paralysis",
             "undefined": "6",
@@ -1135,7 +1146,7 @@
             "Immunity": "8",
             "Weaknesses": "8",
             "Status Effects": "Poison",
-            "undefined": "8",
+            "undefined": "10",
             "Attack Element": "Lightning"
         },
         {
@@ -1149,7 +1160,7 @@
         {
             "Elementals": "Dark",
             "Immunity": "8",
-            "Weaknesses": "7",
+            "Weaknesses": "8",
             "Attack Element": "Holy",
             "undefined": "5"
         },
@@ -1199,7 +1210,7 @@
         },
         {
             "Elementals": "Shore",
-            "Immunity": "9",
+            "Immunity": "10",
             "Status Effects": "Mob",
             "undefined": "9"
         },
