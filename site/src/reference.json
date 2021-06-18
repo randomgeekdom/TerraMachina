@@ -1028,6 +1028,17 @@
             "Weakness": "Dark",
             "Type": "Robotic",
             "Attacks": "Lightning Strike: 1d8 Lightning damage.  Causes Paralysis."
+        },
+        {
+            "Name": "Ice Phantom",
+            "Description": "A ghastly apparition made of pure ice",
+            "HP": "10",
+            "Armor": "3",
+            "Immunity": "Holy, Ice",
+            "Locations": "Tundra",
+            "Weakness": "Fire",
+            "Type": "Undead",
+            "Attacks": "Frost Breath: 1d4 Ice damage."
         }
     ],
     "Sample_Custom_Moves": [
@@ -1120,7 +1131,7 @@
         {
             "Elementals": "Fire",
             "Immunity": "7",
-            "Weaknesses": "7",
+            "Weaknesses": "8",
             "Status Effects": "Burn",
             "undefined": "1",
             "Attack Element": "Air"
@@ -1143,7 +1154,7 @@
         },
         {
             "Elementals": "Ice",
-            "Immunity": "8",
+            "Immunity": "9",
             "Weaknesses": "8",
             "Status Effects": "Poison",
             "undefined": "10",
@@ -1151,10 +1162,10 @@
         },
         {
             "Elementals": "Holy",
-            "Immunity": "7",
+            "Immunity": "8",
             "Weaknesses": "7",
             "Status Effects": "Scared",
-            "undefined": "7",
+            "undefined": "8",
             "Attack Element": "Ice"
         },
         {
@@ -1218,7 +1229,7 @@
             "Elementals": "Plains",
             "Immunity": "12",
             "Status Effects": "Undead",
-            "undefined": "7"
+            "undefined": "8"
         },
         {
             "Elementals": "Desert",
@@ -1226,7 +1237,7 @@
         },
         {
             "Elementals": "Tundra",
-            "Immunity": "9"
+            "Immunity": "10"
         },
         {
             "Elementals": "City",
