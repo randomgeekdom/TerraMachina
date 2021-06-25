@@ -1039,6 +1039,28 @@
             "Weakness": "Fire",
             "Type": "Undead",
             "Attacks": "Frost Breath: 1d4 Ice damage."
+        },
+        {
+            "Name": "Pirate's Ghost",
+            "Description": "A ghastly apparition that looks like a pirate and wields a poisonous blade",
+            "HP": "16",
+            "Armor": "0",
+            "Immunity": "Fire, Water",
+            "Locations": "Underwater, Shore",
+            "Weakness": "Earth",
+            "Type": "Undead",
+            "Attacks": "Poison Strike: 1d10-1 damage.  Causes poison."
+        },
+        {
+            "Name": "Frostflies",
+            "Description": "A swarm of white flyings bug found in cold areas",
+            "HP": "17",
+            "Armor": "3",
+            "Immunity": "Air",
+            "Locations": "Tundra",
+            "Weakness": "Fire",
+            "Type": "Insect, Mob",
+            "Attacks": "Ghastly Swarm: 1d8+1 damage.  Causes scared.\r\n\r\nFrost Bite: 1d4 Ice damage."
         }
     ],
     "Sample_Custom_Moves": [
@@ -1115,14 +1137,14 @@
         {
             "Elementals": "Earth",
             "Immunity": "7",
-            "Weaknesses": "7",
+            "Weaknesses": "8",
             "Status Effects": "Bleed",
             "undefined": "2",
             "Attack Element": "Piercing"
         },
         {
             "Elementals": "Air",
-            "Immunity": "7",
+            "Immunity": "8",
             "Weaknesses": "8",
             "Status Effects": "Blind",
             "undefined": "4",
@@ -1130,15 +1152,15 @@
         },
         {
             "Elementals": "Fire",
-            "Immunity": "7",
-            "Weaknesses": "8",
+            "Immunity": "8",
+            "Weaknesses": "9",
             "Status Effects": "Burn",
             "undefined": "1",
             "Attack Element": "Air"
         },
         {
             "Elementals": "Water",
-            "Immunity": "8",
+            "Immunity": "9",
             "Weaknesses": "8",
             "Status Effects": "Mania",
             "undefined": "10",
@@ -1165,7 +1187,7 @@
             "Immunity": "8",
             "Weaknesses": "7",
             "Status Effects": "Scared",
-            "undefined": "8",
+            "undefined": "9",
             "Attack Element": "Ice"
         },
         {
@@ -1215,15 +1237,15 @@
         },
         {
             "Elementals": "Underwater",
-            "Immunity": "9",
+            "Immunity": "10",
             "Status Effects": "Insect",
             "undefined": "6"
         },
         {
             "Elementals": "Shore",
-            "Immunity": "10",
+            "Immunity": "11",
             "Status Effects": "Mob",
-            "undefined": "9"
+            "undefined": "10"
         },
         {
             "Elementals": "Plains",
@@ -1237,7 +1259,7 @@
         },
         {
             "Elementals": "Tundra",
-            "Immunity": "10"
+            "Immunity": "11"
         },
         {
             "Elementals": "City",
