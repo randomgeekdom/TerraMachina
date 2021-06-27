@@ -1061,6 +1061,17 @@
             "Weakness": "Fire",
             "Type": "Insect, Mob",
             "Attacks": "Ghastly Swarm: 1d8+1 damage.  Causes scared.\r\n\r\nFrost Bite: 1d4 Ice damage."
+        },
+        {
+            "Name": "Pyro",
+            "Description": "A tribal magic user that manipulates fire.",
+            "HP": "16",
+            "Armor": "3",
+            "Immunity": "Fire",
+            "Locations": "Desert, Forest, Mountain",
+            "Weakness": "Holy",
+            "Type": "Human",
+            "Attacks": "Fireball: 1d8 fire damage.  Causes Burn."
         }
     ],
     "Sample_Custom_Moves": [
@@ -1152,7 +1163,7 @@
         },
         {
             "Elementals": "Fire",
-            "Immunity": "8",
+            "Immunity": "9",
             "Weaknesses": "9",
             "Status Effects": "Burn",
             "undefined": "1",
@@ -1163,7 +1174,7 @@
             "Immunity": "9",
             "Weaknesses": "8",
             "Status Effects": "Mania",
-            "undefined": "10",
+            "undefined": "11",
             "Attack Element": "Fire"
         },
         {
@@ -1185,7 +1196,7 @@
         {
             "Elementals": "Holy",
             "Immunity": "8",
-            "Weaknesses": "7",
+            "Weaknesses": "8",
             "Status Effects": "Scared",
             "undefined": "9",
             "Attack Element": "Ice"
@@ -1215,11 +1226,11 @@
             "Elementals": "Sky",
             "Immunity": "12",
             "Status Effects": "Human",
-            "undefined": "8"
+            "undefined": "9"
         },
         {
             "Elementals": "Mountain",
-            "Immunity": "13",
+            "Immunity": "14",
             "Status Effects": "Monster",
             "undefined": "Next Enemy"
         },
@@ -1231,9 +1242,9 @@
         },
         {
             "Elementals": "Forest",
-            "Immunity": "13",
+            "Immunity": "14",
             "Status Effects": "Reptilian",
-            "undefined": "7"
+            "undefined": "8"
         },
         {
             "Elementals": "Underwater",
@@ -1255,7 +1266,7 @@
         },
         {
             "Elementals": "Desert",
-            "Immunity": "10"
+            "Immunity": "11"
         },
         {
             "Elementals": "Tundra",
