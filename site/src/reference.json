@@ -1072,6 +1072,39 @@
             "Weakness": "Holy",
             "Type": "Human",
             "Attacks": "Fireball: 1d8 fire damage.  Causes Burn."
+        },
+        {
+            "Name": "Devil Snake",
+            "Description": "A giant snake with a pair of horns",
+            "HP": "21",
+            "Armor": "1",
+            "Immunity": "Water, Dark",
+            "Locations": "Underwater, Swamp",
+            "Weakness": "Holy",
+            "Type": "Reptilian",
+            "Attacks": "Snakebite: 1d4 Piercing damage.  Causes Poison."
+        },
+        {
+            "Name": "Desert Rhino",
+            "Description": "A yellow rhino that inhabits the desert",
+            "HP": "16",
+            "Armor": "2",
+            "Immunity": "Earth",
+            "Locations": "Desert",
+            "Weakness": "Air",
+            "Type": "Animal",
+            "Attacks": "Trample: 1d8+1 damage to all enemies.\r\n\r\nGlare: 1d6+1 dark damage."
+        },
+        {
+            "Name": "Sandbot",
+            "Description": "A multi-legged robot that walks on sand.",
+            "HP": "17",
+            "Armor": "5",
+            "Immunity": "Lightning",
+            "Locations": "Shore, Desert",
+            "Weakness": "None",
+            "Type": "Robotic",
+            "Attacks": "Shadowbeam: 1d6+1 dark damage."
         }
     ],
     "Sample_Custom_Moves": [
@@ -1147,16 +1180,16 @@
     "Enemy Data": [
         {
             "Elementals": "Earth",
-            "Immunity": "7",
+            "Immunity": "8",
             "Weaknesses": "8",
             "Status Effects": "Bleed",
-            "undefined": "2",
+            "undefined": "3",
             "Attack Element": "Piercing"
         },
         {
             "Elementals": "Air",
             "Immunity": "8",
-            "Weaknesses": "8",
+            "Weaknesses": "9",
             "Status Effects": "Blind",
             "undefined": "4",
             "Attack Element": "Earth"
@@ -1171,7 +1204,7 @@
         },
         {
             "Elementals": "Water",
-            "Immunity": "9",
+            "Immunity": "10",
             "Weaknesses": "8",
             "Status Effects": "Mania",
             "undefined": "11",
@@ -1179,7 +1212,7 @@
         },
         {
             "Elementals": "Lightning",
-            "Immunity": "8",
+            "Immunity": "9",
             "Weaknesses": "9",
             "Status Effects": "Paralysis",
             "undefined": "6",
@@ -1196,17 +1229,17 @@
         {
             "Elementals": "Holy",
             "Immunity": "8",
-            "Weaknesses": "8",
+            "Weaknesses": "9",
             "Status Effects": "Scared",
             "undefined": "9",
             "Attack Element": "Ice"
         },
         {
             "Elementals": "Dark",
-            "Immunity": "8",
+            "Immunity": "9",
             "Weaknesses": "8",
             "Attack Element": "Holy",
-            "undefined": "5"
+            "undefined": ""
         },
         {
             "Attack Element": "Dark",
@@ -1220,7 +1253,7 @@
             "Elementals": "Cave",
             "Immunity": "18",
             "Status Effects": "Animal",
-            "undefined": "19"
+            "undefined": "20"
         },
         {
             "Elementals": "Sky",
@@ -1236,9 +1269,9 @@
         },
         {
             "Elementals": "Swamp",
-            "Immunity": "13",
+            "Immunity": "14",
             "Status Effects": "Robotic",
-            "undefined": "7"
+            "undefined": "8"
         },
         {
             "Elementals": "Forest",
@@ -1248,25 +1281,26 @@
         },
         {
             "Elementals": "Underwater",
-            "Immunity": "10",
+            "Immunity": "11",
             "Status Effects": "Insect",
             "undefined": "6"
         },
         {
             "Elementals": "Shore",
-            "Immunity": "11",
+            "Immunity": "12",
             "Status Effects": "Mob",
-            "undefined": "10"
+            "undefined": "11"
         },
         {
             "Elementals": "Plains",
             "Immunity": "12",
             "Status Effects": "Undead",
-            "undefined": "8"
+            "undefined": "9"
         },
         {
             "Elementals": "Desert",
-            "Immunity": "11"
+            "Immunity": "13",
+            "undefined": "1"
         },
         {
             "Elementals": "Tundra",
